@@ -1,13 +1,219 @@
 ====================
-     2025-12-08    
+     2025-12-13    
 ====================
 * device/lineage/sepolicy
-76eca2c sepolicy: label more sched sysctl toggles [basamaryan]
+ba8f72c sepolicy: label more sched sysctl toggles [basamaryan]
 
 * frameworks/base
-089bb0ee1112 VolumeDialog: Add support for left gravity [Pranav Vashi]
-bc758a9268b7 SettingsLib: Prevent NPE for fragments without divider [Pranav Vashi]
-3ea3c1bfcdcf SystemUI: Fix clock hide [Pranav Vashi]
+1f91b36e99b0 fw/b: Move KEYCODE_ASSIST to interceptKeyBeforeQueueing [Nick Reuter]
+68509139dd6c fixup! SystemUI: Add support for clock auto-hiding [Pranav Vashi]
+2840aface036 SystemUI: Refactor ClockController to view binder [Pranav Vashi]
+
+* lineage/hudson
+d5f8948 hudson: Include SoC brand name in r8q's name [CmdCtrlDevic3]
+d1ff400 hudson: Add Galaxy S20 FE (Exynos) [CmdCtrlDevic3]
+8b286fc Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/scripts
+2d06b78 reuse_helper: Handle mk files [Michael Bestas]
+
+* lineage/wiki
+7274f2d3 wiki: Include SoC brand name in r8q's name [CmdCtrlDevic3]
+6d184432 wiki: Align r8q with r8s [CmdCtrlDevic3]
+86d1f432 wiki: Add Galaxy S20 FE (Exynos) [CmdCtrlDevic3]
+
+* packages/apps/Launcher3
+4d9c7592bf Launcher3: Use system API to check if package is enabled [Bruno Martins]
+
+* tools/extract-utils
+f6edea1 extract_utils: support merging multiple blob fixups [LuK1337]
+4393e30 extract_utils: use file.dst for rfsa package names [LuK1337]
+ef0ffef extract_utils: bp_builder: use existing `target` element if possible [LuK1337]
+
+* vendor/lineage
+169d362f1 [DNM} Revert "overlay: Hide the option to show battery percentage" [basamaryan]
+01bf6b417 aconfig: Enable screen off udfps [aswin7469]
+cd6b0506f config: tablet: Inherit from large_screen_common.mk [Bruno Martins]
+
+====================
+     2025-12-12    
+====================
+* frameworks/base
+68509139dd6c fixup! SystemUI: Add support for clock auto-hiding [Pranav Vashi]
+2840aface036 SystemUI: Refactor ClockController to view binder [Pranav Vashi]
+980a0f255060 fixup! [1] SystemUI: Clock position customization [Pranav Vashi]
+4a71c2303d7e VolumeDialog: Add support for left gravity [Pranav Vashi]
+5331a425fd02 SettingsLib: Prevent NPE for fragments without divider [Pranav Vashi]
+
+* hardware/qcom-caf/sm8350/audio
+c1c4d03601 hal: Fix lvimfs log message [Michael Bestas]
+
+* lineage/hudson
+d5f8948 hudson: Include SoC brand name in r8q's name [CmdCtrlDevic3]
+d1ff400 hudson: Add Galaxy S20 FE (Exynos) [CmdCtrlDevic3]
+8b286fc Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+80ed326 Updated to 11-Dec-2025 23:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+2d06b78 reuse_helper: Handle mk files [Michael Bestas]
+
+* lineage/wiki
+7274f2d3 wiki: Include SoC brand name in r8q's name [CmdCtrlDevic3]
+6d184432 wiki: Align r8q with r8s [CmdCtrlDevic3]
+86d1f432 wiki: Add Galaxy S20 FE (Exynos) [CmdCtrlDevic3]
+
+* packages/apps/WallpaperPicker2
+7a8c8d68c enable integration of the embedded photo picker [Dmitry Muhomor]
+781fe5e83 hide the always-empty wallpaper carousel [Dmitry Muhomor]
+782f6f66e don't use the CuratedPhotos categories which aren't setup in AOSP [Dmitry Muhomor]
+
+* tools/extract-utils
+4393e30 extract_utils: use file.dst for rfsa package names [LuK1337]
+ef0ffef extract_utils: bp_builder: use existing `target` element if possible [LuK1337]
+
+====================
+     2025-12-11    
+====================
+* frameworks/base
+980a0f255060 fixup! [1] SystemUI: Clock position customization [Pranav Vashi]
+4a71c2303d7e VolumeDialog: Add support for left gravity [Pranav Vashi]
+5331a425fd02 SettingsLib: Prevent NPE for fragments without divider [Pranav Vashi]
+
+* hardware/qcom-caf/sm8350/audio
+c1c4d03601 hal: Fix lvimfs log message [Michael Bestas]
+
+* lineage/hudson
+dc400bb after like a year, we figured out the stupid BSOD issue [Nolen Johnson]
+8b55b34 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+80ed326 Updated to 11-Dec-2025 23:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+33a6888b devices: Promote moto_sm8250 to 23.0 [Nolen Johnson]
+
+* packages/apps/WallpaperPicker2
+7a8c8d68c enable integration of the embedded photo picker [Dmitry Muhomor]
+781fe5e83 hide the always-empty wallpaper carousel [Dmitry Muhomor]
+782f6f66e don't use the CuratedPhotos categories which aren't setup in AOSP [Dmitry Muhomor]
+
+* system/core
+e11efa2f7 Revert "fs_mgr: Remove blatant references to retrofit dynamic partitions." [Nolen Johnson]
+a455deab9 Revert "liblp: Remove auto slot suffixing support." [Nolen Johnson]
+6ef0e53ef Revert "Remove Virtual A/B retrofit support." [Nolen Johnson]
+8f004ba8d Revert "Remove support for separate A and B super partitions." [Nolen Johnson]
+
+====================
+     2025-12-10    
+====================
+* lineage/hudson
+dc400bb after like a year, we figured out the stupid BSOD issue [Nolen Johnson]
+8b55b34 Regenerate device dependency mappings [LineageOS Infra]
+17139ba rescuing the Jamboard from Google's dumpster [Nolen Johnson]
+
+* lineage/wiki
+33a6888b devices: Promote moto_sm8250 to 23.0 [Nolen Johnson]
+f322d788 templates: before_build_init: apt get u-boot dep [Nolen Johnson]
+64b06f2a devices: Add the Google Jamboard | 22 [Nolen Johnson]
+
+* system/core
+e11efa2f7 Revert "fs_mgr: Remove blatant references to retrofit dynamic partitions." [Nolen Johnson]
+a455deab9 Revert "liblp: Remove auto slot suffixing support." [Nolen Johnson]
+6ef0e53ef Revert "Remove Virtual A/B retrofit support." [Nolen Johnson]
+8f004ba8d Revert "Remove support for separate A and B super partitions." [Nolen Johnson]
+8fa09499c fastboot: Reimplement zero_packet check [Giovanni Ricca]
+
+====================
+     2025-12-09    
+====================
+* device/qcom/sepolicy-legacy-um
+8204f3a2 legacy: Label timeservice app with user=system [LuK1337]
+
+* device/qcom/sepolicy_vndr/legacy-um
+492c88574 sepolicy: Label qcom,dp_display wakeup node [dianlujitao]
+
+* hardware/qcom-caf/sm8350/display
+e9bbe9a980 qmaa: Fix soong namespace imports [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/display
+c2d198689a qmaa: Fix soong namespace imports [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/display
+3415b63c43 qmaa: Fix soong namespace imports [Michael Bestas]
+
+* hardware/qcom-caf/sm8650/display
+fe52304de7 qmaa: Fix soong namespace imports [Michael Bestas]
+
+* hardware/qcom-caf/sm8750/display/hal
+424f8972c9 qmaa: Fix soong namespace imports [Michael Bestas]
+
+* lineage/hudson
+17139ba rescuing the Jamboard from Google's dumpster [Nolen Johnson]
+cfe0708 Regenerate device dependency mappings [LineageOS Infra]
+b55947d hudson: Add Motorola Edge 2024 to the build roster [Nick Reuter]
+
+* lineage/wiki
+f322d788 templates: before_build_init: apt get u-boot dep [Nolen Johnson]
+64b06f2a devices: Add the Google Jamboard | 22 [Nolen Johnson]
+d7ef709c wiki: Add Motorola Edge 2024 (avatrn) [Nick Reuter]
+
+* packages/apps/LineageParts
+3af1d69 LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
+9dfa879 StatusBarSettings: Add setting for brightness slider position [Pranav Vashi]
+d2778c1 SettingsPreferenceFragment: Defer applying divider [Bruno Martins]
+ff1e836 LineageParts: M3E love for everyone [Bruno Martins]
+63c39cc ButtonSettings: Switch volume panel position to a ListPreference [Bruno Martins]
+
+* packages/apps/SetupWizard
+aa537d7 SetupWizard: Drop CDMA remnants [Michael Bestas]
+
+* packages/apps/TvSystemUI
+4f5a0eb Revert "Remove volumePanelFlag from VolumeDialogImpl call" [Aaron Kling]
+
+* system/core
+8fa09499c fastboot: Reimplement zero_packet check [Giovanni Ricca]
+
+* tools/extract-utils
+bb4f248 extract_utils: allow passing proprietary files to ExtractUtilsModule [Cosmin Tanislav]
+c6385ca extract_utils: add support for virtual proprietary files [Cosmin Tanislav]
+640c56e extract_utils: add support for 7z extraction [Cosmin Tanislav]
+70d8244 extract_utils: fix multiple backing up prints [Cosmin Tanislav]
+bd8e6c5 extract_utils: makefiles: fix typing [Cosmin Tanislav]
+ab812ca extract_utils: fixups: fix typing [Cosmin Tanislav]
+4de9d94 extract_utils: fixups_lib: fix typing [Cosmin Tanislav]
+0ea30ed extract_utils: fixups_blob: fix typing [Cosmin Tanislav]
+cac372e extract_utils: elf: fix typing [Cosmin Tanislav]
+2347a5a extract_utils: elf_parser: fix typing [Cosmin Tanislav]
+39d6754 extract_utils: file: fix typing [Cosmin Tanislav]
+f642e54 extract_utils: bp_encoder: fix typing [Cosmin Tanislav]
+73daa05 extract_utils: bp_builder: fix typing [Cosmin Tanislav]
+c2c84dd extract_utils: extract_misc: fix typing [Cosmin Tanislav]
+138ce00 extract_utils: extract_super_retrofit: fix typing [Cosmin Tanislav]
+3a4836c extract_utils: lp: fix typing [Cosmin Tanislav]
+77fb6c7 extract_utils: module: fix typing [Cosmin Tanislav]
+70c4f35 extract_utils: main: fix typing [Cosmin Tanislav]
+97c5f8f extract_utils: extract_star: fix typing [Cosmin Tanislav]
+6d7abf6 extract_utils: extract_pixel: fix typing [Cosmin Tanislav]
+115cdec extract_utils: extract: fix typing [Cosmin Tanislav]
+4fb32ae extract_utils: utils: fix typing [Cosmin Tanislav]
+e19e99c extract_utils: source: fix typing [Cosmin Tanislav]
+0db42ca extract_utils: fix reverse patch application [Cosmin Tanislav]
+f51fdd4 extract_utils: unpack old dictionary extract fns in ExtractUtilsModule [Cosmin Tanislav]
+7b5ccb8 extract_utils: fix backup copy check [Cosmin Tanislav]
+f0e115f extract_utils: rename root_path to printable_path and move to a property [Cosmin Tanislav]
+
+====================
+     2025-12-08    
+====================
+* device/qcom/sepolicy-legacy-um
+8204f3a2 legacy: Label timeservice app with user=system [LuK1337]
+
+* device/qcom/sepolicy_vndr/legacy-um
+492c88574 sepolicy: Label qcom,dp_display wakeup node [dianlujitao]
+
+* frameworks/base
 8b0fa18c3ee5 InternetDialog: Add missing setOnClickListener for data toggle [Pranav Vashi]
 e693abc89d3a SystemUI: tiles: Preload all icon drawable for custom tiles [Pranav Vashi]
 e78728d08777 SystemUI: Support non-animated custom brightness icons [Pranav Vashi]
@@ -237,7 +443,24 @@ a6c22bbbcb6b SystemUI: Bring in drawables for statusbar icon toggles [althafvly]
 e1428bcbfb80 SystemUI: Split status bar icon controls for vibrate and mute [althafvly]
 db7853a2e337 SystemUI: Status bar tuner improvements [Rashed Abdel-Tawab]
 
+* hardware/qcom-caf/sm8350/display
+e9bbe9a980 qmaa: Fix soong namespace imports [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/display
+c2d198689a qmaa: Fix soong namespace imports [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/display
+3415b63c43 qmaa: Fix soong namespace imports [Michael Bestas]
+
+* hardware/qcom-caf/sm8650/display
+fe52304de7 qmaa: Fix soong namespace imports [Michael Bestas]
+
+* hardware/qcom-caf/sm8750/display/hal
+424f8972c9 qmaa: Fix soong namespace imports [Michael Bestas]
+
 * lineage/hudson
+cfe0708 Regenerate device dependency mappings [LineageOS Infra]
+b55947d hudson: Add Motorola Edge 2024 to the build roster [Nick Reuter]
 4b47a27 hudson: Promote alioth to 23.0 [Christian Hoffmann]
 
 * lineage/mirror
@@ -254,26 +477,62 @@ f94475c aosp-merger: Add basic support for stacked merges [Michael Bestas]
 21cd074 aosp-merger: Rip out Pixel merge support [Michael Bestas]
 
 * lineage/wiki
+d7ef709c wiki: Add Motorola Edge 2024 (avatrn) [Nick Reuter]
 32b10c3e wiki: Merge the developer information page into contributing page [Inhishonor]
 a80d10c6 wiki: devices: Promote alioth to 23.0 [Christian Hoffmann]
 
-* packages/apps/Launcher3
-feb00599e1 Launcher3: Use system API to check if package is enabled [Bruno Martins]
+* packages/apps/LineageParts
+3af1d69 LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
+9dfa879 StatusBarSettings: Add setting for brightness slider position [Pranav Vashi]
+d2778c1 SettingsPreferenceFragment: Defer applying divider [Bruno Martins]
+ff1e836 LineageParts: M3E love for everyone [Bruno Martins]
+63c39cc ButtonSettings: Switch volume panel position to a ListPreference [Bruno Martins]
 
 * packages/apps/Settings
 1d4f5fd1342 Settings: Promote external doze settings to first class [Nick Reuter]
 
+* packages/apps/SetupWizard
+aa537d7 SetupWizard: Drop CDMA remnants [Michael Bestas]
+
+* packages/apps/TvSystemUI
+4f5a0eb Revert "Remove volumePanelFlag from VolumeDialogImpl call" [Aaron Kling]
+
+* tools/extract-utils
+bb4f248 extract_utils: allow passing proprietary files to ExtractUtilsModule [Cosmin Tanislav]
+c6385ca extract_utils: add support for virtual proprietary files [Cosmin Tanislav]
+640c56e extract_utils: add support for 7z extraction [Cosmin Tanislav]
+70d8244 extract_utils: fix multiple backing up prints [Cosmin Tanislav]
+bd8e6c5 extract_utils: makefiles: fix typing [Cosmin Tanislav]
+ab812ca extract_utils: fixups: fix typing [Cosmin Tanislav]
+4de9d94 extract_utils: fixups_lib: fix typing [Cosmin Tanislav]
+0ea30ed extract_utils: fixups_blob: fix typing [Cosmin Tanislav]
+cac372e extract_utils: elf: fix typing [Cosmin Tanislav]
+2347a5a extract_utils: elf_parser: fix typing [Cosmin Tanislav]
+39d6754 extract_utils: file: fix typing [Cosmin Tanislav]
+f642e54 extract_utils: bp_encoder: fix typing [Cosmin Tanislav]
+73daa05 extract_utils: bp_builder: fix typing [Cosmin Tanislav]
+c2c84dd extract_utils: extract_misc: fix typing [Cosmin Tanislav]
+138ce00 extract_utils: extract_super_retrofit: fix typing [Cosmin Tanislav]
+3a4836c extract_utils: lp: fix typing [Cosmin Tanislav]
+77fb6c7 extract_utils: module: fix typing [Cosmin Tanislav]
+70c4f35 extract_utils: main: fix typing [Cosmin Tanislav]
+97c5f8f extract_utils: extract_star: fix typing [Cosmin Tanislav]
+6d7abf6 extract_utils: extract_pixel: fix typing [Cosmin Tanislav]
+115cdec extract_utils: extract: fix typing [Cosmin Tanislav]
+4fb32ae extract_utils: utils: fix typing [Cosmin Tanislav]
+e19e99c extract_utils: source: fix typing [Cosmin Tanislav]
+0db42ca extract_utils: fix reverse patch application [Cosmin Tanislav]
+f51fdd4 extract_utils: unpack old dictionary extract fns in ExtractUtilsModule [Cosmin Tanislav]
+7b5ccb8 extract_utils: fix backup copy check [Cosmin Tanislav]
+f0e115f extract_utils: rename root_path to printable_path and move to a property [Cosmin Tanislav]
+
 * vendor/lineage
-f8a6cd7b9 [DNM} Revert "overlay: Hide the option to show battery percentage" [basamaryan]
 01e88e9d4 vars: Winter cleanup [Michael Bestas]
 
 ====================
      2025-12-07    
 ====================
 * frameworks/base
-089bb0ee1112 VolumeDialog: Add support for left gravity [Pranav Vashi]
-bc758a9268b7 SettingsLib: Prevent NPE for fragments without divider [Pranav Vashi]
-3ea3c1bfcdcf SystemUI: Fix clock hide [Pranav Vashi]
 8b0fa18c3ee5 InternetDialog: Add missing setOnClickListener for data toggle [Pranav Vashi]
 e693abc89d3a SystemUI: tiles: Preload all icon drawable for custom tiles [Pranav Vashi]
 e78728d08777 SystemUI: Support non-animated custom brightness icons [Pranav Vashi]
@@ -526,10 +785,6 @@ f94475c aosp-merger: Add basic support for stacked merges [Michael Bestas]
 * lineage/wiki
 32b10c3e wiki: Merge the developer information page into contributing page [Inhishonor]
 a80d10c6 wiki: devices: Promote alioth to 23.0 [Christian Hoffmann]
-
-* packages/apps/LineageParts
-b805fc0 LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
-810b83b StatusBarSettings: Add setting for brightness slider position [Pranav Vashi]
 
 * packages/apps/Settings
 1d4f5fd1342 Settings: Promote external doze settings to first class [Nick Reuter]
@@ -611,10 +866,6 @@ f63f4483a4 Launcher3Go: Add Go specific default workspace [Bruno Martins]
 a39c46d75b Replace 4x4 grid option with a 4x5 one [Arne Coucheron]
 60a66fd89f Launcher3: Update default workspace [Bruno Martins]
 031b0b4b52 Launcher3: Bring in the new icon [Asher Simonds]
-
-* packages/apps/LineageParts
-b805fc0 LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
-810b83b StatusBarSettings: Add setting for brightness slider position [Pranav Vashi]
 
 * packages/apps/Settings
 1efd20b6d69 Settings: Remove summary placeholder from "System updates" pref [Bruno Martins]
@@ -706,8 +957,6 @@ a39c46d75b Replace 4x4 grid option with a 4x5 one [Arne Coucheron]
 031b0b4b52 Launcher3: Bring in the new icon [Asher Simonds]
 
 * packages/apps/LineageParts
-3eb0a0a SettingsPreferenceFragment: Defer applying divider [Bruno Martins]
-fb1d013 LineageParts: M3E love for everyone [Bruno Martins]
 6a739bc LineageParts: Use CardView for the LiveDisplay color mode preview [Penguin766]
 cba4152 BootReceiver: Always extract contributors cloud database [Bruno Martins]
 ba62e35 LineageParts: Inject LiveDisplay activity into Settings via IA (again) [Bruno Martins]
@@ -842,8 +1091,6 @@ e0880f2 Updated to 04-Dec-2025 23:01 UTC [Tim Schumacher]
 3bea55fe devices: Promote zizhan to 23.0 [Arian]
 
 * packages/apps/LineageParts
-3eb0a0a SettingsPreferenceFragment: Defer applying divider [Bruno Martins]
-fb1d013 LineageParts: M3E love for everyone [Bruno Martins]
 6a739bc LineageParts: Use CardView for the LiveDisplay color mode preview [Penguin766]
 cba4152 BootReceiver: Always extract contributors cloud database [Bruno Martins]
 ba62e35 LineageParts: Inject LiveDisplay activity into Settings via IA (again) [Bruno Martins]
@@ -999,14 +1246,40 @@ aa371c728cf Settings: Add LineageOS legal info [Roman Birg]
 21d31bae474 MainlineModuleVersionPreference: Fully hide if intent is null [LuK1337]
 e9fb7a982d7 Settings: Add LineageOS entries into device info [LuK1337]
 
+* packages/apps/TvSettings
+c2cdd25c1 TvSettings: Support two button mute [Aaron Kling]
+4933120e6 TvSettings: Add Updater icon [Timi]
+ce0fcb48c TvSettings: Relocate Updater [Timi]
+40802c4de TvSettings: Move About to top of Device page [Timi]
+ca9d91e03 TvSettings: Update banner [Asher Simonds]
+bf4120ce9 TvSettings: Check for null HdmiControlManager [Timi]
+c69a64f76 Allow disabling Frame Rate settings [Aaron Kling]
+9b89cd886 Implement Trust menu [Timi Rautamäki]
+5a0fd6e88 Add support for Nvidia convertible USB port [Aaron Kling]
+da8e677f7 [2/2] Add battery info to tvsettings device info [Aaron Kling]
+060c9f1c4 HDMI CEC: Add volume preference [Aaron Kling]
+a90e1812c Show input settings on cec playback devices [Aaron Kling]
+6806527d4 ButtonsFragment: Fix advanced restart preference [Bruno Martins]
+32140ad2b Implement long press power button settings [Timi Rautamäki]
+9227f3bb8 Add Lineage advanced restart options [Aaron Kling]
+8ce26d875 TvSettings: add Buttons-section to System settings [Timi Rautamäki]
+95c82382f Implement ADB over network [Dave Carey]
+5c646022d Add rooted development option [Aaron Kling]
+d76947906 Fix UI glitch on USB debugging toggled [Tuan Le Anh]
+f035bba85 One does not simply become a Developer [dhacker29]
+89ad6e437 Add build date (ro.build.date from build.prop) to About screen. [dhacker29]
+56a6a5281 Add LineageOS version to the About screen [dhacker29]
+31ceb4cf1 TvSettings: Bring in the new icon [Asher Simonds]
+a6fab4d01 Revert "Putting device into pairing mode should time out after awhile" [Aaron Kling]
+4d0a6f289 Only auto-pair peripheral devices [Aaron Kling]
+6100e9a33 Fix NPE in SystemSoundsPlayer [Timi Rautamäki]
+a44639804 Fix default focus in list fragment [Tuan Le Anh]
+890cf2aca Fix the bluetooth headset without mic icon [Tuan Le Anh]
+a764ea723 TwoPanelSettings: fix double ripple in Wifi selection [Timi Rautamäki]
+897593b62 [TvSettings] fix PendingIntent conflict in RowBuilder actions [joe.y.huang]
+
 * system/chre
 949d2ddf chre_daemon_msm: Include pw_base64 as a static library [Nolen Johnson]
-
-* system/core
-26d714423 Revert "fs_mgr: Remove blatant references to retrofit dynamic partitions." [Nolen Johnson]
-bd44af00f Revert "liblp: Remove auto slot suffixing support." [Nolen Johnson]
-aebcf110c Revert "Remove Virtual A/B retrofit support." [Nolen Johnson]
-26bc8cb24 Revert "Remove support for separate A and B super partitions." [Nolen Johnson]
 
 * system/logging
 1c9f5457 logd: Use build time debuggable check for klogd_default [LuK1337]
@@ -1030,6 +1303,9 @@ d31ef2798 kernel: Prevent creating any files in kernel platform source tree [Tho
 23eee04e3d Revert "Remove PRODUCT_RETROFIT_DYNAMIC_PARTITIONS." [Nolen Johnson]
 aa89febb1e Revert "Remove Virtual A/B Retrofit support." [Nolen Johnson]
 c5a0de6536 Revert "Remove retrofit dynamic partition support from otatools." [Nolen Johnson]
+
+* hardware/qcom-caf/common
+d4f02ca qcom: Declare some prebuilt qti radio interfaces [AnierinB]
 
 * lineage-sdk
 50e46bb9 Automatic translation import [LineageOS Infra]
@@ -1076,6 +1352,38 @@ ed83532 Automatic translation import [LineageOS Infra]
 * packages/apps/SetupWizard
 55e9498 Automatic translation import [LineageOS Infra]
 
+* packages/apps/TvSettings
+c2cdd25c1 TvSettings: Support two button mute [Aaron Kling]
+4933120e6 TvSettings: Add Updater icon [Timi]
+ce0fcb48c TvSettings: Relocate Updater [Timi]
+40802c4de TvSettings: Move About to top of Device page [Timi]
+ca9d91e03 TvSettings: Update banner [Asher Simonds]
+bf4120ce9 TvSettings: Check for null HdmiControlManager [Timi]
+c69a64f76 Allow disabling Frame Rate settings [Aaron Kling]
+9b89cd886 Implement Trust menu [Timi Rautamäki]
+5a0fd6e88 Add support for Nvidia convertible USB port [Aaron Kling]
+da8e677f7 [2/2] Add battery info to tvsettings device info [Aaron Kling]
+060c9f1c4 HDMI CEC: Add volume preference [Aaron Kling]
+a90e1812c Show input settings on cec playback devices [Aaron Kling]
+6806527d4 ButtonsFragment: Fix advanced restart preference [Bruno Martins]
+32140ad2b Implement long press power button settings [Timi Rautamäki]
+9227f3bb8 Add Lineage advanced restart options [Aaron Kling]
+8ce26d875 TvSettings: add Buttons-section to System settings [Timi Rautamäki]
+95c82382f Implement ADB over network [Dave Carey]
+5c646022d Add rooted development option [Aaron Kling]
+d76947906 Fix UI glitch on USB debugging toggled [Tuan Le Anh]
+f035bba85 One does not simply become a Developer [dhacker29]
+89ad6e437 Add build date (ro.build.date from build.prop) to About screen. [dhacker29]
+56a6a5281 Add LineageOS version to the About screen [dhacker29]
+31ceb4cf1 TvSettings: Bring in the new icon [Asher Simonds]
+a6fab4d01 Revert "Putting device into pairing mode should time out after awhile" [Aaron Kling]
+4d0a6f289 Only auto-pair peripheral devices [Aaron Kling]
+6100e9a33 Fix NPE in SystemSoundsPlayer [Timi Rautamäki]
+a44639804 Fix default focus in list fragment [Tuan Le Anh]
+890cf2aca Fix the bluetooth headset without mic icon [Tuan Le Anh]
+a764ea723 TwoPanelSettings: fix double ripple in Wifi selection [Timi Rautamäki]
+897593b62 [TvSettings] fix PendingIntent conflict in RowBuilder actions [joe.y.huang]
+
 * packages/apps/Twelve
 4df0e7e Automatic translation import [LineageOS Infra]
 
@@ -1087,12 +1395,6 @@ a3b1433 Automatic translation import [LineageOS Infra]
 
 * system/chre
 949d2ddf chre_daemon_msm: Include pw_base64 as a static library [Nolen Johnson]
-
-* system/core
-26d714423 Revert "fs_mgr: Remove blatant references to retrofit dynamic partitions." [Nolen Johnson]
-bd44af00f Revert "liblp: Remove auto slot suffixing support." [Nolen Johnson]
-aebcf110c Revert "Remove Virtual A/B retrofit support." [Nolen Johnson]
-26bc8cb24 Revert "Remove support for separate A and B super partitions." [Nolen Johnson]
 
 * system/logging
 1c9f5457 logd: Use build time debuggable check for klogd_default [LuK1337]
@@ -1133,6 +1435,9 @@ fd14262 ADPF: Don't enable heuristic rampup for Chrome sessions. [guibing]
 e2bd255 powerhal: Use vendor sched procfs node to apply the session's process tag. [guibing]
 5b5eeb7 livedisplay: Switch to the real boolean values in Soong config [Yumi Yukimura]
 29896a5 health: Switch to the real boolean values in Soong config [Yumi Yukimura]
+
+* hardware/qcom-caf/common
+d4f02ca qcom: Declare some prebuilt qti radio interfaces [AnierinB]
 
 * lineage-sdk
 50e46bb9 Automatic translation import [LineageOS Infra]
@@ -1231,6 +1536,9 @@ e2bd255 powerhal: Use vendor sched procfs node to apply the session's process ta
 * hardware/qcom-caf/bootctrl
 846dfb0 gpt-utils: Switch to the real boolean values in Soong config [Yumi Yukimura]
 
+* hardware/qcom-caf/wlan
+7f93221 qcwcn: Build wpa_supplicant.conf from make to soong [Bill Yang]
+
 * hardware/qcom/wlan
 7528348 legacy: Build wpa_supplicant.conf from make to soong [Bill Yang]
 
@@ -1259,180 +1567,6 @@ de0a1a1e6 vars: November 2025 Pixel Update [Michael Bestas]
 412f513e1 vars: September 2025 Pixel Update [Michael Bestas]
 026d9994f vars: Update to BP3A [Michael Bestas]
 
-====================
-     2025-11-29    
-====================
-* build/make
-00fcf469ba Exclude perf-setup-sh from userdebug builds [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/legacy-um
-ae358764f sepolicy: Label SEC NFC device & HAL [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8450
-2af9358fb Revert "sepolicy_vndr: Allow init/vendor_init to write proc firmware config" [Bruno Martins]
-4ae9561b7 Revert "sepolicy_vndr: Label proc firmware config node" [Bruno Martins]
-ab5a1f3d9 sepolicy: Label SEC NFC device & HAL [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8550
-6244b3a99 Revert "sepolicy_vndr: Allow init/vendor_init to write proc firmware config" [Bruno Martins]
-7c01b10fd Revert "sepolicy_vndr: Label proc firmware config node" [Bruno Martins]
-08e84aa25 sepolicy: Label SEC NFC device & HAL [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8650
-029a166bd Revert "sepolicy_vndr: Allow init/vendor_init to write proc firmware config" [Bruno Martins]
-9b67643d8 Revert "sepolicy_vndr: Label proc firmware config node" [Bruno Martins]
-dd7818565 sepolicy: Label SEC NFC device & HAL [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8750
-6748e0222 sepolicy: Label SEC NFC device & HAL [Michael Bestas]
-
-* frameworks/av
-fec7a1245f fixup! libstagefright: Conditionally disable `thumbnail_block_model` [Bruno Martins]
-
-* hardware/lineage/interfaces
-14a1544 compatibility_matrices: Mark as product specific [LuK1337]
-1b3557d interfaces: Add compatibility matrix [Nick Reuter]
-
-* hardware/qcom-caf/bootctrl
-846dfb0 gpt-utils: Switch to the real boolean values in Soong config [Yumi Yukimura]
-
-* hardware/qcom/wlan
-7528348 legacy: Build wpa_supplicant.conf from make to soong [Bill Yang]
-
-* lineage/hudson
-fadc405 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/wiki
-7dc3668c wiki: Correct a few bits in timelm [Tuan Anh]
-4f75f44a avalon/caihong/waffle: Bump FW to match OOS 16 release [chandu078]
-
-* packages/apps/Dialer
-1531b7128 Dialer: Enable call recording over VOICE_CALL source by default [Michael Bestas]
-
-* packages/apps/Seedvault
-6723deaa Merge branch 'android16' of https://github.com/seedvault-app/seedvault into lineage-23.0 [Michael Bestas]
-de2b6f99 Merge tag '16-5.7' of https://github.com/seedvault-app/seedvault into lineage-23.0 [Michael Bestas]
-
-* vendor/lineage
-d7666177e config: Add libzstd.so to artifact path requirement allowlist [Michael Bestas]
-2fad9fba4 soong: generator: Update for BP3A [Thomas Turner]
-5052a7396 release: Drop remaining Pixel flags [Michael Bestas]
-de0a1a1e6 vars: November 2025 Pixel Update [Michael Bestas]
-137876a2a vars: October 2025 Pixel Update [Michael Bestas]
-8d47278bd LineageOS 23.1 [Michael Bestas]
-1bea6247d release: Bump aconfig flags extension to BP3A [Michael Bestas]
-412f513e1 vars: September 2025 Pixel Update [Michael Bestas]
-026d9994f vars: Update to BP3A [Michael Bestas]
-60444c0dc lineage: Move device_framework_matrix.xml to hardware/lineage/interfaces [Nick Reuter]
-
-====================
-     2025-11-28    
-====================
-* frameworks/av
-fec7a1245f fixup! libstagefright: Conditionally disable `thumbnail_block_model` [Bruno Martins]
-
-* hardware/lineage/interfaces
-1b3557d interfaces: Add compatibility matrix [Nick Reuter]
-
-* lineage/hudson
-b3b5d56 sake: Promote to 23.0 [Michael Zh]
-
-* lineage/wiki
-446887f4 wiki: Allow 15 fw for FP4 [Michael Bestas]
-42682e47 wiki: Allow A16 FW for dodge and erhai [LuK1337]
-ea98db60 wiki: Promote sake to 23.0 [Michael Zh]
-
-* packages/apps/Dialer
-1531b7128 Dialer: Enable call recording over VOICE_CALL source by default [Michael Bestas]
-
-* packages/apps/Seedvault
-6723deaa Merge branch 'android16' of https://github.com/seedvault-app/seedvault into lineage-23.0 [Michael Bestas]
-de2b6f99 Merge tag '16-5.7' of https://github.com/seedvault-app/seedvault into lineage-23.0 [Michael Bestas]
-
-* system/sepolicy
-019152ff7 Grant vendor keymaster_tee access to vendor gatekeeper data [Bruno Martins]
-
-* vendor/lineage
-60444c0dc lineage: Move device_framework_matrix.xml to hardware/lineage/interfaces [Nick Reuter]
-
-====================
-     2025-11-27    
-====================
-* lineage/hudson
-b3b5d56 sake: Promote to 23.0 [Michael Zh]
-
-* lineage/wiki
-446887f4 wiki: Allow 15 fw for FP4 [Michael Bestas]
-42682e47 wiki: Allow A16 FW for dodge and erhai [LuK1337]
-ea98db60 wiki: Promote sake to 23.0 [Michael Zh]
-e880e36e wiki: Update alioth maintainer list [Christian Hoffmann]
-
-* system/sepolicy
-019152ff7 Grant vendor keymaster_tee access to vendor gatekeeper data [Bruno Martins]
-
-====================
-     2025-11-26    
-====================
-* hardware/google/pixel-sepolicy
-7c0e2ea Merge tag 'android-16.0.0_r3' into staging/lineage-23.0_merge-android-16.0.0_r3 [Michael Bestas]
-3e98874 Revert "Restore pixelstats-vendor rules" [Michael Bestas]
-c8a7644 Revert "Add missing pixelstats sepolicy" [Michael Bestas]
-
-* hardware/interfaces
-cdd5b413be fixup! audio: Allow opting out of speaker_layout_channel_mask field [Yumi Yukimura]
-f400f788b5 fixup! camera: Make overrideFormat from reserved fields opt-in [Yumi Yukimura]
-
-* hardware/qcom-caf/sm8450/audio/pal
-0ab95e9be Revert "ResourceManager: fix activeStreams check" [Fiqri Ardyansyah]
-
-* lineage/hudson
-8496bac Time is money [pnguyen879]
-4eb5ef0 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-2074512 Updated to 25-Nov-2025 11:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-e880e36e wiki: Update alioth maintainer list [Christian Hoffmann]
-e7987ee6 wiki: devices: Add LG V60 ThinQ (timelm) [pnguyen879]
-
-* packages/apps/LineageParts
-3cc7827 DisplayRotation: Use new method to listen for preference changes [Bruno Martins]
-f74caaf LineageParts: Add MD3 styling to Trust notification [pnguyen879]
-
-====================
-     2025-11-25    
-====================
-* hardware/google/pixel-sepolicy
-7c0e2ea Merge tag 'android-16.0.0_r3' into staging/lineage-23.0_merge-android-16.0.0_r3 [Michael Bestas]
-3e98874 Revert "Restore pixelstats-vendor rules" [Michael Bestas]
-c8a7644 Revert "Add missing pixelstats sepolicy" [Michael Bestas]
-
-* hardware/interfaces
-cdd5b413be fixup! audio: Allow opting out of speaker_layout_channel_mask field [Yumi Yukimura]
-f400f788b5 fixup! camera: Make overrideFormat from reserved fields opt-in [Yumi Yukimura]
-
-* hardware/qcom-caf/sm8450/audio/pal
-0ab95e9be Revert "ResourceManager: fix activeStreams check" [Fiqri Ardyansyah]
-
-* lineage/hudson
-8496bac Time is money [pnguyen879]
-4eb5ef0 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-2074512 Updated to 25-Nov-2025 11:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-e7987ee6 wiki: devices: Add LG V60 ThinQ (timelm) [pnguyen879]
-4b134c26 wiki: Update gauguin maintainer list [Penguin766]
-
-* packages/apps/LineageParts
-3cc7827 DisplayRotation: Use new method to listen for preference changes [Bruno Martins]
-f74caaf LineageParts: Add MD3 styling to Trust notification [pnguyen879]
-
-* packages/apps/Seedvault
-db4c1a77 Merge pull request #972 from mikeNG/android16-qpr1 [Torsten Grote]
-
 * vendor/qcom/opensource/power
-97a0bce power: Drop non-existent android.hardware.power-impl [basamaryan]
+fdf0851 power: Switch to the real boolean values in Soong config [Yumi Yukimura]
 
