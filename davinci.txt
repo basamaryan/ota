@@ -1,11 +1,80 @@
 ====================
-     2025-12-13    
+     2025-12-14    
 ====================
 * device/lineage/sepolicy
-ba8f72c sepolicy: label more sched sysctl toggles [basamaryan]
+96e638c sepolicy: Label ro.surface_flinger.blur_disabled_by_default [basamaryan]
+5e341b3 sepolicy: label more sched sysctl toggles [basamaryan]
+
+* device/qcom/sepolicy_vndr/sm8650
+6496c150a qva: Allow weaver HAL to request wakelock [dianlujitao]
+4412888bf qva: Label AOSP NXP keymint and weaver HALs [dianlujitao]
 
 * frameworks/base
-1f91b36e99b0 fw/b: Move KEYCODE_ASSIST to interceptKeyBeforeQueueing [Nick Reuter]
+49ce2ebe376c wm: Allow disabling window blurs by default [basamaryan]
+a40c9f40fb1f fw/b: Move KEYCODE_ASSIST to interceptKeyBeforeQueueing [Nick Reuter]
+07746a0f4a4e Add customization to show battery percent [Pranav Vashi]
+
+* lineage/wiki
+e39f72a3 wiki: Add a FAQ about security updates [Inhishonor]
+
+* packages/apps/Launcher3
+0394a6d7b9 Launcher3: Add resource to enable fixed landscape mode by default [AnierinB]
+73c061f574 Launcher3: Expose fixed landscape mode toggle [AnierinB]
+105b3e0140 Launcher3: Add resource to enable rotation by default [AnierinB]
+cec9e52745 SettingsActivity: Hide home screen rotation pref if not supported [Bruno Martins]
+5fc7aa9a8e Launcher3: Restart when FORCE_SHOW_NAVBAR changes [LuK1337]
+1b188f00e5 Launcher3: Add hasNavigationBar() check [LuK1337]
+c40bd2bb8f SettingsActivity: Make it expressive [Bruno Martins]
+f59f61f18d Launcher3: Change number of rows that deskclock widget occupies [LuK1337]
+a85b720624 Launcher3: ModelCallbacks: Remove screen id filter [LuK1337]
+fe07cdda61 Automatic translation import [LineageOS Infra]
+e6e2de2bc6 Automatic translation import [LineageOS Infra]
+57100bbcc3 Launcher3: Add permission for contextual search [Pranav Vashi]
+e7f3389b3c Launcher3: Fix Taskbar{Model,View}CallbacksFactory instantiation [Sebastiano Barezzi]
+02d689be8c Launcher3: Make taskbar start aligned in all grid sizes [Michael Bestas]
+502d2e313a Launcher3: Hide 2x2 grid from foldables [Michael Bestas]
+d280fd1ea2 Launcher3: implement hidden & protected apps [Joey]
+89aa139ac2 Launcher3: Implement auto open keyboard in drawer setting [Frederico Silva]
+7948f5b3cd Launcher3: Ability to toggle themed icons for all apps [Trishiraj]
+7f255804a6 Launcher3: Allow changing app suggestion settings [Alexander Koskovich]
+e394bcdb4d Launcher3: Use match_parent for navigation button dimensions [LuK1337]
+0d8d712c5a Hide app search results of profiles in quiet mode [Oliver Scott]
+fe773fed65 Implement private space access when hidden [Oliver Scott]
+3ace5b138f Launcher3: Implement gesture hint toggle [LuK1337]
+842cdf144c Launcher3: Implement taskbar toggle [LuK1337]
+592a55a955 Launcher3: Make tablet taskbar start aligned [LuK1337]
+b43369eae0 Launcher3: Implement taskbar navbar inversion [LuK1337]
+7704b34e04 Launcher3: Handle home button double taps [LuK1337]
+9c32035134 Launcher3: Inject events for taskbar long press actions [LuK1337]
+2451db62c0 Launcher3: Fix taskbar/3 button navigation SUW height [Michael Bestas]
+d113c98995 QuickStep: Google Feed integration [Edward Cross]
+aeef8424f4 Workspace: Allow resizing any widget [Nebojsa Cvetkovic]
+e424f9ea49 Launcher3: add toggle for desktop and drawer labels [Joey]
+e187a62c04 Launcher3: allow disabling workspace edit [Joey]
+eb6af2210c fixup! Cleanup widgetsModel and add tests [Ido Ben-Hur]
+fedf06878e Launcher3: Address taskbar crash on fold devices [Pranav Vashi]
+cb84ae86d6 RecentsView: Unconditionally hide split option for Go-enabled targets [Bruno Martins]
+eec0f927dc Hide scrollbar when searching All Apps [Tommy Webb]
+913debab34 Launcher3: Fix sorting in zh-Hans-CN [dantmnf]
+
+* packages/apps/LineageParts
+04adf98 LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
+d80464c StatusBarSettings: Add setting for brightness slider position [Pranav Vashi]
+0d5b278 SettingsPreferenceFragment: Defer applying divider [Bruno Martins]
+cc2d85d LineageParts: M3E love for everyone [Bruno Martins]
+
+* tools/extract-utils
+f6edea1 extract_utils: support merging multiple blob fixups [LuK1337]
+
+* vendor/lineage
+6a2729a77 [DNM} Revert "overlay: Hide the option to show battery percentage" [basamaryan]
+8d9f95d85 aconfig: Enable screen off udfps [aswin7469]
+cd6b0506f config: tablet: Inherit from large_screen_common.mk [Bruno Martins]
+
+====================
+     2025-12-13    
+====================
+* frameworks/base
 68509139dd6c fixup! SystemUI: Add support for clock auto-hiding [Pranav Vashi]
 2840aface036 SystemUI: Refactor ClockController to view binder [Pranav Vashi]
 
@@ -18,12 +87,10 @@ d1ff400 hudson: Add Galaxy S20 FE (Exynos) [CmdCtrlDevic3]
 2d06b78 reuse_helper: Handle mk files [Michael Bestas]
 
 * lineage/wiki
+e39f72a3 wiki: Add a FAQ about security updates [Inhishonor]
 7274f2d3 wiki: Include SoC brand name in r8q's name [CmdCtrlDevic3]
 6d184432 wiki: Align r8q with r8s [CmdCtrlDevic3]
 86d1f432 wiki: Add Galaxy S20 FE (Exynos) [CmdCtrlDevic3]
-
-* packages/apps/Launcher3
-4d9c7592bf Launcher3: Use system API to check if package is enabled [Bruno Martins]
 
 * tools/extract-utils
 f6edea1 extract_utils: support merging multiple blob fixups [LuK1337]
@@ -31,8 +98,6 @@ f6edea1 extract_utils: support merging multiple blob fixups [LuK1337]
 ef0ffef extract_utils: bp_builder: use existing `target` element if possible [LuK1337]
 
 * vendor/lineage
-169d362f1 [DNM} Revert "overlay: Hide the option to show battery percentage" [basamaryan]
-01bf6b417 aconfig: Enable screen off udfps [aswin7469]
 cd6b0506f config: tablet: Inherit from large_screen_common.mk [Bruno Martins]
 
 ====================
@@ -76,6 +141,9 @@ ef0ffef extract_utils: bp_builder: use existing `target` element if possible [Lu
 ====================
      2025-12-11    
 ====================
+* build/soong
+8d8e8bc88 Revert "cleanbuild: Add `recovery_kernel` to installclean files" [Michael Bestas]
+
 * frameworks/base
 980a0f255060 fixup! [1] SystemUI: Clock position customization [Pranav Vashi]
 4a71c2303d7e VolumeDialog: Add support for left gravity [Pranav Vashi]
@@ -108,6 +176,9 @@ a455deab9 Revert "liblp: Remove auto slot suffixing support." [Nolen Johnson]
 ====================
      2025-12-10    
 ====================
+* build/soong
+8d8e8bc88 Revert "cleanbuild: Add `recovery_kernel` to installclean files" [Michael Bestas]
+
 * lineage/hudson
 dc400bb after like a year, we figured out the stupid BSOD issue [Nolen Johnson]
 8b55b34 Regenerate device dependency mappings [LineageOS Infra]
@@ -160,10 +231,6 @@ f322d788 templates: before_build_init: apt get u-boot dep [Nolen Johnson]
 d7ef709c wiki: Add Motorola Edge 2024 (avatrn) [Nick Reuter]
 
 * packages/apps/LineageParts
-3af1d69 LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
-9dfa879 StatusBarSettings: Add setting for brightness slider position [Pranav Vashi]
-d2778c1 SettingsPreferenceFragment: Defer applying divider [Bruno Martins]
-ff1e836 LineageParts: M3E love for everyone [Bruno Martins]
 63c39cc ButtonSettings: Switch volume panel position to a ListPreference [Bruno Martins]
 
 * packages/apps/SetupWizard
@@ -482,10 +549,6 @@ d7ef709c wiki: Add Motorola Edge 2024 (avatrn) [Nick Reuter]
 a80d10c6 wiki: devices: Promote alioth to 23.0 [Christian Hoffmann]
 
 * packages/apps/LineageParts
-3af1d69 LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
-9dfa879 StatusBarSettings: Add setting for brightness slider position [Pranav Vashi]
-d2778c1 SettingsPreferenceFragment: Defer applying divider [Bruno Martins]
-ff1e836 LineageParts: M3E love for everyone [Bruno Martins]
 63c39cc ButtonSettings: Switch volume panel position to a ListPreference [Bruno Martins]
 
 * packages/apps/Settings
@@ -812,41 +875,6 @@ f58fec0 wifi_ext: Drop wifi_logging_data_file references [Michael Bestas]
 bfe0fa1 Regenerate device dependency mappings [LineageOS Infra]
 
 * packages/apps/Launcher3
-cef246ef63 Launcher3: Change number of rows that deskclock widget occupies [LuK1337]
-e70a493548 Launcher3: ModelCallbacks: Remove screen id filter [LuK1337]
-a0799ae50c Launcher3: Fix Taskbar{Model,View}CallbacksFactory instantiation [Sebastiano Barezzi]
-cca624a7ba Launcher3: Add resource to enable rotation by default [AnierinB]
-2d2844fac2 Automatic translation import [LineageOS Infra]
-feeb663183 Automatic translation import [LineageOS Infra]
-73e3c77159 Launcher3: Add permission for contextual search [Pranav Vashi]
-6f0aa1f030 Launcher3: Make taskbar start aligned in all grid sizes [Michael Bestas]
-b2c216ecb7 Launcher3: Hide 2x2 grid from foldables [Michael Bestas]
-5668dcae8b Launcher3: implement hidden & protected apps [Joey]
-449c07aa34 Launcher3: Implement auto open keyboard in drawer setting [Frederico Silva]
-2e9c225a40 Launcher3: Ability to toggle themed icons for all apps [Trishiraj]
-6a2551fe29 Launcher3: Allow changing app suggestion settings [Alexander Koskovich]
-253063b182 Launcher3: Use match_parent for navigation button dimensions [LuK1337]
-25fadb01f8 Hide app search results of profiles in quiet mode [Oliver Scott]
-e6bd4ad330 Implement private space access when hidden [Oliver Scott]
-a62a6861bc Launcher3: Restart when FORCE_SHOW_NAVBAR changes [LuK1337]
-f1e129d73c Launcher3: Add hasNavigationBar() check [LuK1337]
-5e1f3c44ef Launcher3: Implement gesture hint toggle [LuK1337]
-ef56965e78 Launcher3: Implement taskbar toggle [LuK1337]
-2bdf4e606c Launcher3: Make tablet taskbar start aligned [LuK1337]
-69202658e4 Launcher3: Implement taskbar navbar inversion [LuK1337]
-beede3a73d Launcher3: Handle home button double taps [LuK1337]
-ea12aea528 Launcher3: Inject events for taskbar long press actions [LuK1337]
-93a9cc32e7 Launcher3: Fix taskbar/3 button navigation SUW height [Michael Bestas]
-d4e4bc349a QuickStep: Google Feed integration [Edward Cross]
-5302fb8113 Workspace: Allow resizing any widget [Nebojsa Cvetkovic]
-6b4e071a75 Launcher3: add toggle for desktop and drawer labels [Joey]
-94707e9770 Launcher3: allow disabling workspace edit [Joey]
-c55545577a fixup! Cleanup widgetsModel and add tests [Ido Ben-Hur]
-ff001b9eb9 Launcher3: Address taskbar crash on fold devices [Pranav Vashi]
-161bda5489 RecentsView: Unconditionally hide split option for Go-enabled targets [Bruno Martins]
-1251324dd9 SettingsActivity: Hide home screen rotation pref if not supported [Bruno Martins]
-ee5e44f2c2 Hide scrollbar when searching All Apps [Tommy Webb]
-7f72aedadf Launcher3: Fix sorting in zh-Hans-CN [dantmnf]
 f81c392427 Skip glitchy search animation [Tommy Webb]
 d0c2bf6c53 Disable all caps from Personal and Work tabs [Michael Bestas]
 4c84c1486b Launcher3: Fix gesture navigation fail to move to bottom [Yingren Wang]
@@ -901,41 +929,6 @@ e0880f2 Updated to 04-Dec-2025 23:01 UTC [Tim Schumacher]
 53c1836 device-deps-regenerator: Improve matching [LuK1337]
 
 * packages/apps/Launcher3
-cef246ef63 Launcher3: Change number of rows that deskclock widget occupies [LuK1337]
-e70a493548 Launcher3: ModelCallbacks: Remove screen id filter [LuK1337]
-a0799ae50c Launcher3: Fix Taskbar{Model,View}CallbacksFactory instantiation [Sebastiano Barezzi]
-cca624a7ba Launcher3: Add resource to enable rotation by default [AnierinB]
-2d2844fac2 Automatic translation import [LineageOS Infra]
-feeb663183 Automatic translation import [LineageOS Infra]
-73e3c77159 Launcher3: Add permission for contextual search [Pranav Vashi]
-6f0aa1f030 Launcher3: Make taskbar start aligned in all grid sizes [Michael Bestas]
-b2c216ecb7 Launcher3: Hide 2x2 grid from foldables [Michael Bestas]
-5668dcae8b Launcher3: implement hidden & protected apps [Joey]
-449c07aa34 Launcher3: Implement auto open keyboard in drawer setting [Frederico Silva]
-2e9c225a40 Launcher3: Ability to toggle themed icons for all apps [Trishiraj]
-6a2551fe29 Launcher3: Allow changing app suggestion settings [Alexander Koskovich]
-253063b182 Launcher3: Use match_parent for navigation button dimensions [LuK1337]
-25fadb01f8 Hide app search results of profiles in quiet mode [Oliver Scott]
-e6bd4ad330 Implement private space access when hidden [Oliver Scott]
-a62a6861bc Launcher3: Restart when FORCE_SHOW_NAVBAR changes [LuK1337]
-f1e129d73c Launcher3: Add hasNavigationBar() check [LuK1337]
-5e1f3c44ef Launcher3: Implement gesture hint toggle [LuK1337]
-ef56965e78 Launcher3: Implement taskbar toggle [LuK1337]
-2bdf4e606c Launcher3: Make tablet taskbar start aligned [LuK1337]
-69202658e4 Launcher3: Implement taskbar navbar inversion [LuK1337]
-beede3a73d Launcher3: Handle home button double taps [LuK1337]
-ea12aea528 Launcher3: Inject events for taskbar long press actions [LuK1337]
-93a9cc32e7 Launcher3: Fix taskbar/3 button navigation SUW height [Michael Bestas]
-d4e4bc349a QuickStep: Google Feed integration [Edward Cross]
-5302fb8113 Workspace: Allow resizing any widget [Nebojsa Cvetkovic]
-6b4e071a75 Launcher3: add toggle for desktop and drawer labels [Joey]
-94707e9770 Launcher3: allow disabling workspace edit [Joey]
-c55545577a fixup! Cleanup widgetsModel and add tests [Ido Ben-Hur]
-ff001b9eb9 Launcher3: Address taskbar crash on fold devices [Pranav Vashi]
-161bda5489 RecentsView: Unconditionally hide split option for Go-enabled targets [Bruno Martins]
-1251324dd9 SettingsActivity: Hide home screen rotation pref if not supported [Bruno Martins]
-ee5e44f2c2 Hide scrollbar when searching All Apps [Tommy Webb]
-7f72aedadf Launcher3: Fix sorting in zh-Hans-CN [dantmnf]
 f81c392427 Skip glitchy search animation [Tommy Webb]
 d0c2bf6c53 Disable all caps from Personal and Work tabs [Michael Bestas]
 4c84c1486b Launcher3: Fix gesture navigation fail to move to bottom [Yingren Wang]
@@ -1491,82 +1484,4 @@ e35b3b2 Automatic translation import [LineageOS Infra]
 
 * vendor/qcom/opensource/commonsys/fm
 9a0f49d Automatic translation import [LineageOS Infra]
-
-====================
-     2025-11-30    
-====================
-* build/make
-00fcf469ba Exclude perf-setup-sh from userdebug builds [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/legacy-um
-ae358764f sepolicy: Label SEC NFC device & HAL [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8450
-2af9358fb Revert "sepolicy_vndr: Allow init/vendor_init to write proc firmware config" [Bruno Martins]
-4ae9561b7 Revert "sepolicy_vndr: Label proc firmware config node" [Bruno Martins]
-ab5a1f3d9 sepolicy: Label SEC NFC device & HAL [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8550
-6244b3a99 Revert "sepolicy_vndr: Allow init/vendor_init to write proc firmware config" [Bruno Martins]
-7c01b10fd Revert "sepolicy_vndr: Label proc firmware config node" [Bruno Martins]
-08e84aa25 sepolicy: Label SEC NFC device & HAL [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8650
-029a166bd Revert "sepolicy_vndr: Allow init/vendor_init to write proc firmware config" [Bruno Martins]
-9b67643d8 Revert "sepolicy_vndr: Label proc firmware config node" [Bruno Martins]
-dd7818565 sepolicy: Label SEC NFC device & HAL [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8750
-6748e0222 sepolicy: Label SEC NFC device & HAL [Michael Bestas]
-
-* hardware/lineage/interfaces
-9f240a0 Extend the CPU_LOAD_RESET hint [Jimmy Shiu]
-0ea0f27 ADPF: Add 'other' configurations for powerhal. [guibing]
-ded9450 ADPF: Filtering metric sessions to limit the cache size. [guibing]
-1d44a2e ADPF: cache the finished metric sessions. [guibing]
-75e30ba ADPF: collect pixel customized perf metrics that maps to atom. [guibing]
-3f4c741 powerhal: set PreferIdle sched policy for powerhal tasks [Jimmy Shiu]
-2aabbb9 libperfmgr: add system-only response for GPU_LOAD_UP. [Kevin DuBois]
-fd14262 ADPF: Don't enable heuristic rampup for Chrome sessions. [guibing]
-e2bd255 powerhal: Use vendor sched procfs node to apply the session's process tag. [guibing]
-5b5eeb7 livedisplay: Switch to the real boolean values in Soong config [Yumi Yukimura]
-29896a5 health: Switch to the real boolean values in Soong config [Yumi Yukimura]
-14a1544 compatibility_matrices: Mark as product specific [LuK1337]
-
-* hardware/qcom-caf/bootctrl
-846dfb0 gpt-utils: Switch to the real boolean values in Soong config [Yumi Yukimura]
-
-* hardware/qcom-caf/wlan
-7f93221 qcwcn: Build wpa_supplicant.conf from make to soong [Bill Yang]
-
-* hardware/qcom/wlan
-7528348 legacy: Build wpa_supplicant.conf from make to soong [Bill Yang]
-
-* lineage-sdk
-2cda05b1 lineage-sdk: add dotted circle style [Jean-Pierre Rasquin]
-
-* lineage/hudson
-fadc405 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/wiki
-1b7a17b7 wiki: Require dtbo flash for enchilada and fajita [LuK1337]
-7dc3668c wiki: Correct a few bits in timelm [Tuan Anh]
-4f75f44a avalon/caihong/waffle: Bump FW to match OOS 16 release [chandu078]
-
-* packages/apps/LineageParts
-9c4241c LineageParts: add dotted circle meter style [Jean-Pierre Rasquin]
-
-* vendor/lineage
-d7666177e config: Add libzstd.so to artifact path requirement allowlist [Michael Bestas]
-2fad9fba4 soong: generator: Update for BP3A [Thomas Turner]
-5052a7396 release: Drop remaining Pixel flags [Michael Bestas]
-de0a1a1e6 vars: November 2025 Pixel Update [Michael Bestas]
-137876a2a vars: October 2025 Pixel Update [Michael Bestas]
-8d47278bd LineageOS 23.1 [Michael Bestas]
-1bea6247d release: Bump aconfig flags extension to BP3A [Michael Bestas]
-412f513e1 vars: September 2025 Pixel Update [Michael Bestas]
-026d9994f vars: Update to BP3A [Michael Bestas]
-
-* vendor/qcom/opensource/power
-fdf0851 power: Switch to the real boolean values in Soong config [Yumi Yukimura]
 
