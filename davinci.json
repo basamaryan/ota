@@ -1,13 +1,13 @@
 {
   "response": [
     {
-      "datetime": "1766042458",
-      "filename": "lineage-23.1-20251218-UNOFFICIAL-GMS-davinci.zip",
-      "id": "cd70e566f146bff655013907ff0cc58354dd7080db1a9196be08dec81079c419",
+      "datetime": "1768671261",
+      "filename": "lineage-23.2-20260117-UNOFFICIAL-GMS-davinci.zip",
+      "id": "556b9b641e0b761571eb6b5951db4cc65315d58be29916c373d089829e873e9d",
       "romtype": "UNOFFICIAL",
-      "size": 2421668598,
-      "url": "https://sourceforge.net/projects/noprincesshere/files/lineage-23.1/davinci/12182025/lineage-23.1-20251218-UNOFFICIAL-GMS-davinci.zip/download",
-      "version": "23.1"
+      "size": 2435900918,
+      "url": "https://sourceforge.net/projects/noprincesshere/files/lineage-23.2/davinci/01172026/lineage-23.2-20260117-UNOFFICIAL-GMS-davinci.zip/download",
+      "version": "23.2"
     }
   ]
 }
