@@ -1,178 +1,359 @@
 ====================
+     2026-01-17    
+====================
+* android
+23fab54 manifest: Track newer prebuilts/misc revision [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/legacy-um
+9f853807d sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
+
+* device/qcom/sepolicy_vndr/sm8450
+19faa7cc7 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
+
+* device/qcom/sepolicy_vndr/sm8550
+55e3ef8b2 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
+b251b5c9d location: slim_daemon provide find rights for sensor service. [kparmar]
+3ef2a4f5e location: slim_daemon binder call access to service manager [kparmar]
+
+* external/wpa_supplicant_8
+8a9d0a55 external: wpa_supplicant: Switch to the real boolean values in Soong config [Yumi Yukimura]
+
+* frameworks/av
+5011dc5c19 Merge commit 'refs/changes/98/455598/2' of https://github.com/LineageOS/android_frameworks_av into HEAD [basamaryan]
+6d6612fceb Merge commit 'refs/changes/97/455597/2' of https://github.com/LineageOS/android_frameworks_av into HEAD [basamaryan]
+
+* frameworks/base
+3d305a5d65cb Merge commit 'refs/changes/95/458795/2' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+5b108b0b1735 core: convertVelocityToFrameRate should use MAX frame rate at any velocity [John Galt]
+1789e7e881c3 fixup! Firewall: Transport-based toggle support (1/3) [Luca Stefani]
+acab382e77c3 SystemUI: Add Lineage statusbar item holder [Sam Mortimer]
+6e26c1921249 WifiDisplayController: handle preexisting p2p connection status [Li Sun]
+179664f48779 services: core: wfd: extend check for qualcomm wfd jar [Alexander Martinz]
+d1cec3a84ba6 SystemUI: Check whether the selected WFD route is available [Weijie Wang]
+55110ba65808 Merge changes for launching wifidisplay from system settings [Indranil Chakraborty]
+c5c125bb2506 toast: fix bg color not changing with theme change [SuperDroidBond]
+e747fc71d456 SystemUI: Bring back good ol' circle battery style once again [LuK1337]
+6d8ed98603e5 VolumeDialog: Fix layout issues with left gravity [Dmitrii]
+547da6a870c3 Add gravity end to the volume dialog root view [Anton Potapov]
+
+* hardware/lineage/compat
+8d2d24bf compat: Provide libaudioutils shim [Bruno Martins]
+
+* lineage-sdk
+04737817 LineageSettings: Allow disabling window blurs by default [Michael Bestas]
+
+* lineage/mirror
+5e0410a Updated to 17-Jan-2026 11:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+7772f420 wiki: Add Sony Xperia 1 IV/5 IV [Tuan Anh]
+61b7f13b wiki: Update hotdogb maintainer list [Onelots]
+
+* packages/apps/Glimpse
+b741877 Glimpse: Virtual albums [Luca Stefani]
+
+* packages/apps/LineageParts
+d5b5abf LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
+
+* prebuilts/misc
+79b3682 Use older libprotobuf-cpp-{lite,full}-21.12 [Michael Bestas]
+
+* system/core
+fcf5ab360e libcutils: Silence trace open error in recovery [basamaryan]
+
+* vendor/lineage
+6355f484d Merge commit 'refs/changes/92/468492/1' of https://github.com/LineageOS/android_vendor_lineage into HEAD [basamaryan]
+ac6d90d27 aconfig: enable media_controls_in_compose [Cosmin Tanislav]
+5fcbd3174 config: Stop building icon packs & shapes [Michael Bestas]
+1b9dda089 aconfig: Disable notification_background_tint_optimization [ralph950412]
+e603db99e release: disable new dozing keyguard states [John Galt]
+9b1f66dce config: tablet: Disable desktop windowing mode on internal displays [Bruno Martins]
+
+====================
+     2026-01-16    
+====================
+* build/soong
+353c5ccec check_boot_jars: Add oplus package names to allowed list [pjgowtham]
+
+* device/lineage/sepolicy
+96bb6d0 sepolicy: label more sched sysctl toggles [basamaryan]
+
+* external/dng_sdk
+c2298b9 dng_area_task: Provide backwards compatibility with legacy blobs [Bruno Martins]
+69f7e3d libbng_sdk: Make it available to vendor again [Bruno Martins]
+
+* external/libjxl
+b1da369a libjxl: Make it available to vendor [imranpopz]
+
+* external/wpa_supplicant_8
+8a9d0a55 external: wpa_supplicant: Switch to the real boolean values in Soong config [Yumi Yukimura]
+
+* frameworks/av
+acfd86f1cd StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
+926de9c305 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
+
+* frameworks/base
+de2c40c50baf Add some fwb stubs from Oplus [DennySPb]
+ab2595f2bdde AlertWindowNotification: Correctly load app label [HZ]
+f10a8856637f Stop domain verification delegated from UIDs blocked by network policy [Oliver Scott]
+3528d46375ee aconfig: Use old storage if /metadata is not available [LuK1337]
+c32d801fb6a8 Fix HDMI CEC volume control setting being ignored [João Oliveira]
+32f4bbaf1892 Biometrics: Allow disabling of fingerprint cleanups [Quallenauge]
+8736740eca9e Allow BAL for usb debugging notifications [Christian Hoffmann]
+425caeabb728 SystemUI: Make battery clickable again [Ido Ben-Hur]
+7296655c0e69 Forward port CM Screen Security settings (1/2) [Michael Bestas]
+d63a62031ea7 Grant CAPTURE_AUDIO_OUTPUT permission for media uid [LuK1337]
+b9dbf37fc445 SystemUI: Don't remove keyguard slice view [LuK1337]
+c6bf595878df SystemUI: Fix constraints for keyguard slice view [LuK1337]
+9319a81c5f5d SystemUI: Add KeyguardSliceViewSection to split shade blueprint [LuK1337]
+e40af0dbfeba SystemUI: Fix media section constraints with Smartspace disabled [LuK1337]
+5d45d3eac3ba SystemUI: fix Keyguard slice [Fred Underwood]
+9610f4ef6321 Automatic translation import [LineageOS Infra]
+a120a4aefde4 Automatic translation import [LineageOS Infra]
+ebfce6b4bf89 Automatic translation import [LineageOS Infra]
+8f29442fe28a SystemUI: Fix system animation disable checks [Dhina17]
+6bdfb0aba434 usb: Show charging notification only if power brick is disconnected [Adithya R]
+fb50a8185638 services: fix quickswitch with gesture pill disabled [nift4]
+88d7cca1d1cd Correction in logic of roundend size calculation of SD card [Chetan Gurjar]
+702a79d5ba47 DisplayCutout: fully animate camera protection [Cosmin Tanislav]
+efcb448b71dd SettingsLib: Use framework resource for headline font [Adithya R]
+56f19c46f989 Enable backup service by default for all users [Oliver Scott]
+c73387eaafc5 Quick Settings power menu uses keyguard show state [Tommy Webb]
+4686429d773d QSLongPressEffect: Provide a fallback for devices with no primitives [Ido Ben-Hur]
+646a76b96443 SystemUI: Check if primitive vibrations are supported in new quick affordances [Fabian Leutenegger]
+8f654db021c7 InternetDialog: Add missing setOnClickListener for data toggle [Pranav Vashi]
+1482a9dba0ed SystemUI: Allow skipping mirroring confirmation dialog [Sebastiano Barezzi]
+9dda482da53d SystemUI: Add customization to show battery percent [Pranav Vashi]
+5b0fc66aa700 SystemUI: Re-implement clock auto-hiding feature [Bruno Martins]
+71e774539fa3 SystemUI: Clock AM/PM style customization [Michael Bestas]
+ee79fef38eac SystemUI: Clock position customization [Luca Stefani]
+5148237c2349 Screenrecord: Save preferences for permission dialog [Pranav Vashi]
+5943d49172a1 Screenrecord: Hide HEVC option when no HW codec is available [Ido Ben-Hur]
+4166bbc7fe21 Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
+375a7f556126 Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
+b572ceff16d4 Screenrecord: Add an option to record for longer [Ido Ben-Hur]
+de7ade8338cb Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
+016daedac789 Screenrecord: add low quality option [ezio84]
+347b373f3972 Screenrecord: Allow to select AVC codec profile level [iusmac]
+05ed9c71d3c4 Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
+d60e28b1999e Screenrecord: Use AVCProfileMain [Arne Coucheron]
+c3034b30dd59 SystemUI: Fix burn-in translations not applying to keyguard slices [Andy CrossGate Yan]
+12509179b618 FingerprintUtils: Migrate old fp config xml to new one on HIDL/AIDL switch [Luofan Chen]
+ec85dd613471 HidlFingerprintSensorConfig: UNKNOWN -> UNDER_DISPLAY_OPTICAL [LuK1337]
+3b98dcfe8d58 HidlFingerprintSensorConfig: Add support for HIDL workaround props [LuK1337]
+233dde604169 SystemUI: Add support for udfps dim layer [pjgowtham]
+c40184d20301 udfps: Make pressed udfps view configurable [TheScarastic]
+a9bf111de405 udfps: Restore illumination dot for global hbm [Arian]
+b037470a19d3 MetaKeyKeyListener: Disable locking of toggled modifier keys [Sean McCreary]
+a09729edc8d8 base: Allow disabling turbulence noise after clicking the play button [Ido Ben-Hur]
+547c1b087106 fixup! Update the cutout side override doc to encourage all side override [Aaron Kling]
+cc206fc23a61 SettingsLib: Always show package name in installed app details [Michael Bestas]
+6372e235ba94 SystemUI: Add double tap to sleep gesture [Rashed Abdel-Tawab]
+300357b404fa Fallback BUTTON_SELECT to BACK [Aaron Kling]
+cd20fdf06041 Fallback ESC to BACK [Aaron Kling]
+c4fea2266ce7 keylayouts: Nintendo ProCon: Map it like stock does [Nolen Johnson]
+f73560410105 Add nvidia profile manager [Aaron Kling]
+f91a3480afd3 Add nvcpl hook interfaces [Aaron Kling]
+063714e8b6c9 Keyguard: Hide battery indication on battery-less devices [Bruno Martins]
+29b3b226d562 ATV: Display battery notifications [Aaron Kling]
+c64a1cde0b01 SystemUI: don't show screenshot button on TV [Timi Rautamäki]
+2199383b1d63 frameworks: Add device controls shortcut to power menu [LuK1337]
+038e5e066aed frameworks: Add more power menu customizations [Gegham Zakaryan]
+efade7e0bf3d frameworks: Add support for advanced restart options [Michael Bestas]
+4427d1128122 Fix ever-growing AppOpItem string representation [Tommy Webb]
+3904ca69f70e webkit: SystemImpl: Filter out unavailable providers [LuK1337]
+f5684edd8932 PhoneWindowManager: Restore haptic feedback for physical nav keys [LuK1337]
+33fd8a5df980 PhoneWindowManager: Add support for back key long press customization [LuK1337]
+0d84febce54b Implement edge long swipe gesture to new back gesture affordance [someone5678]
+16a91df186a0 PhoneWindowManager: Implement press home to answer call [Oleksandr Byelkin]
+fbc92d47677a PhoneWindowManager: Tap volume buttons to answer call [martincz]
+0869a5e3eb49 fw/b: Implement device hardware wake keys support [LuK1337]
+c756a96587b3 fw/b: Allow customisation of navbar app switch long press action [Sam Mortimer]
+3ecd6e45a470 fw/b: Implement hardware keys custom rebinding [Phil Tunstall]
+
+* hardware/lineage/interfaces
+bf03f05 light: Add license header to init rc and vintf fragment [Sebastiano Barezzi]
+81edd29 light: LedDevice: Write also to the brightness node with breath mode [Sebastiano Barezzi]
+01b88c3 light: LedDevice: Properly handle on/off transition [Sebastiano Barezzi]
+26ef329 light: Fix support for upstream timed light mode [Michael Zh]
+4e1191e light: Move stuff around, again [Sebastiano Barezzi]
+d8e8722 light: Switch to SPDX copyright & remove dates [Michael Bestas]
+52bcba2 light: Reformat code [Sebastiano Barezzi]
+
+* lineage-sdk
+04737817 LineageSettings: Allow disabling window blurs by default [Michael Bestas]
+
+* lineage/wiki
+7772f420 wiki: Add Sony Xperia 1 IV/5 IV [Tuan Anh]
+61b7f13b wiki: Update hotdogb maintainer list [Onelots]
+
+* packages/apps/Glimpse
+b741877 Glimpse: Virtual albums [Luca Stefani]
+
+* prebuilts/misc
+79b3682 Use older libprotobuf-cpp-{lite,full}-21.12 [Michael Bestas]
+
+* system/core
+fcf5ab360e libcutils: Silence trace open error in recovery [basamaryan]
+
+* vendor/lineage
+ac6d90d27 aconfig: enable media_controls_in_compose [Cosmin Tanislav]
+5fcbd3174 config: Stop building icon packs & shapes [Michael Bestas]
+1b9dda089 aconfig: Disable notification_background_tint_optimization [ralph950412]
+e603db99e release: disable new dozing keyguard states [John Galt]
+9b1f66dce config: tablet: Disable desktop windowing mode on internal displays [Bruno Martins]
+a1e9f70bb vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+
+====================
      2026-01-15    
 ====================
 * build/soong
-b0a53c0f3 check_boot_jars: Add oplus package names to allowed list [pjgowtham]
+353c5ccec check_boot_jars: Add oplus package names to allowed list [pjgowtham]
 
 * device/lineage/sepolicy
-5db5baa sepolicy: label more sched sysctl toggles [basamaryan]
+96bb6d0 sepolicy: label more sched sysctl toggles [basamaryan]
 
 * device/qcom/sepolicy_vndr/legacy-um
-ee16f7434 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
 a1a44fbb1 Fix the AVC denial issue [Parushuram bada]
 
 * device/qcom/sepolicy_vndr/sm8450
-91a1b2647 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
 9d4b97198 Fix the AVC denial issue [Parushuram bada]
 
 * device/qcom/sepolicy_vndr/sm8550
-788375149 location: slim_daemon provide find rights for sensor service. [kparmar]
-959c5b9f6 location: slim_daemon binder call access to service manager [kparmar]
-1d292f7a6 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
+ec7f7b6a8 sepolicy_vndr: Add permission to write kmsg in vendor_qti_init_shell [Naman Jain]
 8ac95060d Fix the AVC denial issue [Parushuram bada]
 
 * device/qcom/sepolicy_vndr/sm8750
+4d2c01b88 sepolicy_vndr: Add permission to write kmsg in vendor_qti_init_shell [Naman Jain]
 fe8fc376d Fix the AVC denial issue [Parushuram bada]
 
+* external/dng_sdk
+c2298b9 dng_area_task: Provide backwards compatibility with legacy blobs [Bruno Martins]
+69f7e3d libbng_sdk: Make it available to vendor again [Bruno Martins]
+
+* external/libjxl
+b1da369a libjxl: Make it available to vendor [imranpopz]
+
 * frameworks/av
-d058d5e39f StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
-a01945b978 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
+acfd86f1cd StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
+926de9c305 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
 
 * frameworks/base
-72d69d101dbb Add some fwb stubs from Oplus [DennySPb]
-
-* hardware/lineage/compat
-954a516d compat: Provide libaudioutils shim [Bruno Martins]
+de2c40c50baf Add some fwb stubs from Oplus [DennySPb]
+ab2595f2bdde AlertWindowNotification: Correctly load app label [HZ]
+f10a8856637f Stop domain verification delegated from UIDs blocked by network policy [Oliver Scott]
+3528d46375ee aconfig: Use old storage if /metadata is not available [LuK1337]
+c32d801fb6a8 Fix HDMI CEC volume control setting being ignored [João Oliveira]
+32f4bbaf1892 Biometrics: Allow disabling of fingerprint cleanups [Quallenauge]
+8736740eca9e Allow BAL for usb debugging notifications [Christian Hoffmann]
+425caeabb728 SystemUI: Make battery clickable again [Ido Ben-Hur]
+7296655c0e69 Forward port CM Screen Security settings (1/2) [Michael Bestas]
+d63a62031ea7 Grant CAPTURE_AUDIO_OUTPUT permission for media uid [LuK1337]
+b9dbf37fc445 SystemUI: Don't remove keyguard slice view [LuK1337]
+c6bf595878df SystemUI: Fix constraints for keyguard slice view [LuK1337]
+9319a81c5f5d SystemUI: Add KeyguardSliceViewSection to split shade blueprint [LuK1337]
+e40af0dbfeba SystemUI: Fix media section constraints with Smartspace disabled [LuK1337]
+5d45d3eac3ba SystemUI: fix Keyguard slice [Fred Underwood]
+9610f4ef6321 Automatic translation import [LineageOS Infra]
+a120a4aefde4 Automatic translation import [LineageOS Infra]
+ebfce6b4bf89 Automatic translation import [LineageOS Infra]
+8f29442fe28a SystemUI: Fix system animation disable checks [Dhina17]
+6bdfb0aba434 usb: Show charging notification only if power brick is disconnected [Adithya R]
+fb50a8185638 services: fix quickswitch with gesture pill disabled [nift4]
+88d7cca1d1cd Correction in logic of roundend size calculation of SD card [Chetan Gurjar]
+702a79d5ba47 DisplayCutout: fully animate camera protection [Cosmin Tanislav]
+efcb448b71dd SettingsLib: Use framework resource for headline font [Adithya R]
+56f19c46f989 Enable backup service by default for all users [Oliver Scott]
+c73387eaafc5 Quick Settings power menu uses keyguard show state [Tommy Webb]
+4686429d773d QSLongPressEffect: Provide a fallback for devices with no primitives [Ido Ben-Hur]
+646a76b96443 SystemUI: Check if primitive vibrations are supported in new quick affordances [Fabian Leutenegger]
+8f654db021c7 InternetDialog: Add missing setOnClickListener for data toggle [Pranav Vashi]
+1482a9dba0ed SystemUI: Allow skipping mirroring confirmation dialog [Sebastiano Barezzi]
+9dda482da53d SystemUI: Add customization to show battery percent [Pranav Vashi]
+5b0fc66aa700 SystemUI: Re-implement clock auto-hiding feature [Bruno Martins]
+71e774539fa3 SystemUI: Clock AM/PM style customization [Michael Bestas]
+ee79fef38eac SystemUI: Clock position customization [Luca Stefani]
+5148237c2349 Screenrecord: Save preferences for permission dialog [Pranav Vashi]
+5943d49172a1 Screenrecord: Hide HEVC option when no HW codec is available [Ido Ben-Hur]
+4166bbc7fe21 Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
+375a7f556126 Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
+b572ceff16d4 Screenrecord: Add an option to record for longer [Ido Ben-Hur]
+de7ade8338cb Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
+016daedac789 Screenrecord: add low quality option [ezio84]
+347b373f3972 Screenrecord: Allow to select AVC codec profile level [iusmac]
+05ed9c71d3c4 Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
+d60e28b1999e Screenrecord: Use AVCProfileMain [Arne Coucheron]
+c3034b30dd59 SystemUI: Fix burn-in translations not applying to keyguard slices [Andy CrossGate Yan]
+12509179b618 FingerprintUtils: Migrate old fp config xml to new one on HIDL/AIDL switch [Luofan Chen]
+ec85dd613471 HidlFingerprintSensorConfig: UNKNOWN -> UNDER_DISPLAY_OPTICAL [LuK1337]
+3b98dcfe8d58 HidlFingerprintSensorConfig: Add support for HIDL workaround props [LuK1337]
+233dde604169 SystemUI: Add support for udfps dim layer [pjgowtham]
+c40184d20301 udfps: Make pressed udfps view configurable [TheScarastic]
+a9bf111de405 udfps: Restore illumination dot for global hbm [Arian]
+b037470a19d3 MetaKeyKeyListener: Disable locking of toggled modifier keys [Sean McCreary]
+a09729edc8d8 base: Allow disabling turbulence noise after clicking the play button [Ido Ben-Hur]
+547c1b087106 fixup! Update the cutout side override doc to encourage all side override [Aaron Kling]
+cc206fc23a61 SettingsLib: Always show package name in installed app details [Michael Bestas]
+6372e235ba94 SystemUI: Add double tap to sleep gesture [Rashed Abdel-Tawab]
+300357b404fa Fallback BUTTON_SELECT to BACK [Aaron Kling]
+cd20fdf06041 Fallback ESC to BACK [Aaron Kling]
+c4fea2266ce7 keylayouts: Nintendo ProCon: Map it like stock does [Nolen Johnson]
+f73560410105 Add nvidia profile manager [Aaron Kling]
+f91a3480afd3 Add nvcpl hook interfaces [Aaron Kling]
+063714e8b6c9 Keyguard: Hide battery indication on battery-less devices [Bruno Martins]
+29b3b226d562 ATV: Display battery notifications [Aaron Kling]
+c64a1cde0b01 SystemUI: don't show screenshot button on TV [Timi Rautamäki]
+2199383b1d63 frameworks: Add device controls shortcut to power menu [LuK1337]
+038e5e066aed frameworks: Add more power menu customizations [Gegham Zakaryan]
+efade7e0bf3d frameworks: Add support for advanced restart options [Michael Bestas]
+4427d1128122 Fix ever-growing AppOpItem string representation [Tommy Webb]
+3904ca69f70e webkit: SystemImpl: Filter out unavailable providers [LuK1337]
+f5684edd8932 PhoneWindowManager: Restore haptic feedback for physical nav keys [LuK1337]
+33fd8a5df980 PhoneWindowManager: Add support for back key long press customization [LuK1337]
+0d84febce54b Implement edge long swipe gesture to new back gesture affordance [someone5678]
+16a91df186a0 PhoneWindowManager: Implement press home to answer call [Oleksandr Byelkin]
+fbc92d47677a PhoneWindowManager: Tap volume buttons to answer call [martincz]
+0869a5e3eb49 fw/b: Implement device hardware wake keys support [LuK1337]
+c756a96587b3 fw/b: Allow customisation of navbar app switch long press action [Sam Mortimer]
+3ecd6e45a470 fw/b: Implement hardware keys custom rebinding [Phil Tunstall]
 
 * hardware/lineage/interfaces
-2ef045b light: LedDevice: Write also to the brightness node with breath mode [Sebastiano Barezzi]
-21f3dfb light: LedDevice: Properly handle on/off transition [Sebastiano Barezzi]
-e18fd79 light: Fix support for upstream timed light mode [Michael Zh]
-34e4c1b light: Move stuff around, again [Sebastiano Barezzi]
-1d38333 light: Add license header to init rc and vintf fragment [Sebastiano Barezzi]
-98f9fa0 light: Switch to SPDX copyright & remove dates [Michael Bestas]
-0210a60 light: Reformat code [Sebastiano Barezzi]
+bf03f05 light: Add license header to init rc and vintf fragment [Sebastiano Barezzi]
+81edd29 light: LedDevice: Write also to the brightness node with breath mode [Sebastiano Barezzi]
+01b88c3 light: LedDevice: Properly handle on/off transition [Sebastiano Barezzi]
+26ef329 light: Fix support for upstream timed light mode [Michael Zh]
+4e1191e light: Move stuff around, again [Sebastiano Barezzi]
+d8e8722 light: Switch to SPDX copyright & remove dates [Michael Bestas]
+52bcba2 light: Reformat code [Sebastiano Barezzi]
 
 * lineage/wiki
 a75e3735 snippets: recovery_reboot: Clarify how to navigate fastboot menu [Nolen Johnson]
 42985276 templates: device_install: Be more explicit about side-button navigation [Nolen Johnson]
 
-* packages/apps/LineageParts
-5d8c85d LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
+* packages/services/Car
+a1d31456ff dewd: Fix broken makefile [Nolen Johnson]
 
 * vendor/lineage
-132703d78 vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
-9d13a0751 aconfig: enable media_controls_in_compose [Cosmin Tanislav]
-c1d06068a config: Stop building icon packs & shapes [Michael Bestas]
-8d9ed33ab aconfig: Disable notification_background_tint_optimization [ralph950412]
-86c3574a2 release: disable new dozing keyguard states [John Galt]
-556787e94 config: tablet: Disable desktop windowing mode on internal displays [Bruno Martins]
+a1e9f70bb vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
 
 ====================
      2026-01-14    
 ====================
-* build/soong
-b0a53c0f3 check_boot_jars: Add oplus package names to allowed list [pjgowtham]
-
-* device/lineage/sepolicy
-5db5baa sepolicy: label more sched sysctl toggles [basamaryan]
-
 * device/qcom/sepolicy_vndr/legacy-um
-ee16f7434 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
 a1a44fbb1 Fix the AVC denial issue [Parushuram bada]
 
 * device/qcom/sepolicy_vndr/sm8450
-91a1b2647 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
 9d4b97198 Fix the AVC denial issue [Parushuram bada]
 
 * device/qcom/sepolicy_vndr/sm8550
-788375149 location: slim_daemon provide find rights for sensor service. [kparmar]
-959c5b9f6 location: slim_daemon binder call access to service manager [kparmar]
-1d292f7a6 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
+ec7f7b6a8 sepolicy_vndr: Add permission to write kmsg in vendor_qti_init_shell [Naman Jain]
 8ac95060d Fix the AVC denial issue [Parushuram bada]
 
 * device/qcom/sepolicy_vndr/sm8750
+4d2c01b88 sepolicy_vndr: Add permission to write kmsg in vendor_qti_init_shell [Naman Jain]
 fe8fc376d Fix the AVC denial issue [Parushuram bada]
 
-* frameworks/av
-d058d5e39f StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
-a01945b978 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
-
 * frameworks/base
-72d69d101dbb Add some fwb stubs from Oplus [DennySPb]
-a3bf2465ed93 fixup! Firewall: Transport-based toggle support (1/3) [Luca Stefani]
-39f0a1b34b5e SystemUI: Add Lineage statusbar item holder [Sam Mortimer]
-b17b108b3203 WifiDisplayController: handle preexisting p2p connection status [Li Sun]
-3db0743aa729 services: core: wfd: extend check for qualcomm wfd jar [Alexander Martinz]
-4d615b91fd21 SystemUI: Check whether the selected WFD route is available [Weijie Wang]
-fbe7b1bb8f65 Merge changes for launching wifidisplay from system settings [Indranil Chakraborty]
-3ce052978684 toast: fix bg color not changing with theme change [SuperDroidBond]
-7b2097132b77 SystemUI: Bring back good ol' circle battery style once again [LuK1337]
-d777d1c60f48 AlertWindowNotification: Correctly load app label [HZ]
-c17adeaede09 Stop domain verification delegated from UIDs blocked by network policy [Oliver Scott]
-b08ca0c3a898 aconfig: Use old storage if /metadata is not available [LuK1337]
-6bd97fca5aba Fix HDMI CEC volume control setting being ignored [João Oliveira]
-b6a550f6d98b Biometrics: Allow disabling of fingerprint cleanups [Quallenauge]
-fece5909cc9d Allow BAL for usb debugging notifications [Christian Hoffmann]
-48f83b91547e SystemUI: Make battery clickable again [Ido Ben-Hur]
-5a058abfeaea Forward port CM Screen Security settings (1/2) [Michael Bestas]
-ed88cf1783fd Grant CAPTURE_AUDIO_OUTPUT permission for media uid [LuK1337]
-2dd32b0b1e95 SystemUI: Don't remove keyguard slice view [LuK1337]
-cff9bcc7b604 SystemUI: Fix constraints for keyguard slice view [LuK1337]
-1f57c8a0bcb3 SystemUI: Add KeyguardSliceViewSection to split shade blueprint [LuK1337]
-67f5b615fd98 SystemUI: Fix media section constraints with Smartspace disabled [LuK1337]
-a92ed68f4646 SystemUI: fix Keyguard slice [Fred Underwood]
-b43d2468b08c Automatic translation import [LineageOS Infra]
-e930dcd6a401 Automatic translation import [LineageOS Infra]
-b1129e71554b Automatic translation import [LineageOS Infra]
-50343ee55367 SystemUI: Fix system animation disable checks [Dhina17]
-561f36442501 usb: Show charging notification only if power brick is disconnected [Adithya R]
-b35d5a9e7446 services: fix quickswitch with gesture pill disabled [nift4]
-5f25ed8f9460 Correction in logic of roundend size calculation of SD card [Chetan Gurjar]
-4c5cc0ff8dc0 DisplayCutout: fully animate camera protection [Cosmin Tanislav]
-c2ad3d378718 SettingsLib: Use framework resource for headline font [Adithya R]
-3c3c9afa3577 Enable backup service by default for all users [Oliver Scott]
-8530e0fd425a Quick Settings power menu uses keyguard show state [Tommy Webb]
-56f22238fce8 QSLongPressEffect: Provide a fallback for devices with no primitives [Ido Ben-Hur]
-8dd0ee6f910b SystemUI: Check if primitive vibrations are supported in new quick affordances [Fabian Leutenegger]
-04bfcf3b2ff1 InternetDialog: Add missing setOnClickListener for data toggle [Pranav Vashi]
-0453c07e0b60 SystemUI: Allow skipping mirroring confirmation dialog [Sebastiano Barezzi]
-9b2a86cce29c SystemUI: Add customization to show battery percent [Pranav Vashi]
-54c9027e4285 SystemUI: Re-implement clock auto-hiding feature [Bruno Martins]
-66a77479eebd SystemUI: Clock AM/PM style customization [Michael Bestas]
-ed47d878535f SystemUI: Clock position customization [Luca Stefani]
-5320efdb0cbb Screenrecord: Save preferences for permission dialog [Pranav Vashi]
-e2cf4c0e1e61 Screenrecord: Hide HEVC option when no HW codec is available [Ido Ben-Hur]
-1ce774ffaf2d Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
-5bb15f28ccf0 Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
-cf42eeb03866 Screenrecord: Add an option to record for longer [Ido Ben-Hur]
-47ad163c0559 Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
-27f16b7410eb Screenrecord: add low quality option [ezio84]
-dd1f834c28f2 Screenrecord: Allow to select AVC codec profile level [iusmac]
-e1bc4f32bc4a Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
-108606c3099f Screenrecord: Use AVCProfileMain [Arne Coucheron]
-094186d5e79f SystemUI: Fix burn-in translations not applying to keyguard slices [Andy CrossGate Yan]
-7eabff5012e8 FingerprintUtils: Migrate old fp config xml to new one on HIDL/AIDL switch [Luofan Chen]
-c98150a0223d HidlFingerprintSensorConfig: UNKNOWN -> UNDER_DISPLAY_OPTICAL [LuK1337]
-aa8c980025d7 HidlFingerprintSensorConfig: Add support for HIDL workaround props [LuK1337]
-17dfe5575b66 SystemUI: Add support for udfps dim layer [pjgowtham]
-51983902c38a udfps: Make pressed udfps view configurable [TheScarastic]
-f60bfdb2d505 udfps: Restore illumination dot for global hbm [Arian]
-5609ecc09376 MetaKeyKeyListener: Disable locking of toggled modifier keys [Sean McCreary]
-1912e8207d67 base: Allow disabling turbulence noise after clicking the play button [Ido Ben-Hur]
-785909089ccd fixup! Update the cutout side override doc to encourage all side override [Aaron Kling]
-2862acb15d15 SettingsLib: Always show package name in installed app details [Michael Bestas]
-4c6f8eafac2e SystemUI: Add double tap to sleep gesture [Rashed Abdel-Tawab]
-d4a4e5a6fa33 Fallback BUTTON_SELECT to BACK [Aaron Kling]
-08c858fc4544 Fallback ESC to BACK [Aaron Kling]
-96754711376e keylayouts: Nintendo ProCon: Map it like stock does [Nolen Johnson]
-1d2a6401af4e Add nvidia profile manager [Aaron Kling]
-88971a5c0a10 Add nvcpl hook interfaces [Aaron Kling]
-8b808946d378 Keyguard: Hide battery indication on battery-less devices [Bruno Martins]
-4b1bb032954d ATV: Display battery notifications [Aaron Kling]
-e1b7661614ef SystemUI: don't show screenshot button on TV [Timi Rautamäki]
-62ba7c11b7b8 frameworks: Add device controls shortcut to power menu [LuK1337]
-281ceb0fc15e frameworks: Add more power menu customizations [Gegham Zakaryan]
-3d82bb6a2035 frameworks: Add support for advanced restart options [Michael Bestas]
-a9d4227a3639 Fix ever-growing AppOpItem string representation [Tommy Webb]
-8b73c7e4ef17 webkit: SystemImpl: Filter out unavailable providers [LuK1337]
-4819c6ad6f34 PhoneWindowManager: Restore haptic feedback for physical nav keys [LuK1337]
-7ce575968547 PhoneWindowManager: Add support for back key long press customization [LuK1337]
-61bb725983d3 Implement edge long swipe gesture to new back gesture affordance [someone5678]
-6f59735a4297 PhoneWindowManager: Implement press home to answer call [Oleksandr Byelkin]
-7cfbe23c82c7 PhoneWindowManager: Tap volume buttons to answer call [martincz]
-17f5fc13c8c2 fw/b: Implement device hardware wake keys support [LuK1337]
-905e8f9aeca0 fw/b: Implement hardware keys custom rebinding [Phil Tunstall]
 ce09de65b7d5 Forward port 'Swap volume buttons' (1/3) [nadlabak]
 23c0a5c19844 Allow signature spoofing for microG Companion/Services [LuK1337]
 456fccb0dfbc camera2: allow access to CaptureRequest.mLogicalCameraSettings [Cosmin Tanislav]
@@ -311,18 +492,6 @@ e4f7176116eb audio: update WiredAccessoryManager to use ExtconUEventObserver bas
 b80a79551440 WiredAccessoryManager: update extcon file paths [Aalique Grahame]
 a69fb2f497fa WiredAccessoryManager: Add support for DisplayPort Audio [Revathi Uddaraju]
 
-* hardware/lineage/compat
-954a516d compat: Provide libaudioutils shim [Bruno Martins]
-
-* hardware/lineage/interfaces
-2ef045b light: LedDevice: Write also to the brightness node with breath mode [Sebastiano Barezzi]
-21f3dfb light: LedDevice: Properly handle on/off transition [Sebastiano Barezzi]
-e18fd79 light: Fix support for upstream timed light mode [Michael Zh]
-34e4c1b light: Move stuff around, again [Sebastiano Barezzi]
-1d38333 light: Add license header to init rc and vintf fragment [Sebastiano Barezzi]
-98f9fa0 light: Switch to SPDX copyright & remove dates [Michael Bestas]
-0210a60 light: Reformat code [Sebastiano Barezzi]
-
 * lineage/wiki
 a75e3735 snippets: recovery_reboot: Clarify how to navigate fastboot menu [Nolen Johnson]
 42985276 templates: device_install: Be more explicit about side-button navigation [Nolen Johnson]
@@ -330,105 +499,16 @@ a75e3735 snippets: recovery_reboot: Clarify how to navigate fastboot menu [Nolen
 * packages/apps/Launcher3
 b38e019248 Launcher3: Double tap on home screen to turn off screen [Thecrazyskull]
 
-* packages/apps/LineageParts
-5d8c85d LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
+* packages/services/Car
+a1d31456ff dewd: Fix broken makefile [Nolen Johnson]
 
 * vendor/lineage
-132703d78 vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
-9d13a0751 aconfig: enable media_controls_in_compose [Cosmin Tanislav]
-c1d06068a config: Stop building icon packs & shapes [Michael Bestas]
-8d9ed33ab aconfig: Disable notification_background_tint_optimization [ralph950412]
-86c3574a2 release: disable new dozing keyguard states [John Galt]
-556787e94 config: tablet: Disable desktop windowing mode on internal displays [Bruno Martins]
 d47e478e9 vars: January 2026 Pixel Update [Michael Bestas]
 
 ====================
      2026-01-13    
 ====================
 * frameworks/base
-a3bf2465ed93 fixup! Firewall: Transport-based toggle support (1/3) [Luca Stefani]
-39f0a1b34b5e SystemUI: Add Lineage statusbar item holder [Sam Mortimer]
-b17b108b3203 WifiDisplayController: handle preexisting p2p connection status [Li Sun]
-3db0743aa729 services: core: wfd: extend check for qualcomm wfd jar [Alexander Martinz]
-4d615b91fd21 SystemUI: Check whether the selected WFD route is available [Weijie Wang]
-fbe7b1bb8f65 Merge changes for launching wifidisplay from system settings [Indranil Chakraborty]
-3ce052978684 toast: fix bg color not changing with theme change [SuperDroidBond]
-7b2097132b77 SystemUI: Bring back good ol' circle battery style once again [LuK1337]
-d777d1c60f48 AlertWindowNotification: Correctly load app label [HZ]
-c17adeaede09 Stop domain verification delegated from UIDs blocked by network policy [Oliver Scott]
-b08ca0c3a898 aconfig: Use old storage if /metadata is not available [LuK1337]
-6bd97fca5aba Fix HDMI CEC volume control setting being ignored [João Oliveira]
-b6a550f6d98b Biometrics: Allow disabling of fingerprint cleanups [Quallenauge]
-fece5909cc9d Allow BAL for usb debugging notifications [Christian Hoffmann]
-48f83b91547e SystemUI: Make battery clickable again [Ido Ben-Hur]
-5a058abfeaea Forward port CM Screen Security settings (1/2) [Michael Bestas]
-ed88cf1783fd Grant CAPTURE_AUDIO_OUTPUT permission for media uid [LuK1337]
-2dd32b0b1e95 SystemUI: Don't remove keyguard slice view [LuK1337]
-cff9bcc7b604 SystemUI: Fix constraints for keyguard slice view [LuK1337]
-1f57c8a0bcb3 SystemUI: Add KeyguardSliceViewSection to split shade blueprint [LuK1337]
-67f5b615fd98 SystemUI: Fix media section constraints with Smartspace disabled [LuK1337]
-a92ed68f4646 SystemUI: fix Keyguard slice [Fred Underwood]
-b43d2468b08c Automatic translation import [LineageOS Infra]
-e930dcd6a401 Automatic translation import [LineageOS Infra]
-b1129e71554b Automatic translation import [LineageOS Infra]
-50343ee55367 SystemUI: Fix system animation disable checks [Dhina17]
-561f36442501 usb: Show charging notification only if power brick is disconnected [Adithya R]
-b35d5a9e7446 services: fix quickswitch with gesture pill disabled [nift4]
-5f25ed8f9460 Correction in logic of roundend size calculation of SD card [Chetan Gurjar]
-4c5cc0ff8dc0 DisplayCutout: fully animate camera protection [Cosmin Tanislav]
-c2ad3d378718 SettingsLib: Use framework resource for headline font [Adithya R]
-3c3c9afa3577 Enable backup service by default for all users [Oliver Scott]
-8530e0fd425a Quick Settings power menu uses keyguard show state [Tommy Webb]
-56f22238fce8 QSLongPressEffect: Provide a fallback for devices with no primitives [Ido Ben-Hur]
-8dd0ee6f910b SystemUI: Check if primitive vibrations are supported in new quick affordances [Fabian Leutenegger]
-04bfcf3b2ff1 InternetDialog: Add missing setOnClickListener for data toggle [Pranav Vashi]
-0453c07e0b60 SystemUI: Allow skipping mirroring confirmation dialog [Sebastiano Barezzi]
-9b2a86cce29c SystemUI: Add customization to show battery percent [Pranav Vashi]
-54c9027e4285 SystemUI: Re-implement clock auto-hiding feature [Bruno Martins]
-66a77479eebd SystemUI: Clock AM/PM style customization [Michael Bestas]
-ed47d878535f SystemUI: Clock position customization [Luca Stefani]
-5320efdb0cbb Screenrecord: Save preferences for permission dialog [Pranav Vashi]
-e2cf4c0e1e61 Screenrecord: Hide HEVC option when no HW codec is available [Ido Ben-Hur]
-1ce774ffaf2d Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
-5bb15f28ccf0 Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
-cf42eeb03866 Screenrecord: Add an option to record for longer [Ido Ben-Hur]
-47ad163c0559 Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
-27f16b7410eb Screenrecord: add low quality option [ezio84]
-dd1f834c28f2 Screenrecord: Allow to select AVC codec profile level [iusmac]
-e1bc4f32bc4a Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
-108606c3099f Screenrecord: Use AVCProfileMain [Arne Coucheron]
-094186d5e79f SystemUI: Fix burn-in translations not applying to keyguard slices [Andy CrossGate Yan]
-7eabff5012e8 FingerprintUtils: Migrate old fp config xml to new one on HIDL/AIDL switch [Luofan Chen]
-c98150a0223d HidlFingerprintSensorConfig: UNKNOWN -> UNDER_DISPLAY_OPTICAL [LuK1337]
-aa8c980025d7 HidlFingerprintSensorConfig: Add support for HIDL workaround props [LuK1337]
-17dfe5575b66 SystemUI: Add support for udfps dim layer [pjgowtham]
-51983902c38a udfps: Make pressed udfps view configurable [TheScarastic]
-f60bfdb2d505 udfps: Restore illumination dot for global hbm [Arian]
-5609ecc09376 MetaKeyKeyListener: Disable locking of toggled modifier keys [Sean McCreary]
-1912e8207d67 base: Allow disabling turbulence noise after clicking the play button [Ido Ben-Hur]
-785909089ccd fixup! Update the cutout side override doc to encourage all side override [Aaron Kling]
-2862acb15d15 SettingsLib: Always show package name in installed app details [Michael Bestas]
-4c6f8eafac2e SystemUI: Add double tap to sleep gesture [Rashed Abdel-Tawab]
-d4a4e5a6fa33 Fallback BUTTON_SELECT to BACK [Aaron Kling]
-08c858fc4544 Fallback ESC to BACK [Aaron Kling]
-96754711376e keylayouts: Nintendo ProCon: Map it like stock does [Nolen Johnson]
-1d2a6401af4e Add nvidia profile manager [Aaron Kling]
-88971a5c0a10 Add nvcpl hook interfaces [Aaron Kling]
-8b808946d378 Keyguard: Hide battery indication on battery-less devices [Bruno Martins]
-4b1bb032954d ATV: Display battery notifications [Aaron Kling]
-e1b7661614ef SystemUI: don't show screenshot button on TV [Timi Rautamäki]
-62ba7c11b7b8 frameworks: Add device controls shortcut to power menu [LuK1337]
-281ceb0fc15e frameworks: Add more power menu customizations [Gegham Zakaryan]
-3d82bb6a2035 frameworks: Add support for advanced restart options [Michael Bestas]
-a9d4227a3639 Fix ever-growing AppOpItem string representation [Tommy Webb]
-8b73c7e4ef17 webkit: SystemImpl: Filter out unavailable providers [LuK1337]
-4819c6ad6f34 PhoneWindowManager: Restore haptic feedback for physical nav keys [LuK1337]
-7ce575968547 PhoneWindowManager: Add support for back key long press customization [LuK1337]
-61bb725983d3 Implement edge long swipe gesture to new back gesture affordance [someone5678]
-6f59735a4297 PhoneWindowManager: Implement press home to answer call [Oleksandr Byelkin]
-7cfbe23c82c7 PhoneWindowManager: Tap volume buttons to answer call [martincz]
-17f5fc13c8c2 fw/b: Implement device hardware wake keys support [LuK1337]
-905e8f9aeca0 fw/b: Implement hardware keys custom rebinding [Phil Tunstall]
 ce09de65b7d5 Forward port 'Swap volume buttons' (1/3) [nadlabak]
 23c0a5c19844 Allow signature spoofing for microG Companion/Services [LuK1337]
 456fccb0dfbc camera2: allow access to CaptureRequest.mLogicalCameraSettings [Cosmin Tanislav]
@@ -570,6 +650,9 @@ a69fb2f497fa WiredAccessoryManager: Add support for DisplayPort Audio [Revathi U
 * frameworks/native
 22eb3282bf Only rotate secondary internal displays [Luca Stefani]
 918cea7cab SF: Add sysprop for secondary display orientation [Josip Kelecic]
+
+* lineage/hudson
+52ba84f left behind [Tuan Anh]
 
 * packages/apps/Launcher3
 b38e019248 Launcher3: Double tap on home screen to turn off screen [Thecrazyskull]
@@ -614,7 +697,11 @@ a3a3eef manifest: Track EuiccPolicy [Nick Reuter]
 22eb3282bf Only rotate secondary internal displays [Luca Stefani]
 918cea7cab SF: Add sysprop for secondary display orientation [Josip Kelecic]
 
+* lineage-sdk
+548ea4b0 LineageSettings: Migrate navbar invert layout to the new AOSP setting [Michael Bestas]
+
 * lineage/hudson
+52ba84f left behind [Tuan Anh]
 f5cc699 Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/mirror
@@ -674,6 +761,9 @@ a3a3eef manifest: Track EuiccPolicy [Nick Reuter]
 
 * hardware/qcom-caf/sm8550/audio/agm
 26046b32 agm: Fix format specifiers [Michael Bestas]
+
+* lineage-sdk
+548ea4b0 LineageSettings: Migrate navbar invert layout to the new AOSP setting [Michael Bestas]
 
 * lineage/hudson
 f5cc699 Regenerate device dependency mappings [LineageOS Infra]
@@ -934,6 +1024,9 @@ fca0a753850 Settings: Reset tether offload developer setting correctly [Adithya 
 ====================
      2026-01-08    
 ====================
+* hardware/qcom/sm7250/display
+d3fae691 display: Fix duplicate property overrides [Anand S]
+
 * lineage-sdk
 246f0b5a Revert "LineagePreferenceLib: Ensure the preference is available before replacing" [LuK1337]
 
@@ -960,6 +1053,9 @@ cee1d9e LineageParts: Disable resource shrinking [Michael Bestas]
 ====================
      2026-01-07    
 ====================
+* hardware/qcom/sm7250/display
+d3fae691 display: Fix duplicate property overrides [Anand S]
+
 * lineage/hudson
 d91422d hudson: heard lexus was missing out [grepfox]
 
@@ -1099,67 +1195,4 @@ d86de17 scripts: add developer tools [Cosmin Tanislav]
 * lineage/wiki
 b129d43e wiki: Add OnePlus 13R / Ace 5 [chandu078]
 dbdf2537 devices: gunnar: Promote to 23.0 [Albert Tang]
-
-====================
-     2026-01-03    
-====================
-* bootable/recovery
-833e2948 recovery: Fix scrolling when touch is rotated [AnierinB]
-
-* hardware/qcom-caf/sm8650/audio/pal
-90aedd388 fixup! pal: Fix format specifiers [Cosmin Tanislav]
-
-* hardware/qcom-caf/sm8650/display
-1d2edeab0e sdm: color_manager: leave ddr_version out of PPHWAttributes [Cosmin Tanislav]
-
-* lineage/hudson
-4a204d7 Regenerate device dependency mappings [LineageOS Infra]
-93a2136 hudson: Add OnePlus 13R / Ace 5 [chandu078]
-691b00a gunnar: Promote to 23.0 [Albert Tang]
-9815337 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/website
-18f1b58 Make local bundle/vendor install of Jekyll easier [Phyks (Lucas Verney)]
-
-* lineage/wiki
-b129d43e wiki: Add OnePlus 13R / Ace 5 [chandu078]
-dbdf2537 devices: gunnar: Promote to 23.0 [Albert Tang]
-13521081 fixup! gems: Update jekyll to 4.3.3 [Nolen Johnson]
-
-====================
-     2026-01-02    
-====================
-* bootable/recovery
-833e2948 recovery: Fix scrolling when touch is rotated [AnierinB]
-
-* frameworks/av
-24d595511f Revert "CCodec: Avoid OOB memory access in some cases" [Bruno Martins]
-7f0b9e190a Revert "codec2: add smoothfactor when checking n-th work" [Bruno Martins]
-4040f84881 Revert "codec2: a workaround to solve backward compatibility issue" [Bruno Martins]
-0a4d083c57 Revert "CCodec: Control the inputs to avoid pipeline overflow" [Bruno Martins]
-4693c1331c Revert "codec2: Use numClientBuffers to control the pipeline" [Bruno Martins]
-54a42bf7ca Revert "codec2: Change a Info print into Verbose" [Bruno Martins]
-ff54eccd9e Revert "[WA] Codec2: queue a empty work to HAL to wake up allocation thread" [Bruno Martins]
-34757956be Revert "CCodec: Use pipelineRoom only for HW decoder" [Bruno Martins]
-e337746935 Revert "codec2: Extend the queue empty work hack to MTK decoders too" [Bruno Martins]
-4813c16f63 media: map the standard profile/level for c2 params config for vp8 codec. [Rahul Ratneshwar Mandal]
-
-* lineage/hudson
-9815337 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-34ece06 Updated to 01-Jan-2026 23:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-13521081 fixup! gems: Update jekyll to 4.3.3 [Nolen Johnson]
-0510c690 gems: Update jekyll to 4.3.3 [Nolen Johnson]
-
-* packages/apps/Aperture
-0926cc7 Automatic translation import [LineageOS Infra]
-
-* packages/apps/AudioFX
-6f60288 Automatic translation import [LineageOS Infra]
-
-* vendor/lineage
-6da62bb1b backuptool: Restore /system/build.prop checks [LuK1337]
 
