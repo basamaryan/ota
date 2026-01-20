@@ -1,4 +1,95 @@
 ====================
+     2026-01-19    
+====================
+* device/lineage/sepolicy
+eae854d sepolicy: Add policy to silence flags_health_check denials [Ethan Chen]
+ee12208 sepolicy: Make it REUSE compatible [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/legacy-um
+571b6cea5 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
+
+* device/qcom/sepolicy_vndr/sm8450
+31f408590 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
+
+* device/qcom/sepolicy_vndr/sm8550
+434a6184b location: slim_daemon provide find rights for sensor service. [kparmar]
+4c5fa6164 location: slim_daemon binder call access to service manager [kparmar]
+ba2934bd3 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
+
+* frameworks/av
+114729a483 Merge commit 'refs/changes/98/455598/2' of https://github.com/LineageOS/android_frameworks_av into HEAD [basamaryan]
+5684defa19 Merge commit 'refs/changes/97/455597/2' of https://github.com/LineageOS/android_frameworks_av into HEAD [basamaryan]
+0fada58419 Revert "CCodec: Avoid OOB memory access in some cases" [Bruno Martins]
+84a20a3721 Revert "codec2: add smoothfactor when checking n-th work" [Bruno Martins]
+656ea12ed0 Revert "codec2: a workaround to solve backward compatibility issue" [Bruno Martins]
+9db2746d81 Revert "CCodec: Control the inputs to avoid pipeline overflow" [Bruno Martins]
+11dd20b9a1 Revert "codec2: Use numClientBuffers to control the pipeline" [Bruno Martins]
+c69db61a78 Revert "codec2: Change a Info print into Verbose" [Bruno Martins]
+f7bd188819 Revert "[WA] Codec2: queue a empty work to HAL to wake up allocation thread" [Bruno Martins]
+fdca5940de Revert "CCodec: Use pipelineRoom only for HW decoder" [Bruno Martins]
+8b5807d46d Revert "codec2: Extend the queue empty work hack to MTK decoders too" [Bruno Martins]
+427bbc4351 media: map the standard profile/level for c2 params config for vp8 codec. [Rahul Ratneshwar Mandal]
+53e646bf3e MediaCodec: Use proper surface when creating PersistentSurface [Luca Stefani]
+
+* frameworks/base
+55d0bc99b7c8 Merge commit 'refs/changes/95/458795/2' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+e7b9c663a701 fixup! Firewall: Transport-based toggle support (1/3) [Luca Stefani]
+0762dbd729f5 SystemUI: Bring back good ol' circle battery style once again [LuK1337]
+bb16ee55da70 SystemUI: Add wifi/cell tiles [Pranav Vashi]
+dc64f81a51ff core: convertVelocityToFrameRate should use MAX frame rate at any velocity [John Galt]
+9ccac79f282d UdfpsHelper: Track brightness mirror to hide/show dim layer [pjgowtham]
+642eee957270 services: core: wfd: extend check for qualcomm wfd jar [Alexander Martinz]
+a0e185f3b125 SystemUI: Grant android.permission.ACCESS_FINE_LOCATION [LuK1337]
+3bc840b46a2d Don't strub mac addresses in getWifiDisplayStatus() for SYSTEM_UID [LuK1337]
+325a0120c3de WifiDisplayController: handle preexisting p2p connection status [Li Sun]
+2fb8d998bb44 SystemUI: Check whether the selected WFD route is available [Weijie Wang]
+f155a199be1b Merge changes for launching wifidisplay from system settings [Indranil Chakraborty]
+0a6636640e42 fixup! SystemUI: Add support for udfps dim layer [ExtremeXT]
+
+* hardware/lineage/compat
+1e1fdb42 compat: Provide libaudioutils shim [Bruno Martins]
+58d91e78 compat: libutils: Add Thread::run shim [Tim Zimmermann]
+
+* hardware/lineage/interfaces
+ed0c161 light: Add license header to init rc and vintf fragment [Sebastiano Barezzi]
+8bceea5 light: LedDevice: Write also to the brightness node with breath mode [Sebastiano Barezzi]
+1037fd1 light: LedDevice: Properly handle on/off transition [Sebastiano Barezzi]
+721294f light: Fix support for upstream timed light mode [Michael Zh]
+5507823 light: Move stuff around, again [Sebastiano Barezzi]
+1efe54f light: Switch to SPDX copyright & remove dates [Michael Bestas]
+f0943f6 light: Reformat code [Sebastiano Barezzi]
+50b3715 light: Add LED devices with ":indicator" suffix [Yumi Yukimura]
+
+* lineage-sdk
+066b87e0 sdk: Make it REUSE compatible again [Michael Bestas]
+e2497b20 sdk: Drop LineageOS copyright years [Michael Bestas]
+
+* lineage/hudson
+5dad587 Regenerate device dependency mappings [LuK1337]
+
+* lineage/scripts
+4bd08c7 key-migration: Bypass SELinux during abx conversion [Nicholas Lim]
+
+* packages/apps/LineageParts
+a1a9e32 LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
+
+* packages/apps/ThemePicker
+1f90c837 ThemePicker: Reimplement font picker [sidharthify]
+
+* system/core
+87523aaf30 fs_mgr: Don't fail on unable to open ZRAM max_comp_streams [Yumi Yukimura]
+764a29a6d0 Partially Revert "usbd: Exit in case of charger mode." [Yumi Yukimura]
+
+* vendor/apn
+f606483 BY: Fix Life:) configuration [Alexandr Primak]
+
+* vendor/lineage
+c0b1b762c Merge commit 'refs/changes/92/468492/1' of https://github.com/LineageOS/android_vendor_lineage into HEAD [basamaryan]
+bd28aca33 backuptool: Check build.prop in system and product locations [Christian Hoffmann]
+f30459b21 aconfig: Enable qs_split_internet_tile [Michael Bestas]
+c642e619b aconfig: Fix notification_background_tint_optimization filename [Michael Bestas]
+
+====================
      2026-01-18    
 ====================
 * android
@@ -11,21 +102,6 @@ b383605 car: Fix common and tangporpro targets [Nolen Johnson]
 
 * device/lineage/car
 d1c70d2 car: Add missing copyright headers [Michael Bestas]
-
-* device/lineage/sepolicy
-d10d4c2 sepolicy: Add policy to silence flags_health_check denials [Ethan Chen]
-f3c310b sepolicy: Make it REUSE compatible [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/legacy-um
-b78af85cb sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
-
-* device/qcom/sepolicy_vndr/sm8450
-71f43f981 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
-
-* device/qcom/sepolicy_vndr/sm8550
-08b8f00ce location: slim_daemon provide find rights for sensor service. [kparmar]
-b4ce8d6e3 location: slim_daemon binder call access to service manager [kparmar]
-36dbfff5d sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
 
 * external/chromium-webview/prebuilt/arm
 6cf941d Update Chromium Webview arm to 144.0.7559.76 [Kevin F. Haggerty]
@@ -40,27 +116,9 @@ b4ce8d6e3 location: slim_daemon binder call access to service manager [kparmar]
 fceff90 Update Chromium Webview x86_64 to 144.0.7559.76 [Kevin F. Haggerty]
 
 * frameworks/av
-675e63be32 Merge commit 'refs/changes/98/455598/2' of https://github.com/LineageOS/android_frameworks_av into HEAD [basamaryan]
-f123714781 Merge commit 'refs/changes/97/455597/2' of https://github.com/LineageOS/android_frameworks_av into HEAD [basamaryan]
-1c2f5eeb9e Revert "CCodec: Avoid OOB memory access in some cases" [Bruno Martins]
-1907ff1b18 Revert "codec2: add smoothfactor when checking n-th work" [Bruno Martins]
-4c131e8f58 Revert "codec2: a workaround to solve backward compatibility issue" [Bruno Martins]
-5edf68f761 Revert "CCodec: Control the inputs to avoid pipeline overflow" [Bruno Martins]
-0195b0f23f Revert "codec2: Use numClientBuffers to control the pipeline" [Bruno Martins]
-16be0e036e Revert "codec2: Change a Info print into Verbose" [Bruno Martins]
-36e29821fe Revert "[WA] Codec2: queue a empty work to HAL to wake up allocation thread" [Bruno Martins]
-03e7267fb4 Revert "CCodec: Use pipelineRoom only for HW decoder" [Bruno Martins]
-4cb3b7653a Revert "codec2: Extend the queue empty work hack to MTK decoders too" [Bruno Martins]
-41054016e3 media: map the standard profile/level for c2 params config for vp8 codec. [Rahul Ratneshwar Mandal]
 53e646bf3e MediaCodec: Use proper surface when creating PersistentSurface [Luca Stefani]
 
 * frameworks/base
-9b2f509b83c4 Merge commit 'refs/changes/95/458795/2' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
-2efb3856d19e fixup! Firewall: Transport-based toggle support (1/3) [Luca Stefani]
-65d27a49494d SystemUI: Add Lineage statusbar item holder [Sam Mortimer]
-388cd18a47fa toast: fix bg color not changing with theme change [SuperDroidBond]
-7520f4bc7f58 SystemUI: Bring back good ol' circle battery style once again [LuK1337]
-d1ecd578c129 SystemUI: Add wifi/cell tiles [Pranav Vashi]
 dc64f81a51ff core: convertVelocityToFrameRate should use MAX frame rate at any velocity [John Galt]
 9ccac79f282d UdfpsHelper: Track brightness mirror to hide/show dim layer [pjgowtham]
 642eee957270 services: core: wfd: extend check for qualcomm wfd jar [Alexander Martinz]
@@ -74,7 +132,6 @@ f155a199be1b Merge changes for launching wifidisplay from system settings [Indra
 547da6a870c3 Add gravity end to the volume dialog root view [Anton Potapov]
 
 * hardware/lineage/compat
-cf8cba50 compat: Provide libaudioutils shim [Bruno Martins]
 58d91e78 compat: libutils: Add Thread::run shim [Tim Zimmermann]
 
 * lineage-sdk
@@ -92,14 +149,12 @@ e2497b20 sdk: Drop LineageOS copyright years [Michael Bestas]
 4bd08c7 key-migration: Bypass SELinux during abx conversion [Nicholas Lim]
 bf00364 dev: rro: Remove extra first line space [Leviscape]
 
-* packages/apps/LineageParts
-e65f2cb LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
-
 * vendor/lineage
-331571354 Merge commit 'refs/changes/92/468492/1' of https://github.com/LineageOS/android_vendor_lineage into HEAD [basamaryan]
-6d4479861 backuptool: Check build.prop in system and product locations [Christian Hoffmann]
 652375406 aconfig: Disable notification_background_tint_optimization [ralph950412]
 c6a060762 config: Stop building icon packs & shapes [Michael Bestas]
+
+* vendor/partner_gms
+0cae422 fixup! Import from gms-oem-B-16-202510.zip [basamaryan]
 
 ====================
      2026-01-17    
@@ -165,6 +220,9 @@ fcf5ab360e libcutils: Silence trace open error in recovery [basamaryan]
 c6a060762 config: Stop building icon packs & shapes [Michael Bestas]
 e603db99e release: disable new dozing keyguard states [John Galt]
 9b1f66dce config: tablet: Disable desktop windowing mode on internal displays [Bruno Martins]
+
+* vendor/partner_gms
+0cae422 fixup! Import from gms-oem-B-16-202510.zip [basamaryan]
 
 ====================
      2026-01-16    
@@ -270,15 +328,6 @@ fbc92d47677a PhoneWindowManager: Tap volume buttons to answer call [martincz]
 0869a5e3eb49 fw/b: Implement device hardware wake keys support [LuK1337]
 c756a96587b3 fw/b: Allow customisation of navbar app switch long press action [Sam Mortimer]
 3ecd6e45a470 fw/b: Implement hardware keys custom rebinding [Phil Tunstall]
-
-* hardware/lineage/interfaces
-bf03f05 light: Add license header to init rc and vintf fragment [Sebastiano Barezzi]
-81edd29 light: LedDevice: Write also to the brightness node with breath mode [Sebastiano Barezzi]
-01b88c3 light: LedDevice: Properly handle on/off transition [Sebastiano Barezzi]
-26ef329 light: Fix support for upstream timed light mode [Michael Zh]
-4e1191e light: Move stuff around, again [Sebastiano Barezzi]
-d8e8722 light: Switch to SPDX copyright & remove dates [Michael Bestas]
-52bcba2 light: Reformat code [Sebastiano Barezzi]
 
 * lineage-sdk
 04737817 LineageSettings: Allow disabling window blurs by default [Michael Bestas]
@@ -416,15 +465,6 @@ fbc92d47677a PhoneWindowManager: Tap volume buttons to answer call [martincz]
 0869a5e3eb49 fw/b: Implement device hardware wake keys support [LuK1337]
 c756a96587b3 fw/b: Allow customisation of navbar app switch long press action [Sam Mortimer]
 3ecd6e45a470 fw/b: Implement hardware keys custom rebinding [Phil Tunstall]
-
-* hardware/lineage/interfaces
-bf03f05 light: Add license header to init rc and vintf fragment [Sebastiano Barezzi]
-81edd29 light: LedDevice: Write also to the brightness node with breath mode [Sebastiano Barezzi]
-01b88c3 light: LedDevice: Properly handle on/off transition [Sebastiano Barezzi]
-26ef329 light: Fix support for upstream timed light mode [Michael Zh]
-4e1191e light: Move stuff around, again [Sebastiano Barezzi]
-d8e8722 light: Switch to SPDX copyright & remove dates [Michael Bestas]
-52bcba2 light: Reformat code [Sebastiano Barezzi]
 
 * lineage/scripts
 6b2f980 build-webview: Update default webview to 144.0.7559.76 [Kevin F. Haggerty]
@@ -1245,32 +1285,4 @@ b313e62d9 Allow disabling Frame Rate settings [Aaron Kling]
 
 * vendor/qcom/opensource/power
 4914c6f config: lahaina: Remove duplicate camera 30FPS SHDR hint [Michael Bestas]
-
-====================
-     2026-01-05    
-====================
-* lineage-sdk
-ebd1b718 health: Catch all exceptions in fastcharge handleSettingChange [Michael Bestas]
-
-* lineage/hudson
-92072ae Regenerate device dependency mappings [LineageOS Infra]
-0bd7232 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-551dfcf Updated to 04-Jan-2026 11:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-d0512fd dev: rro: Support `targetName` overlay attr [LuK1337]
-0679aa1 scripts: add tarball manifest matcher [Cosmin Tanislav]
-7d410ac scripts: add aconfig extractor [Cosmin Tanislav]
-d86de17 scripts: add developer tools [Cosmin Tanislav]
-
-* packages/apps/AudioFX
-6fb1a15 AudioFX: Optimize and shrink resources [Luca Stefani]
-
-* packages/modules/Connectivity
-8e92e094e9 NetBpfLoad: Relax 5.10 kernel requirement [Michael Bestas]
-
-* vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
-58f3c85c ipacm: Fix tautological-constant-out-of-range-compare warning [Michael Bestas]
 
