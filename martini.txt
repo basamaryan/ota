@@ -1,748 +1,428 @@
 ====================
-     2026-02-02    
+     2026-02-23    
 ====================
 * device/qcom/sepolicy_vndr/legacy-um
-649dd6e9e BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
-98fcae1ca BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
+81469a115 BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
+f003181f8 BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
 
 * frameworks/av
-5fe9602e13 StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
-566976b962 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
+5624a26126 StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
+7ee8190dfb libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
 
 * frameworks/base
-d8bdcae835c0 Add some fwb stubs from Oplus [DennySPb]
-e5f49ff35c7b SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
-40e371fa22f9 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
-89472de5808b SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
-3ca4bb8cb0e8 SystemUI: Fix long swipe on edge back gesture [Pranav Vashi]
-4ce2b6890ffe Automatic translation import [LineageOS Infra]
-
-* hardware/lineage/compat
-a6e01a79 compat: libutils: Add Thread::run shim [Tim Zimmermann]
+9d0dc32b6507 Add some fwb stubs from Oplus [DennySPb]
+087e886d274f SettingsLib: Ensure divider is set before view is returned in onCreateView [LuK1337]
+49dd4d2655f1 VolumeDialogImpl: Don't vibrate when volume dialog is not visible [LuK1337]
+e4c0b76966fc SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
+7698b9e6b7ec SystemUI: Add status bar battery disable toggle [Pranav Vashi]
+52ae2eef0724 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
+7458b54332b6 Allow overlaying baseline font families [Michael Bestas]
+98ad9814a27b Allow overlaying emphasized font families [Luca Stefani]
+51e1d17280c7 SystemUI: Fix default font feature on lockscreen [Pranav Vashi]
+173c493aa9ea base: Use font configs instead hardcoded fonts [Pranav Vashi]
+9c42f37565f4 Wire up default fonts with config [Pranav Vashi]
+0731b43d14fd base: styles: Use user fonts for Material UI themes [Danny Lin]
+99296103ed24 Set alert dialog message to use system font [maxwen]
 
 * hardware/qcom-caf/common
-582dae5 libqti-perfd-client: Implement camera perf hints [Arian]
+42bbe1a libqti-perfd-client: Implement camera perf hints [Arian]
 
-* lineage-sdk
-0c3902d0 sdk: Make it REUSE compatible again [Michael Bestas]
-d7a4cff0 sdk: Drop LineageOS copyright years [Michael Bestas]
-bb723392 Automatic translation import [LineageOS Infra]
+* hardware/qcom-caf/sm8350/display
+35026dc46e sdm: Operate FINGERPRINT_MASK for oplus optical UDFPS [pjgowtham]
+940af99ae1 sdm: Support Samsung FINGERPRINT_MASK DRM property [Atakan]
+a34ffd4a74 Support pixelworks soft iris color calibration [pjgowtham]
 
-* lineage/crowdin
-2cd36db crowdin: Allow specifying `uploader` filter for abandon/submit/vote [LuK1337]
-
-* packages/apps/Aperture
-a6b04d7 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Backgrounds
-6a1594c Automatic translation import [LineageOS Infra]
-
-* packages/apps/Camelot
-d45e0f1 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Catapult
-f325f5c Automatic translation import [LineageOS Infra]
-
-* packages/apps/Contacts
-53143a497 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DeskClock
-117ef9b5e DeskClock: Fix screensaver settings crash in Turkish locale [Pranav Vashi]
-fa57884e3 DeskClock: Fix bug with night mode color pref [Pranav Vashi]
-2b68c47a5 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Dialer
-c14692d97 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DocumentsUI
-9c611a323 Automatic translation import [LineageOS Infra]
-
-* packages/apps/FMRadio
-33c8d2a Automatic translation import [LineageOS Infra]
-
-* packages/apps/FlipFlap
-13b16b6 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Glimpse
-e483915 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Jelly
-25a414a Automatic translation import [LineageOS Infra]
-
-* packages/apps/Launcher3
-d5b13b2dcb Launcher3: Double tap on home screen to turn off screen [Thecrazyskull]
-428be54cc1 Automatic translation import [LineageOS Infra]
+* lineage/hudson
+da91b76 Regenerate device dependency mappings [LineageOS Infra]
 
 * packages/apps/LineageParts
-48ff9f5 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Messaging
-0965ba5 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Profiles
-63699e7 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Recorder
-0f5b121 Automatic translation import [LineageOS Infra]
+c22b604 LineageParts: Use SimpleSummaryProvider for ListPreference [armdebug]
 
 * packages/apps/Settings
-e7232d11039 Automatic translation import [LineageOS Infra]
-
-* packages/apps/SetupWizard
-6753414 Automatic translation import [LineageOS Infra]
+86c00530625 Settings: Use font configs instead of hardcoded fonts [Pranav Vashi]
 
 * packages/apps/ThemePicker
-19c4910f ThemePicker: Reimplement font picker [sidharthify]
-aa907206 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Twelve
-9fe7ee0 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Updater
-6910ef9 Automatic translation import [LineageOS Infra]
-
-* packages/inputmethods/LatinIME
-7ef9404d0 Automatic translation import [LineageOS Infra]
-
-* packages/providers/DownloadProvider
-5883c33c Automatic translation import [LineageOS Infra]
+9a8379af ThemePicker: Reimplement font picker [sidharthify]
 
 * packages/resources/devicesettings
-0b5fac9 Revert "DeviceSettings: Migrate MainSwitchBar and Switch to Material3" [Bruno Martins]
-979533e Automatic translation import [LineageOS Infra]
-
-* packages/services/Mms
-f9a8450 Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-8c444dd Automatic translation import [LineageOS Infra]
+ad6bd51 Revert "DeviceSettings: Migrate MainSwitchBar and Switch to Material3" [Bruno Martins]
 
 * vendor/lineage
-ab3b76c18 vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
-bb3441306 release: Bump Security String to 2026-02-01 [Nolen Johnson]
-
-* vendor/qcom/opensource/commonsys/fm
-5e72484 Automatic translation import [LineageOS Infra]
+c78304b38 vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
 
 ====================
-     2026-02-01    
+     2026-02-22    
 ====================
-* device/lineage/car
-0f3b402 car: Tidy up the makefiles [Yumi Yukimura]
-5fed345 car: Copy preinstalled-packages xml from cuttlefish instead [Yumi Yukimura]
-2a06941 car: Switch to `device/google_car/common/sepolicy` [Yumi Yukimura]
-6b4a57c car: Remove `persist.bluetooth.enablenewavrcp` property override [Yumi Yukimura]
-0e48a3b car: Remove `init.bootstat.rc` copy rule [Yumi Yukimura]
+* device/qcom/sepolicy_vndr/legacy-um
+81469a115 BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
+f003181f8 BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
+
+* external/chromium-webview/prebuilt/arm
+f547731 Update Chromium Webview arm to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+8ea09e0 Update Chromium Webview arm64 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+2005a53 Update Chromium Webview x86 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+0baf207 Update Chromium Webview x86_64 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* frameworks/av
+5624a26126 StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
+7ee8190dfb libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
 
 * frameworks/base
-4ce2b6890ffe Automatic translation import [LineageOS Infra]
-8c1b42361434 fixup! webkit: SystemImpl: Filter out unavailable providers [LuK1337]
+9d0dc32b6507 Add some fwb stubs from Oplus [DennySPb]
+087e886d274f SettingsLib: Ensure divider is set before view is returned in onCreateView [LuK1337]
+49dd4d2655f1 VolumeDialogImpl: Don't vibrate when volume dialog is not visible [LuK1337]
+e4c0b76966fc SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
+7698b9e6b7ec SystemUI: Add status bar battery disable toggle [Pranav Vashi]
+52ae2eef0724 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
+7458b54332b6 Allow overlaying baseline font families [Michael Bestas]
+98ad9814a27b Allow overlaying emphasized font families [Luca Stefani]
+51e1d17280c7 SystemUI: Fix default font feature on lockscreen [Pranav Vashi]
+173c493aa9ea base: Use font configs instead hardcoded fonts [Pranav Vashi]
+9c42f37565f4 Wire up default fonts with config [Pranav Vashi]
+0731b43d14fd base: styles: Use user fonts for Material UI themes [Danny Lin]
+99296103ed24 Set alert dialog message to use system font [maxwen]
 
-* lineage-sdk
-bb723392 Automatic translation import [LineageOS Infra]
+* hardware/qcom-caf/common
+42bbe1a libqti-perfd-client: Implement camera perf hints [Arian]
 
-* lineage/crowdin
-2cd36db crowdin: Allow specifying `uploader` filter for abandon/submit/vote [LuK1337]
+* hardware/qcom-caf/sm8350/display
+35026dc46e sdm: Operate FINGERPRINT_MASK for oplus optical UDFPS [pjgowtham]
+940af99ae1 sdm: Support Samsung FINGERPRINT_MASK DRM property [Atakan]
+a34ffd4a74 Support pixelworks soft iris color calibration [pjgowtham]
 
-* lineage/scripts
-df4b7f3 config-fs-gen: Cast vendor UID to int [LuK1337]
+* lineage/hudson
+da91b76 Regenerate device dependency mappings [LineageOS Infra]
+2e0103a hudson: Add Galaxy Tab S6 Lite 2024 Wi-Fi (gta4xlswifi) [Tim Zimmermann]
 
 * lineage/wiki
-26793621 templates: device_specific: flox*: Increase waiting time to 15m [Nolen Johnson]
-
-* packages/apps/Aperture
-a6b04d7 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Backgrounds
-6a1594c Automatic translation import [LineageOS Infra]
-
-* packages/apps/Camelot
-d45e0f1 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Catapult
-f325f5c Automatic translation import [LineageOS Infra]
-
-* packages/apps/Contacts
-53143a497 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DeskClock
-2b68c47a5 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Dialer
-c14692d97 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DocumentsUI
-9c611a323 Automatic translation import [LineageOS Infra]
-
-* packages/apps/FMRadio
-33c8d2a Automatic translation import [LineageOS Infra]
-
-* packages/apps/FlipFlap
-13b16b6 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Glimpse
-e483915 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Jelly
-25a414a Automatic translation import [LineageOS Infra]
-
-* packages/apps/Launcher3
-428be54cc1 Automatic translation import [LineageOS Infra]
+2d73bceb wiki: devices: Add Galaxy Tab S6 Lite 2024 Wi-Fi (gta4xlswifi) [Tim Zimmermann]
 
 * packages/apps/LineageParts
-48ff9f5 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Messaging
-0965ba5 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Profiles
-63699e7 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Recorder
-0f5b121 Automatic translation import [LineageOS Infra]
+c22b604 LineageParts: Use SimpleSummaryProvider for ListPreference [armdebug]
 
 * packages/apps/Settings
-e7232d11039 Automatic translation import [LineageOS Infra]
-
-* packages/apps/SetupWizard
-6753414 Automatic translation import [LineageOS Infra]
+86c00530625 Settings: Use font configs instead of hardcoded fonts [Pranav Vashi]
 
 * packages/apps/ThemePicker
-aa907206 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Twelve
-9fe7ee0 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Updater
-6910ef9 Automatic translation import [LineageOS Infra]
-
-* packages/inputmethods/LatinIME
-7ef9404d0 Automatic translation import [LineageOS Infra]
-
-* packages/providers/DownloadProvider
-5883c33c Automatic translation import [LineageOS Infra]
+9a8379af ThemePicker: Reimplement font picker [sidharthify]
 
 * packages/resources/devicesettings
-979533e Automatic translation import [LineageOS Infra]
+ad6bd51 Revert "DeviceSettings: Migrate MainSwitchBar and Switch to Material3" [Bruno Martins]
 
-* packages/services/Mms
-f9a8450 Automatic translation import [LineageOS Infra]
+* vendor/lineage
+c78304b38 vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
 
-* system/update_engine
-fc83053a Use ro.build.type in HardwareAndroid::AllowDowngrade() [LuK1337]
+====================
+     2026-02-21    
+====================
+* external/chromium-webview/patches
+a268fe6 Update Chromium Webview to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+f547731 Update Chromium Webview arm to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+8ea09e0 Update Chromium Webview arm64 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+2005a53 Update Chromium Webview x86 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+0baf207 Update Chromium Webview x86_64 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* lineage/hudson
+2e0103a hudson: Add Galaxy Tab S6 Lite 2024 Wi-Fi (gta4xlswifi) [Tim Zimmermann]
+4eddd23 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+f975644 Updated to 20-Feb-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+2d92096 build-webview: Update default webview to 145.0.7632.109 [Kevin F. Haggerty]
+
+* lineage/wiki
+2d73bceb wiki: devices: Add Galaxy Tab S6 Lite 2024 Wi-Fi (gta4xlswifi) [Tim Zimmermann]
+
+====================
+     2026-02-20    
+====================
+* external/chromium-webview/patches
+a268fe6 Update Chromium Webview to 145.0.7632.109 [Kevin F. Haggerty]
+
+* lineage/hudson
+4eddd23 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+f975644 Updated to 20-Feb-2026 23:01 UTC [Tim Schumacher]
+644f44d Updated aosp-minimal to 19-Feb-2026 11:02 UTC [Tim Schumacher]
+
+* lineage/scripts
+2d92096 build-webview: Update default webview to 145.0.7632.109 [Kevin F. Haggerty]
+
+* packages/apps/Settings
+17933f6eef4 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+977e96a62dd Settings: Port battery mAh readout to Kotlin header [armdebug]
+
+====================
+     2026-02-19    
+====================
+* lineage/mirror
+644f44d Updated aosp-minimal to 19-Feb-2026 11:02 UTC [Tim Schumacher]
+e0b2c0a Updated to 18-Feb-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+3292a6aa wiki: Update storage info for socrates [WenHao2130]
+3f69d1af wiki: Update contributors and groups [Inhishonor]
+
+* packages/apps/LineageParts
+d1cc261 LineageParts: Remove unsupported camera button preferences the right way [LuK1337]
+
+* packages/apps/Settings
+17933f6eef4 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+977e96a62dd Settings: Port battery mAh readout to Kotlin header [armdebug]
+
+====================
+     2026-02-18    
+====================
+* device/qcom/sepolicy_vndr/sm8750
+711e0a3dc parrot: Label ucsi-source-psy-soc:qcom,pmic_glink:qcom,ucsi1 node [LuK1337]
+
+* lineage/hudson
+095b846 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+e0b2c0a Updated to 18-Feb-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+3292a6aa wiki: Update storage info for socrates [WenHao2130]
+3f69d1af wiki: Update contributors and groups [Inhishonor]
+2f9f9178 wiki: pdx225/pdx235: Require vendor_boot flash [LuK1337]
+
+* packages/apps/LineageParts
+d1cc261 LineageParts: Remove unsupported camera button preferences the right way [LuK1337]
+
+====================
+     2026-02-17    
+====================
+* device/qcom/sepolicy_vndr/sm8750
+711e0a3dc parrot: Label ucsi-source-psy-soc:qcom,pmic_glink:qcom,ucsi1 node [LuK1337]
+
+* lineage/hudson
+095b846 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+dffa805 Updated to 16-Feb-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+2f9f9178 wiki: pdx225/pdx235: Require vendor_boot flash [LuK1337]
+757d8afb wiki: Require dtbo flash for alioth [Nicholas Lim]
+
+* packages/apps/ExactCalculator
+f80bf9c fixup! ExactCalculator: Clean up unused and redundant code [LuK1337]
+
+* packages/services/Car
+8beca5caa5 car_dewd_common: Fix EPPE violations [Akash Suresh]
+
+====================
+     2026-02-16    
+====================
+* frameworks/base
+60a0325b151d Automatic translation import [LineageOS Infra]
+
+* lineage/hudson
+570f692 hudson: Promote earth to 23.2 [Matsvei Niaverau]
+
+* lineage/mirror
+dffa805 Updated to 16-Feb-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+757d8afb wiki: Require dtbo flash for alioth [Nicholas Lim]
+392c215d wiki: Promote earth to 23.2 [Matsvei Niaverau]
+
+* packages/apps/ExactCalculator
+f80bf9c fixup! ExactCalculator: Clean up unused and redundant code [LuK1337]
+
+* packages/apps/FMRadio
+e03adbb Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+49ca2e2 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+e581dc3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+f1215425 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+6099895 Automatic translation import [LineageOS Infra]
+
+* packages/overlays/Lineage
+b68ec93 Add GoogleSansFlex baseline families [Michael Bestas]
+ae0ec8e Add GoogleSansFlex emphasized families [Luca Stefani]
+
+* packages/resources/devicesettings
+fbece7c Automatic translation import [LineageOS Infra]
+
+* packages/services/Car
+8beca5caa5 car_dewd_common: Fix EPPE violations [Akash Suresh]
 
 * vendor/crowdin
-8c444dd Automatic translation import [LineageOS Infra]
+87e162b Automatic translation import [LineageOS Infra]
 
 * vendor/qcom/opensource/commonsys/fm
-5e72484 Automatic translation import [LineageOS Infra]
+adda498 Automatic translation import [LineageOS Infra]
 
 ====================
-     2026-01-31    
+     2026-02-15    
 ====================
-* device/lineage/car
-0f3b402 car: Tidy up the makefiles [Yumi Yukimura]
-5fed345 car: Copy preinstalled-packages xml from cuttlefish instead [Yumi Yukimura]
-2a06941 car: Switch to `device/google_car/common/sepolicy` [Yumi Yukimura]
-6b4a57c car: Remove `persist.bluetooth.enablenewavrcp` property override [Yumi Yukimura]
-0e48a3b car: Remove `init.bootstat.rc` copy rule [Yumi Yukimura]
-
 * frameworks/base
-8c1b42361434 fixup! webkit: SystemImpl: Filter out unavailable providers [LuK1337]
-
-* lineage/scripts
-df4b7f3 config-fs-gen: Cast vendor UID to int [LuK1337]
-
-* lineage/wiki
-26793621 templates: device_specific: flox*: Increase waiting time to 15m [Nolen Johnson]
-73946f00 wiki: Fix com.android.appsearch.apk signing instructions [LuK1337]
-
-* packages/services/Car
-c57a9da5c8 car_product: displaycompat: Add to soong namespaces [Yumi Yukimura]
-
-* system/update_engine
-fc83053a Use ro.build.type in HardwareAndroid::AllowDowngrade() [LuK1337]
-
-====================
-     2026-01-30    
-====================
-* lineage/wiki
-73946f00 wiki: Fix com.android.appsearch.apk signing instructions [LuK1337]
-
-* packages/apps/Twelve
-0a30b67 Twelve: Don't suppress PROVIDED_RUNTIME_TOO_LOW [Luca Stefani]
-0a66ff8 Twelve: Implement fullscreen mode [Sebastiano Barezzi]
-e1e2ccb Twelve: MediaStoreDataSource: `AudioColumns._ID` -> `BaseColumns._ID` [Luca Stefani]
-246ec61 Twelve: LibraryFragment: Remove icons from the tab layout [Sebastiano Barezzi]
-fea1570 Twelve: MainFragment: Implement insets handling [Sebastiano Barezzi]
-9a91496 Twelve: Rework now playing navigation [Sebastiano Barezzi]
-21b67c8 Twelve: Fixed now playing bar [Sebastiano Barezzi]
-34462f5 Twelve: DisplayAwareGridLayoutManager: Actually use the display density [Sebastiano Barezzi]
-
-* packages/services/Car
-c57a9da5c8 car_product: displaycompat: Add to soong namespaces [Yumi Yukimura]
-
-* vendor/lineage
-83501f185 overlay: tablet: Update lockscreen widget feature config for 16 QPR2 [Yumi Yukimura]
-
-====================
-     2026-01-29    
-====================
-* hardware/lineage/interfaces
-e0bbf71 livedisplay: sdm: Update default PA on setDisplayMode [LuK1337]
-
-* packages/apps/ExactCalculator
-4053832 ExactCalculator: Clean up unused and redundant code [Inhishonor]
-a9ce2ab ExactCalculator: Migrate to Material 3 Expressive [Inhishonor]
-49d72c0 ExactCalculator: Don't use BuildConfig [Luca Stefani]
-
-* packages/apps/SimpleSettingsConfig
-d63949d Allow "lineage" settings to be set [Nolen Johnson]
-
-* packages/apps/Twelve
-0a30b67 Twelve: Don't suppress PROVIDED_RUNTIME_TOO_LOW [Luca Stefani]
-0a66ff8 Twelve: Implement fullscreen mode [Sebastiano Barezzi]
-e1e2ccb Twelve: MediaStoreDataSource: `AudioColumns._ID` -> `BaseColumns._ID` [Luca Stefani]
-246ec61 Twelve: LibraryFragment: Remove icons from the tab layout [Sebastiano Barezzi]
-fea1570 Twelve: MainFragment: Implement insets handling [Sebastiano Barezzi]
-9a91496 Twelve: Rework now playing navigation [Sebastiano Barezzi]
-21b67c8 Twelve: Fixed now playing bar [Sebastiano Barezzi]
-34462f5 Twelve: DisplayAwareGridLayoutManager: Actually use the display density [Sebastiano Barezzi]
-34c38ed Twelve: Migrate to Material 3 Expressive [Inhishonor]
-452bf54 Twelve: SettingsLib: Migrate to Material 3 Expressive [Inhishonor]
-da69026 Twelve: Fix typo [Sebastiano Barezzi]
-7c81d0a Twelve: Jellyfin: Rename PlaybackRequest to PlaybackStartInfo [Luca Stefani]
-5aee8ec Twelve: Jellyfin: Be smart when creating playlists [Luca Stefani]
-
-* vendor/lineage
-83501f185 overlay: tablet: Update lockscreen widget feature config for 16 QPR2 [Yumi Yukimura]
-
-====================
-     2026-01-28    
-====================
-* device/lineage/sepolicy
-8bd9ddd qcom: Allow postinstall to read xbl_config_[ab] [LuK1337]
-
-* hardware/lineage/interfaces
-e0bbf71 livedisplay: sdm: Update default PA on setDisplayMode [LuK1337]
-
-* packages/apps/ExactCalculator
-4053832 ExactCalculator: Clean up unused and redundant code [Inhishonor]
-a9ce2ab ExactCalculator: Migrate to Material 3 Expressive [Inhishonor]
-49d72c0 ExactCalculator: Don't use BuildConfig [Luca Stefani]
-236308d ExactCalculator: Update generatebp to v1.31 [Inhishonor]
-d2a810c ExactCalculator: Update Gradle Wrapper to 9.21 [Inhishonor]
-
-* packages/apps/SimpleSettingsConfig
-d63949d Allow "lineage" settings to be set [Nolen Johnson]
-
-* packages/apps/Twelve
-34c38ed Twelve: Migrate to Material 3 Expressive [Inhishonor]
-452bf54 Twelve: SettingsLib: Migrate to Material 3 Expressive [Inhishonor]
-da69026 Twelve: Fix typo [Sebastiano Barezzi]
-7c81d0a Twelve: Jellyfin: Rename PlaybackRequest to PlaybackStartInfo [Luca Stefani]
-5aee8ec Twelve: Jellyfin: Be smart when creating playlists [Luca Stefani]
-
-* packages/apps/WallpaperPicker2
-4d1e80114 Update settings repository to latest interface [Pranav Vashi]
-
-* vendor/apn
-0762fe5 apn: Make it REUSE compatible [Michael Bestas]
-
-====================
-     2026-01-27    
-====================
-* device/lineage/sepolicy
-8bd9ddd qcom: Allow postinstall to read xbl_config_[ab] [LuK1337]
+60a0325b151d Automatic translation import [LineageOS Infra]
+b6dc5288eb3e SystemUI: Fix long swipe on edge back gesture [Pranav Vashi]
+a0758a4d2989 SystemUI: Network Traffic [Sam Mortimer]
+fab583eb9e6f SystemUI: Add Lineage statusbar item holder [Sam Mortimer]
+188fd0d8e2b1 fixup! SystemUI: Bring back good ol' circle battery style once again [LuK1337]
 
 * hardware/qcom-caf/common
-28e41fa Introduce xbl_config_arb_check [LuK1337]
+05beb7e common: Update matrix to LA.QSSI.16.0.r1-11700-qssi.0 [Nikita Savchenko]
 
 * lineage/hudson
-cdb9b53 guess what TIME it is [pnguyen879]
-
-* lineage/mirror
-e9547ed Updated to 26-Jan-2026 23:01 UTC [Tim Schumacher]
+570f692 hudson: Promote earth to 23.2 [Matsvei Niaverau]
 
 * lineage/wiki
-e24fc7f0 fixup! devices: Promote timelm to 23.0 [pnguyen879]
-08fbcb80 devices: Promote timelm to 23.0 [pnguyen879]
-d2990d7b wiki: Update SSH host key error handling [Alvin Zhu]
+392c215d wiki: Promote earth to 23.2 [Matsvei Niaverau]
 
-* packages/apps/ExactCalculator
-236308d ExactCalculator: Update generatebp to v1.31 [Inhishonor]
-d2a810c ExactCalculator: Update Gradle Wrapper to 9.21 [Inhishonor]
+* packages/apps/FMRadio
+e03adbb Automatic translation import [LineageOS Infra]
 
-* packages/apps/WallpaperPicker2
-4d1e80114 Update settings repository to latest interface [Pranav Vashi]
+* packages/apps/Jelly
+49ca2e2 Automatic translation import [LineageOS Infra]
 
-* vendor/apn
-0762fe5 apn: Make it REUSE compatible [Michael Bestas]
+* packages/apps/LineageParts
+e581dc3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+f1215425 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+6099895 Automatic translation import [LineageOS Infra]
+
+* packages/modules/Permission
+54c74b56ae PermissionController: Add missing permission groups [Pranav Vashi]
+
+* packages/overlays/Lineage
+b68ec93 Add GoogleSansFlex baseline families [Michael Bestas]
+ae0ec8e Add GoogleSansFlex emphasized families [Luca Stefani]
+
+* packages/resources/devicesettings
+fbece7c Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+87e162b Automatic translation import [LineageOS Infra]
+
+* vendor/qcom/opensource/commonsys/fm
+adda498 Automatic translation import [LineageOS Infra]
 
 ====================
-     2026-01-26    
+     2026-02-14    
 ====================
-* device/lineage/sepolicy
-75ead3e sepolicy: qcom: Silence serial_number denials [Machad3x]
-98788c2 sepolicy: Allow linkerconfig to kill itself [Nolen Johnson]
-abbe687 sepolicy: Allow toolbox to terminate itself [Nolen Johnson]
-44e9951 sepolicy: shut up odrefresh [Han Sol Jin]
-aa1352b sepolicy: Add policy to silence flags_health_check denials [Ethan Chen]
-
 * frameworks/base
-ee998e0796c0 Support volume up/down to mute [Aaron Kling]
+b6dc5288eb3e SystemUI: Fix long swipe on edge back gesture [Pranav Vashi]
+a0758a4d2989 SystemUI: Network Traffic [Sam Mortimer]
+fab583eb9e6f SystemUI: Add Lineage statusbar item holder [Sam Mortimer]
+188fd0d8e2b1 fixup! SystemUI: Bring back good ol' circle battery style once again [LuK1337]
 
 * hardware/qcom-caf/common
-28e41fa Introduce xbl_config_arb_check [LuK1337]
-
-* hardware/qcom-caf/sm8550/audio/agm
-10316d1c agm: Fix format specifiers [Michael Bestas]
-9b7c6f5e agm: Fix static analysis issues & warnings [Aravind Siddappaji]
-a8ce2a71 fixup! plugins: tinyalsa: fix build [Bruno Martins]
-513dae6e AGM:  Fixes to prevent warnings 	- Fixed Typecasting 	- Fixed Format Specifier for logs 	- Misc Fixes to prevent warnings [Manan Jain]
-
-* hardware/qcom-caf/thermal
-181d4d6 thermal-hal: Update skin temperature values for kalama and crow [chandu078]
-
-* lineage/hudson
-cdb9b53 guess what TIME it is [pnguyen879]
-
-* lineage/mirror
-e9547ed Updated to 26-Jan-2026 23:01 UTC [Tim Schumacher]
+05beb7e common: Update matrix to LA.QSSI.16.0.r1-11700-qssi.0 [Nikita Savchenko]
 
 * lineage/wiki
-e24fc7f0 fixup! devices: Promote timelm to 23.0 [pnguyen879]
-08fbcb80 devices: Promote timelm to 23.0 [pnguyen879]
-d2990d7b wiki: Update SSH host key error handling [Alvin Zhu]
-
-* packages/apps/TvSettings
-01f7b09b0 TvSettings: Support two button mute [Aaron Kling]
-09ca07296 TvSettings: Check for null HdmiControlManager [Timi]
-3067c451e HDMI CEC: Add volume preference [Aaron Kling]
-d095e3c75 Show input settings on cec playback devices [Aaron Kling]
+5bc7f314 Revert "wiki: Add `ab_copy_partitions` for vayu" [LuK1337]
+5c2d24c5 wiki: Add `ab_copy_partitions` for vayu [LuK1337]
+ca3f1ff9 wiki: Add `ab_copy_partitions` for A/B Xiaomi SM8250 devices [LuK1337]
 
 * packages/apps/Twelve
-4af3c74 Twelve: SubsonicDataSource: Add scrobble [Sebastiano Barezzi]
-215d7c6 Twelve: Merge `onAudioPlayed` and `broadcastPlaybackStartFromAudio` [Sebastiano Barezzi]
-f4a600e Twelve: Use widget style attributes where possible [Sebastiano Barezzi]
-a4646ec Twelve: ListItem: Use text appearance theme attribute [Sebastiano Barezzi]
-c3aee1b Twelve: SettingsLib: Reformat code [Sebastiano Barezzi]
-a4090b7 Twelve: Reformat code [Sebastiano Barezzi]
+a74bfae Twelve: Band aid for serialization of ProviderIdentifier [Sebastiano Barezzi]
+
+* packages/modules/Permission
+54c74b56ae PermissionController: Add missing permission groups [Pranav Vashi]
 
 ====================
-     2026-01-25    
+     2026-02-13    
 ====================
-* android
-772706b manifest: Switch to our system/bpf fork [Michael Bestas]
+* lineage/wiki
+5bc7f314 Revert "wiki: Add `ab_copy_partitions` for vayu" [LuK1337]
+5c2d24c5 wiki: Add `ab_copy_partitions` for vayu [LuK1337]
+ca3f1ff9 wiki: Add `ab_copy_partitions` for A/B Xiaomi SM8250 devices [LuK1337]
+d091493e wiki: promote Samsung sm7125 and sm7325 series to 23.2 [Simon1511]
 
-* device/lineage/sepolicy
-75ead3e sepolicy: qcom: Silence serial_number denials [Machad3x]
-98788c2 sepolicy: Allow linkerconfig to kill itself [Nolen Johnson]
-abbe687 sepolicy: Allow toolbox to terminate itself [Nolen Johnson]
-44e9951 sepolicy: shut up odrefresh [Han Sol Jin]
-aa1352b sepolicy: Add policy to silence flags_health_check denials [Ethan Chen]
+* packages/apps/Twelve
+a74bfae Twelve: Band aid for serialization of ProviderIdentifier [Sebastiano Barezzi]
+4bfd9cc Twelve: Drop the weird ProviderIdentifier / Provider inheritance [Sebastiano Barezzi]
+35ae9e9 Twelve: MediaRepository: Drop Provider usage [Sebastiano Barezzi]
 
-* device/qcom/sepolicy_vndr/legacy-um
-32aefa594 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
-
-* device/qcom/sepolicy_vndr/sm8450
-ce9bc1dc5 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
-
-* device/qcom/sepolicy_vndr/sm8550
-155be9396 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
-
+====================
+     2026-02-12    
+====================
 * frameworks/base
-ee998e0796c0 Support volume up/down to mute [Aaron Kling]
+89d94788a3cf fixup! SystemUI: Add double tap to sleep gesture [Pranav Vashi]
 
-* hardware/lineage/compat
-f8955222 compat: Provide libaudioutils shim [Bruno Martins]
-
-* hardware/qcom-caf/sm8550/audio/agm
-10316d1c agm: Fix format specifiers [Michael Bestas]
-9b7c6f5e agm: Fix static analysis issues & warnings [Aravind Siddappaji]
-a8ce2a71 fixup! plugins: tinyalsa: fix build [Bruno Martins]
-513dae6e AGM:  Fixes to prevent warnings 	- Fixed Typecasting 	- Fixed Format Specifier for logs 	- Misc Fixes to prevent warnings [Manan Jain]
-
-* hardware/qcom-caf/sm8750/audio/agm
-4ce90e27 agm: Fix format specifiers [Michael Bestas]
-16205b07 agm: Fix static analysis issues & warnings [Aravind Siddappaji]
-07fe7e48 fixup! plugins: tinyalsa: fix build [Bruno Martins]
-a59ae324 AGM:  Fixes to prevent warnings 	- Fixed Typecasting 	- Fixed Format Specifier for logs 	- Misc Fixes to prevent warnings [Manan Jain]
-
-* hardware/qcom-caf/sm8750/audio/pal
-7f00b3556 plugins: customva_intf: Fix format specifiers [Cosmin Tanislav]
-f60184718 pal/plugins: Fix static analysis issues & warnings [Aravind Siddappaji]
-b60259f09 Fixed compiler warnings for audio-core-auto.lnx.1.0 [Ashwin Srirankan]
-a048bf1aa Handle compiler warning treated as error [Vaidegi Balakrishnan]
-
-* hardware/qcom-caf/sm8750/display/core
-2318000 Partial apply: "display-core: fix clang issues" [Rohit Kumar]
-905402f display-core: fix qssi 16.1.1 tag update compiler issues [Vishalteja Kosana]
-
-* hardware/qcom-caf/sm8750/display/hal
-8f0658c383 gralloc: Fix format specifiers [Bruno Martins]
-32eeea7096 gralloc: Fix compilation error for incorrect format specifier. [Avdhesh Singh Chauhan]
-7859ccb636 display: fix qssi 16.1.1 tag update compiler issues [Vishalteja Kosana]
-
-* hardware/qcom-caf/thermal
-181d4d6 thermal-hal: Update skin temperature values for kalama and crow [chandu078]
+* hardware/qcom-caf/sm8650/display
+02970c0bc3 sdm: color_manager: Make ddr_version in PPHWAttributes optional [Cosmin Tanislav]
 
 * lineage/hudson
-f4f49c7 hudson: Revive scorpio [Onelots]
+613c84d hudson: promote Samsung sm7125 and sm7325 series to 23.2 [Simon1511]
 
 * lineage/wiki
-f99c66de devices: Promote scorpio to 22.2 [Onelots]
-5969a8d3 wiki: troika: Update maintainers [Thomas Turner]
-
-* packages/apps/TvSettings
-01f7b09b0 TvSettings: Support two button mute [Aaron Kling]
-09ca07296 TvSettings: Check for null HdmiControlManager [Timi]
-3067c451e HDMI CEC: Add volume preference [Aaron Kling]
-d095e3c75 Show input settings on cec playback devices [Aaron Kling]
+d091493e wiki: promote Samsung sm7125 and sm7325 series to 23.2 [Simon1511]
+168063cb wiki: Correct bootloader key combination for audi, avalon and lexus [Romeo-05]
+4faf0616 wiki: Run prepare image script on a21s [Thomas Turner]
+7129525d add UFS 4.0 to the storage section of fuxi, nuwa and socrates [Leviscape]
 
 * packages/apps/Twelve
-4af3c74 Twelve: SubsonicDataSource: Add scrobble [Sebastiano Barezzi]
-215d7c6 Twelve: Merge `onAudioPlayed` and `broadcastPlaybackStartFromAudio` [Sebastiano Barezzi]
-f4a600e Twelve: Use widget style attributes where possible [Sebastiano Barezzi]
-a4646ec Twelve: ListItem: Use text appearance theme attribute [Sebastiano Barezzi]
-c3aee1b Twelve: SettingsLib: Reformat code [Sebastiano Barezzi]
-a4090b7 Twelve: Reformat code [Sebastiano Barezzi]
-
-* system/bpf
-6c5f4f8 bpfloader: Allow overriding kernel version [kyasu]
-
-* tools/extract-utils
-48bb722 extract_utils: use copy.deepcopy() for merging fixups [LuK1337]
+4bfd9cc Twelve: Drop the weird ProviderIdentifier / Provider inheritance [Sebastiano Barezzi]
+35ae9e9 Twelve: MediaRepository: Drop Provider usage [Sebastiano Barezzi]
 
 ====================
-     2026-01-24    
+     2026-02-11    
 ====================
-* android
-772706b manifest: Switch to our system/bpf fork [Michael Bestas]
+* frameworks/base
+89d94788a3cf fixup! SystemUI: Add double tap to sleep gesture [Pranav Vashi]
 
-* device/qcom/sepolicy_vndr/legacy-um
-32aefa594 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
-
-* device/qcom/sepolicy_vndr/sm8450
-ce9bc1dc5 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
-
-* device/qcom/sepolicy_vndr/sm8550
-155be9396 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
-
-* hardware/lineage/compat
-f8955222 compat: Provide libaudioutils shim [Bruno Martins]
-
-* hardware/qcom-caf/sm8750/audio/agm
-4ce90e27 agm: Fix format specifiers [Michael Bestas]
-16205b07 agm: Fix static analysis issues & warnings [Aravind Siddappaji]
-07fe7e48 fixup! plugins: tinyalsa: fix build [Bruno Martins]
-a59ae324 AGM:  Fixes to prevent warnings 	- Fixed Typecasting 	- Fixed Format Specifier for logs 	- Misc Fixes to prevent warnings [Manan Jain]
-
-* hardware/qcom-caf/sm8750/audio/pal
-7f00b3556 plugins: customva_intf: Fix format specifiers [Cosmin Tanislav]
-f60184718 pal/plugins: Fix static analysis issues & warnings [Aravind Siddappaji]
-b60259f09 Fixed compiler warnings for audio-core-auto.lnx.1.0 [Ashwin Srirankan]
-a048bf1aa Handle compiler warning treated as error [Vaidegi Balakrishnan]
-
-* hardware/qcom-caf/sm8750/display/core
-2318000 Partial apply: "display-core: fix clang issues" [Rohit Kumar]
-905402f display-core: fix qssi 16.1.1 tag update compiler issues [Vishalteja Kosana]
-
-* hardware/qcom-caf/sm8750/display/hal
-8f0658c383 gralloc: Fix format specifiers [Bruno Martins]
-32eeea7096 gralloc: Fix compilation error for incorrect format specifier. [Avdhesh Singh Chauhan]
-7859ccb636 display: fix qssi 16.1.1 tag update compiler issues [Vishalteja Kosana]
+* hardware/qcom-caf/sm8650/display
+02970c0bc3 sdm: color_manager: Make ddr_version in PPHWAttributes optional [Cosmin Tanislav]
 
 * lineage/hudson
-f4f49c7 hudson: Revive scorpio [Onelots]
+613c84d hudson: promote Samsung sm7125 and sm7325 series to 23.2 [Simon1511]
+e27be2d Regenerate device dependency mappings [LineageOS Infra]
+cfa5b38 Regenerate device dependency mappings [LineageOS Infra]
 
-* lineage/scripts
-6a6c6da dev: rro: beautify: Allow ignoring specific overlay packages [Nolen Johnson]
-811d4d9 dev: rro: beautify: Remove now-empty RRO packages [Nolen Johnson]
+* lineage/website
+60466b7 Changelog-31: Differentiate Updating and Upgrading [Nolen Johnson]
 
 * lineage/wiki
-f99c66de devices: Promote scorpio to 22.2 [Onelots]
-5969a8d3 wiki: troika: Update maintainers [Thomas Turner]
-
-* packages/apps/Settings
-8eeb7a07ed3 TopLevelSettings: Fix homepage icons hiding on tablets [Amrit Ranjan]
-
-* packages/apps/TvSettings
-058571829 Allow disabling Frame Rate settings [Aaron Kling]
-e2acd714e Add battery info to tvsettings device info [Aaron Kling]
-e5e0b1779 TvSettings: Add Updater icon [Timi]
-e8c7f2241 TvSettings: Relocate Updater [Timi]
-b1678ad92 TvSettings: Move About to top of Device page [Timi]
-5164d2cea TvSettings: Update banner [Asher Simonds]
-31de9873a Implement long press power button settings [Timi Rautamäki]
-
-* packages/apps/Twelve
-1c07843 Twelve: Suppress PROVIDED_RUNTIME_TOO_LOW for PlaybackRequest [LuK1337]
-9ac907c Twelve: Limit Jellyfin albums to 50 [Timi]
-13ee3c1 Twelve: Add most played suggestion for Jellyfin [Timi]
-e74114a fixup! Twelve: Fix post calls [Timi]
-b8cd259 Twelve: Notify Jellyfin of playback [Timi]
-
-* system/bpf
-6c5f4f8 bpfloader: Allow overriding kernel version [kyasu]
-
-* tools/extract-utils
-48bb722 extract_utils: use copy.deepcopy() for merging fixups [LuK1337]
-
-====================
-     2026-01-23    
-====================
-* frameworks/av
-8e3f0f52e0 CAMX: CHI: Added support for handling jpeg debug data. [Abhinav sohane]
-
-* hardware/interfaces
-ff5a924b4e Health: Indicate missing battery properties with -1 [Christian Hoffmann]
-
-* lineage/crowdin
-eeb2099 config: Move alert slider strings to devicesettings [Michael Bestas]
-acace86 config: Initial lineage-23.2 changes [Michael Bestas]
-c957283 gerrit: Fix invalid escape sequence warning [Michael Bestas]
-
-* lineage/scripts
-6a6c6da dev: rro: beautify: Allow ignoring specific overlay packages [Nolen Johnson]
-811d4d9 dev: rro: beautify: Remove now-empty RRO packages [Nolen Johnson]
-82f7f5c dev: rro: beautify: Allow preserving existing copyrights [Nolen Johnson]
-
-* packages/apps/Settings
-8eeb7a07ed3 TopLevelSettings: Fix homepage icons hiding on tablets [Amrit Ranjan]
-
-* packages/apps/TvSettings
-058571829 Allow disabling Frame Rate settings [Aaron Kling]
-e2acd714e Add battery info to tvsettings device info [Aaron Kling]
-e5e0b1779 TvSettings: Add Updater icon [Timi]
-e8c7f2241 TvSettings: Relocate Updater [Timi]
-b1678ad92 TvSettings: Move About to top of Device page [Timi]
-5164d2cea TvSettings: Update banner [Asher Simonds]
-31de9873a Implement long press power button settings [Timi Rautamäki]
-
-* packages/apps/Twelve
-1c07843 Twelve: Suppress PROVIDED_RUNTIME_TOO_LOW for PlaybackRequest [LuK1337]
-9ac907c Twelve: Limit Jellyfin albums to 50 [Timi]
-13ee3c1 Twelve: Add most played suggestion for Jellyfin [Timi]
-e74114a fixup! Twelve: Fix post calls [Timi]
-b8cd259 Twelve: Notify Jellyfin of playback [Timi]
-
-* packages/resources/devicesettings
-5a84769 devicesettings: Import alert slider strings [Michael Bestas]
-
-====================
-     2026-01-22    
-====================
-* frameworks/av
-8e3f0f52e0 CAMX: CHI: Added support for handling jpeg debug data. [Abhinav sohane]
-
-* frameworks/base
-e3a7a509ea85 SystemUI: QSFragmentCompose: wrap mediaHost.hostView in a FrameLayout [Cosmin Tanislav]
-5277aa9b597e fixup! SystemUI: Bring back good ol' circle battery style once again [LuK1337]
-472b9a235e59 SystemUI: ToastUI: Fixup toast theme again [Ido Ben-Hur]
-5a82a79a3d95 toast: fix bg color not changing with theme change [SuperDroidBond]
-
-* hardware/interfaces
-ff5a924b4e Health: Indicate missing battery properties with -1 [Christian Hoffmann]
-
-* lineage/crowdin
-eeb2099 config: Move alert slider strings to devicesettings [Michael Bestas]
-acace86 config: Initial lineage-23.2 changes [Michael Bestas]
-c957283 gerrit: Fix invalid escape sequence warning [Michael Bestas]
-79b7b3c utils: Base path env var is mandatory [Michael Bestas]
-
-* lineage/hudson
-5c79dd1 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-eb26919 Updated lineage-minimal to 21-Jan-2026 11:02 UTC [Tim Schumacher]
-
-* lineage/scripts
-82f7f5c dev: rro: beautify: Allow preserving existing copyrights [Nolen Johnson]
-
-* packages/apps/Seedvault
-7bc83258 Merge tag '16-5.8' of https://github.com/seedvault-app/seedvault into lineage-23.0 [Michael Bestas]
-
-* packages/apps/WallpaperPicker2
-3a776967e WallpaperPicker2: Collapse wallpaper picker button by default [Michael Bestas]
-
-* packages/resources/devicesettings
-5a84769 devicesettings: Import alert slider strings [Michael Bestas]
-
-* vendor/lineage
-f46dc7232 aconfig: Enable qs_split_internet_tile [Michael Bestas]
-2dd10ea62 backuptool: Check build.prop in system and product locations [Christian Hoffmann]
-
-====================
-     2026-01-21    
-====================
-* android
-c62329b manifest: Switch to our forks of external/{dng_sdk,libjxl} [basamaryan]
-
-* external/libjxl
-4365ed52 libjxl: Make it available to vendor [imranpopz]
-
-* frameworks/base
-e3a7a509ea85 SystemUI: QSFragmentCompose: wrap mediaHost.hostView in a FrameLayout [Cosmin Tanislav]
-5277aa9b597e fixup! SystemUI: Bring back good ol' circle battery style once again [LuK1337]
-472b9a235e59 SystemUI: ToastUI: Fixup toast theme again [Ido Ben-Hur]
-5a82a79a3d95 toast: fix bg color not changing with theme change [SuperDroidBond]
-
-* lineage/crowdin
-79b7b3c utils: Base path env var is mandatory [Michael Bestas]
-
-* lineage/hudson
-5c79dd1 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-eb26919 Updated lineage-minimal to 21-Jan-2026 11:02 UTC [Tim Schumacher]
-7413912 Updated to 20-Jan-2026 23:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-ebcd894 dev: rro: Ignore pseudolocale directories [Michael Bestas]
-9e30a53 dev: rro: Map more google packages [Michael Bestas]
-7e55c6a dev: rro: Use apk file name as the RRO package name [Leviscape]
-
-* packages/apps/Seedvault
-7bc83258 Merge tag '16-5.8' of https://github.com/seedvault-app/seedvault into lineage-23.0 [Michael Bestas]
-
-* packages/apps/WallpaperPicker2
-3a776967e WallpaperPicker2: Collapse wallpaper picker button by default [Michael Bestas]
-
-* vendor/lineage
-f46dc7232 aconfig: Enable qs_split_internet_tile [Michael Bestas]
-2dd10ea62 backuptool: Check build.prop in system and product locations [Christian Hoffmann]
-
-====================
-     2026-01-20    
-====================
-* android
-c62329b manifest: Switch to our forks of external/{dng_sdk,libjxl} [basamaryan]
-
-* device/lineage/sepolicy
-ee12208 sepolicy: Make it REUSE compatible [Michael Bestas]
-
-* external/libjxl
-4365ed52 libjxl: Make it available to vendor [imranpopz]
-
-* frameworks/base
-0762dbd729f5 SystemUI: Bring back good ol' circle battery style once again [LuK1337]
-bb16ee55da70 SystemUI: Add wifi/cell tiles [Pranav Vashi]
-
-* lineage/mirror
-7413912 Updated to 20-Jan-2026 23:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-ebcd894 dev: rro: Ignore pseudolocale directories [Michael Bestas]
-9e30a53 dev: rro: Map more google packages [Michael Bestas]
-7e55c6a dev: rro: Use apk file name as the RRO package name [Leviscape]
-
-* packages/modules/Connectivity
-0e19223594 Always drop non-VPN ingress in lockdown mode [Oliver Scott]
+168063cb wiki: Correct bootloader key combination for audi, avalon and lexus [Romeo-05]
+4faf0616 wiki: Run prepare image script on a21s [Thomas Turner]
+7129525d add UFS 4.0 to the storage section of fuxi, nuwa and socrates [Leviscape]
 
 * vendor/apn
-f606483 BY: Fix Life:) configuration [Alexandr Primak]
+6d94773 apn: US: Add Tello [razorloves]
 
-* vendor/lineage
-c642e619b aconfig: Fix notification_background_tint_optimization filename [Michael Bestas]
+====================
+     2026-02-10    
+====================
+* lineage/hudson
+e27be2d Regenerate device dependency mappings [LineageOS Infra]
+cfa5b38 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/website
+60466b7 Changelog-31: Differentiate Updating and Upgrading [Nolen Johnson]
+
+* vendor/apn
+6d94773 apn: US: Add Tello [razorloves]
 
