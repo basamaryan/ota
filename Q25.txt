@@ -1,0 +1,894 @@
+====================
+     2026-03-04    
+====================
+* android
+59a694d manifest: Track our fork of packages/modules/Virtualization [Michael Bestas]
+
+* build/soong
+eca9dea31 check_boot_jars: Add oplus package names to allowed list [pjgowtham]
+
+* device/qcom/sepolicy_vndr/legacy-um
+82b92d16a BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
+6b77e4841 BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
+
+* frameworks/av
+177b25e946 StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
+8551bc938e libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
+
+* frameworks/base
+d92cab247da7 Add some fwb stubs from Oplus [DennySPb]
+e9abf2521093 SettingsLib: Ensure divider is set before view is returned in onCreateView [LuK1337]
+6a935e3847d2 Allow overlaying baseline font families [Michael Bestas]
+bc093ad17208 Allow overlaying emphasized font families [Luca Stefani]
+af77e425a735 SystemUI: Fix default font feature on lockscreen [Pranav Vashi]
+38bc9b0d209e base: Use font configs instead hardcoded fonts [Pranav Vashi]
+8147ed5bc5f0 Wire up default fonts with config [Pranav Vashi]
+56a968e350bb base: styles: Use user fonts for Material UI themes [Danny Lin]
+03c8947294f6 Set alert dialog message to use system font [maxwen]
+9775b4e421f8 SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
+f59d6897a984 SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
+e9ae8f893fa6 SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
+455fbb068552 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
+39489143de1d SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
+0fc31d3e3029 [UidMigration] fix update uninstallation with sharedUserMaxSdkVersion [Song Chun Fan]
+b112ffd8dff4 Limit the number of services (NLSes, etc) that can be approved per user [Matías Hernández]
+e1a82137d2ea Block overriding satellite carrier config keys on user builds [Jayachandran C]
+d5566a5c706d Remove any revoked associations after reboot [Evan Chen]
+5afaea5631c1 MediaSession: Enforce max name length on broadcast receivers too [Ian Baker]
+3900a857273f Be more strict about content types for message array [Julia Reynolds]
+6f67bbc2f886 Prevent long press on profile notifs when locked [Julia Reynolds]
+91f7abe90b8e [PM] Check unknown sources for intent installation [Ivan Chiang]
+a784a1b359b5 Reapply "[PM] Check unknown sources user restriction for intent installation" [Ivan Chiang]
+4d0d8fe28715 Explicitly unset INSTALL_FROM_MANAGED_USER_OR_PROFILE flag [Sanjana Sunil]
+d218c34b79ce Prevent launchedFromPackage spoofing via FLAG_ACTIVITY_FORWARD_RESULT. [Annie Lin]
+eac99dd69769 Handle loadDescription OutOfMemoryError in DeviceAdminInfo [Iustin Ventaniuc]
+4d79e16df1d1 Introduce InputMethodSubtypeSafeList [Hiroki Sato]
+433e3f17a247 Harden InputMethodInfo parsing against large metadata [Hiroki Sato]
+681f85119a1c Fixed "Unlock your phone" unexpectedlly turned ON after OTA [Shawn Lin]
+7966874ba70d Sanitize a11y qs shortcut tile service name before using it [Chun-Ku Lin]
+b7270b8f0e35 Trim permission, permission group names [Nate Myren]
+2598fb6e0257 Prohibit untrusted proxys from specifying proxied attribution tags [Nate Myren]
+d326b9ad6e38 Ensure sandboxed UIDs are treated as untrusted in Appops [Nate Myren]
+9e6f38897f04 [RESTRICT AUTOMERGE] Stay in app pinned mode upon SystemUI crash [Brad Hinegardner]
+
+* hardware/qcom-caf/common
+a0e665a libqti-perfd-client: Implement camera perf hints [Arian]
+
+* hardware/qcom-caf/sm8450-6.6/audio/pal
+f5ab61245 pal: Fix platform checks [LuK1337]
+
+* hardware/qcom-caf/sm8450-6.6/audio/primary-hal
+aa04bf4d7 hal: Fix libaudiocorehal.qti vintf fragments [LuK1337]
+
+* lineage/mirror
+cb70a09 Updated to 03-Mar-2026 23:01 UTC [Tim Schumacher]
+
+* packages/apps/DocumentsUI
+9d5265008 Merge commit 'refs/changes/06/476606/1' of https://github.com/LineageOS/android_packages_apps_DocumentsUI into HEAD [basamaryan]
+
+* packages/apps/LineageParts
+4c77386 LineageParts: Use SimpleSummaryProvider for ListPreference [armdebug]
+
+* packages/apps/Settings
+1805209c1bc Settings: Use font configs instead of hardcoded fonts [Pranav Vashi]
+dfec94902f0 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+27bb0d1c99c Settings: Port battery mAh readout to Kotlin header [armdebug]
+e665f7b521f Merge commit 'refs/changes/01/476601/2' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+0662bd17523 Merge commit 'refs/changes/02/476602/2' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+c245434951b Merge commit 'refs/changes/07/476607/1' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+
+* packages/apps/ThemePicker
+03156889 ThemePicker: Reimplement font picker [sidharthify]
+
+* packages/modules/Permission
+8eb7719c76 PermissionController: Add missing permission groups [Pranav Vashi]
+d4e1c1c8a6 Update RuntimePermissionsUpgradeController to accept null PermGroups [Nate Myren]
+f57689541a V2 Merge all permissions in a shared UID for every package in that UID [Nate Myren]
+
+* packages/modules/Virtualization
+b00eb1080 vmbase,pvmfw: aarch64: Clean dcache to PoC not PoU [Pierre-Clément Tosi]
+
+* packages/providers/MediaProvider
+e8e9568ce Throw exception on MediaStore createRequest for non-existent uri [Garvita Jain]
+6a7342b81 Fix ACCESS_MEDIA_LOCATION bypass via SAF picker [Himanshu Arora]
+
+* packages/resources/devicesettings
+4c345c3 Revert "DeviceSettings: Migrate MainSwitchBar and Switch to Material3" [Bruno Martins]
+
+* packages/services/Telephony
+9ff48901c Block overriding satellite carrier config keys on user builds [Jayachandran C]
+
+* vendor/lineage
+d4b1ea50a vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+2e1ed83b4 release: Bump Security String to 2026-03-01 [Michael Bestas]
+
+====================
+     2026-03-03    
+====================
+* android
+59a694d manifest: Track our fork of packages/modules/Virtualization [Michael Bestas]
+
+* build/soong
+eca9dea31 check_boot_jars: Add oplus package names to allowed list [pjgowtham]
+
+* device/qcom/sepolicy_vndr/legacy-um
+82b92d16a BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
+6b77e4841 BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
+
+* external/dng_sdk
+ce34163 Update to DNG SDK 1.7.1 2410 [John Reck]
+
+* frameworks/av
+177b25e946 StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
+8551bc938e libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
+c0c46e9758 Fix vulnerability in drmserver [Kyle Zhang]
+
+* frameworks/base
+d92cab247da7 Add some fwb stubs from Oplus [DennySPb]
+e9abf2521093 SettingsLib: Ensure divider is set before view is returned in onCreateView [LuK1337]
+6a935e3847d2 Allow overlaying baseline font families [Michael Bestas]
+bc093ad17208 Allow overlaying emphasized font families [Luca Stefani]
+af77e425a735 SystemUI: Fix default font feature on lockscreen [Pranav Vashi]
+38bc9b0d209e base: Use font configs instead hardcoded fonts [Pranav Vashi]
+8147ed5bc5f0 Wire up default fonts with config [Pranav Vashi]
+56a968e350bb base: styles: Use user fonts for Material UI themes [Danny Lin]
+03c8947294f6 Set alert dialog message to use system font [maxwen]
+9775b4e421f8 SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
+f59d6897a984 SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
+e9ae8f893fa6 SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
+455fbb068552 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
+39489143de1d SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
+0fc31d3e3029 [UidMigration] fix update uninstallation with sharedUserMaxSdkVersion [Song Chun Fan]
+b112ffd8dff4 Limit the number of services (NLSes, etc) that can be approved per user [Matías Hernández]
+e1a82137d2ea Block overriding satellite carrier config keys on user builds [Jayachandran C]
+d5566a5c706d Remove any revoked associations after reboot [Evan Chen]
+5afaea5631c1 MediaSession: Enforce max name length on broadcast receivers too [Ian Baker]
+3900a857273f Be more strict about content types for message array [Julia Reynolds]
+6f67bbc2f886 Prevent long press on profile notifs when locked [Julia Reynolds]
+91f7abe90b8e [PM] Check unknown sources for intent installation [Ivan Chiang]
+a784a1b359b5 Reapply "[PM] Check unknown sources user restriction for intent installation" [Ivan Chiang]
+4d0d8fe28715 Explicitly unset INSTALL_FROM_MANAGED_USER_OR_PROFILE flag [Sanjana Sunil]
+d218c34b79ce Prevent launchedFromPackage spoofing via FLAG_ACTIVITY_FORWARD_RESULT. [Annie Lin]
+eac99dd69769 Handle loadDescription OutOfMemoryError in DeviceAdminInfo [Iustin Ventaniuc]
+4d79e16df1d1 Introduce InputMethodSubtypeSafeList [Hiroki Sato]
+433e3f17a247 Harden InputMethodInfo parsing against large metadata [Hiroki Sato]
+681f85119a1c Fixed "Unlock your phone" unexpectedlly turned ON after OTA [Shawn Lin]
+7966874ba70d Sanitize a11y qs shortcut tile service name before using it [Chun-Ku Lin]
+b7270b8f0e35 Trim permission, permission group names [Nate Myren]
+2598fb6e0257 Prohibit untrusted proxys from specifying proxied attribution tags [Nate Myren]
+d326b9ad6e38 Ensure sandboxed UIDs are treated as untrusted in Appops [Nate Myren]
+9e6f38897f04 [RESTRICT AUTOMERGE] Stay in app pinned mode upon SystemUI crash [Brad Hinegardner]
+
+* frameworks/native
+9a9d8be686 Clip to layer bounds when drawing blur regions [Alec Mouri]
+5c7b7748ed Truncate WindowInfo.name during parcelling. [Anton Ivanov]
+
+* hardware/qcom-caf/common
+a0e665a libqti-perfd-client: Implement camera perf hints [Arian]
+
+* hardware/qcom-caf/sm8450-6.6/audio/pal
+f5ab61245 pal: Fix platform checks [LuK1337]
+
+* hardware/qcom-caf/sm8450-6.6/audio/primary-hal
+aa04bf4d7 hal: Fix libaudiocorehal.qti vintf fragments [LuK1337]
+
+* hardware/st/nfc
+b041ec0 Fix use-after-free in eventCallback [Kyle Hsiao]
+
+* lineage/hudson
+61b0403 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+cb70a09 Updated to 03-Mar-2026 23:01 UTC [Tim Schumacher]
+e068bf0 Updated to 02-Mar-2026 23:01 UTC [Tim Schumacher]
+
+* packages/apps/DocumentsUI
+9d5265008 Merge commit 'refs/changes/06/476606/1' of https://github.com/LineageOS/android_packages_apps_DocumentsUI into HEAD [basamaryan]
+7688d7d5c Prevent a malicious selector from launching an arbitrary activity. [Himanshu Arora]
+
+* packages/apps/LineageParts
+4c77386 LineageParts: Use SimpleSummaryProvider for ListPreference [armdebug]
+
+* packages/apps/Settings
+1805209c1bc Settings: Use font configs instead of hardcoded fonts [Pranav Vashi]
+dfec94902f0 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+27bb0d1c99c Settings: Port battery mAh readout to Kotlin header [armdebug]
+e665f7b521f Merge commit 'refs/changes/01/476601/2' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+0662bd17523 Merge commit 'refs/changes/02/476602/2' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+c245434951b Merge commit 'refs/changes/07/476607/1' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+3fa503e7a1f Fixed "Unlock your phone" unexpectedlly turned ON after OTA [Shawn Lin]
+71f427a41a0 Check permission of the calling package in multi-pane devices [Mill Chen]
+f5d29d9fab4 Ignore enrollAfterFace in FaceEnroll from ext pkg [Milton]
+c168479718f Settings: Don't index VmTerminal fragment if device doesn't support it [LuK1337]
+
+* packages/apps/ThemePicker
+03156889 ThemePicker: Reimplement font picker [sidharthify]
+
+* packages/modules/Permission
+8eb7719c76 PermissionController: Add missing permission groups [Pranav Vashi]
+d4e1c1c8a6 Update RuntimePermissionsUpgradeController to accept null PermGroups [Nate Myren]
+f57689541a V2 Merge all permissions in a shared UID for every package in that UID [Nate Myren]
+
+* packages/modules/Virtualization
+b00eb1080 vmbase,pvmfw: aarch64: Clean dcache to PoC not PoU [Pierre-Clément Tosi]
+
+* packages/providers/MediaProvider
+e8e9568ce Throw exception on MediaStore createRequest for non-existent uri [Garvita Jain]
+6a7342b81 Fix ACCESS_MEDIA_LOCATION bypass via SAF picker [Himanshu Arora]
+
+* packages/resources/devicesettings
+4c345c3 Revert "DeviceSettings: Migrate MainSwitchBar and Switch to Material3" [Bruno Martins]
+
+* packages/services/Telephony
+9ff48901c Block overriding satellite carrier config keys on user builds [Jayachandran C]
+
+* vendor/lineage
+d4b1ea50a vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+2e1ed83b4 release: Bump Security String to 2026-03-01 [Michael Bestas]
+
+====================
+     2026-03-02    
+====================
+* external/dng_sdk
+ce34163 Update to DNG SDK 1.7.1 2410 [John Reck]
+
+* frameworks/av
+c0c46e9758 Fix vulnerability in drmserver [Kyle Zhang]
+
+* frameworks/base
+4b8d7bba68fa Automatic translation import [LineageOS Infra]
+
+* frameworks/native
+9a9d8be686 Clip to layer bounds when drawing blur regions [Alec Mouri]
+5c7b7748ed Truncate WindowInfo.name during parcelling. [Anton Ivanov]
+
+* hardware/qcom-caf/sm8450-6.6/audio/agm
+58c1c901 agm: remove "LOG_TAG" in device.c [Harold Tan]
+74aa6156 agm: Fix format specifiers [Michael Bestas]
+be95c018 agm: Fix static analysis issues & warnings [Aravind Siddappaji]
+92e1559d AGM:  Fixes to prevent warnings 	- Fixed Typecasting 	- Fixed Format Specifier for logs 	- Misc Fixes to prevent warnings [Manan Jain]
+e47e829e agm: Set vendor.qti.hardware.agm_interface AIDL interface owner [LuK1337]
+852cfaa6 Ignore incompatible-pointer-types and pointer-integer-compare errors [Cosmin Tanislav]
+ed1842d4 plugins: tinyalsa: fix build [dianlujitao]
+
+* hardware/qcom-caf/sm8450-6.6/audio/graphservices
+704ed68 Revert "Disable 32 bit variants of audio libraries for 64 bit audio targets" [LuK1337]
+
+* hardware/qcom-caf/sm8550/display
+c0ad2c56d0 composer: Support Pixelworks HW iris 7 color calibration [John Galt]
+8027f8ab0c sdm: Support Pixelworks soft-iris color calibration [pjgowtham]
+de69e991b4 sdm: Operate FINGERPRINT_MASK for oplus optical UDFPS [pjgowtham]
+b7b1456f5a sdm: Support HBM for Samsung optical UDFPS [Atakan]
+408b447033 sdm: get around client compositioning for FOD pressed layer [Demon Singur]
+557b53d59a sdm: mark FOD pressed layer by setting a bit on ZPOS [Demon000]
+
+* hardware/st/nfc
+b041ec0 Fix use-after-free in eventCallback [Kyle Hsiao]
+
+* lineage-sdk
+2e8d9cd5 Automatic translation import [LineageOS Infra]
+
+* lineage/hudson
+61b0403 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+e068bf0 Updated to 02-Mar-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+5fae4457 wiki: NAVIC -> NavIC [LuK1337]
+65b8657b wiki: pdx234/pdx235: Blue led -> blue star [LuK1337]
+
+* packages/apps/Aperture
+3b6bc17 Automatic translation import [LineageOS Infra]
+
+* packages/apps/AudioFX
+05d6710 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Backgrounds
+72bdada Automatic translation import [LineageOS Infra]
+
+* packages/apps/Camelot
+27e5e16 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Catapult
+521a06c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Contacts
+45ccf1751 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+c01b9ddf8 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+d51d67bac Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+7688d7d5c Prevent a malicious selector from launching an arbitrary activity. [Himanshu Arora]
+9e32259a2 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FMRadio
+408f46a Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+7cbeb3f Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+097d818 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+f2783ed Automatic translation import [LineageOS Infra]
+
+* packages/apps/Launcher3
+6774ff4a50 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+900cd59 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Messaging
+70d5007 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Profiles
+6cd3b62 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+b670004 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+3fa503e7a1f Fixed "Unlock your phone" unexpectedlly turned ON after OTA [Shawn Lin]
+71f427a41a0 Check permission of the calling package in multi-pane devices [Mill Chen]
+f5d29d9fab4 Ignore enrollAfterFace in FaceEnroll from ext pkg [Milton]
+c168479718f Settings: Don't index VmTerminal fragment if device doesn't support it [LuK1337]
+7ebf87cd10b Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+9d088f9 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+51cefa5e Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+29b5126 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+cfbeb97 Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+d6cc930e2 Automatic translation import [LineageOS Infra]
+
+* packages/providers/DownloadProvider
+719d3b63 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+546d732 Automatic translation import [LineageOS Infra]
+
+* packages/services/Mms
+d6713d2 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+0a75736 Automatic translation import [LineageOS Infra]
+
+* vendor/lineage
+016aeda2f config: CUSTOM_LOCALES: Add Nynorsk [Tim Schumacher]
+
+* vendor/qcom/opensource/commonsys/fm
+f339ceb Automatic translation import [LineageOS Infra]
+
+====================
+     2026-03-01    
+====================
+* frameworks/base
+4b8d7bba68fa Automatic translation import [LineageOS Infra]
+
+* hardware/qcom-caf/sm8450-6.6/audio/agm
+58c1c901 agm: remove "LOG_TAG" in device.c [Harold Tan]
+74aa6156 agm: Fix format specifiers [Michael Bestas]
+be95c018 agm: Fix static analysis issues & warnings [Aravind Siddappaji]
+92e1559d AGM:  Fixes to prevent warnings 	- Fixed Typecasting 	- Fixed Format Specifier for logs 	- Misc Fixes to prevent warnings [Manan Jain]
+e47e829e agm: Set vendor.qti.hardware.agm_interface AIDL interface owner [LuK1337]
+852cfaa6 Ignore incompatible-pointer-types and pointer-integer-compare errors [Cosmin Tanislav]
+ed1842d4 plugins: tinyalsa: fix build [dianlujitao]
+
+* hardware/qcom-caf/sm8450-6.6/audio/graphservices
+704ed68 Revert "Disable 32 bit variants of audio libraries for 64 bit audio targets" [LuK1337]
+
+* hardware/qcom-caf/sm8550/display
+c0ad2c56d0 composer: Support Pixelworks HW iris 7 color calibration [John Galt]
+8027f8ab0c sdm: Support Pixelworks soft-iris color calibration [pjgowtham]
+de69e991b4 sdm: Operate FINGERPRINT_MASK for oplus optical UDFPS [pjgowtham]
+b7b1456f5a sdm: Support HBM for Samsung optical UDFPS [Atakan]
+408b447033 sdm: get around client compositioning for FOD pressed layer [Demon Singur]
+557b53d59a sdm: mark FOD pressed layer by setting a bit on ZPOS [Demon000]
+
+* lineage-sdk
+2e8d9cd5 Automatic translation import [LineageOS Infra]
+
+* lineage/wiki
+5fae4457 wiki: NAVIC -> NavIC [LuK1337]
+65b8657b wiki: pdx234/pdx235: Blue led -> blue star [LuK1337]
+
+* packages/apps/Aperture
+3b6bc17 Automatic translation import [LineageOS Infra]
+
+* packages/apps/AudioFX
+05d6710 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Backgrounds
+72bdada Automatic translation import [LineageOS Infra]
+
+* packages/apps/Camelot
+27e5e16 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Catapult
+521a06c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Contacts
+45ccf1751 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+c01b9ddf8 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+d51d67bac Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+9e32259a2 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FMRadio
+408f46a Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+7cbeb3f Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+097d818 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+f2783ed Automatic translation import [LineageOS Infra]
+
+* packages/apps/Launcher3
+6774ff4a50 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+900cd59 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Messaging
+70d5007 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Profiles
+6cd3b62 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+b670004 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+7ebf87cd10b Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+9d088f9 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+51cefa5e Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+29b5126 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+cfbeb97 Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+d6cc930e2 Automatic translation import [LineageOS Infra]
+
+* packages/providers/DownloadProvider
+719d3b63 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+546d732 Automatic translation import [LineageOS Infra]
+
+* packages/services/Mms
+d6713d2 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+0a75736 Automatic translation import [LineageOS Infra]
+
+* vendor/lineage
+016aeda2f config: CUSTOM_LOCALES: Add Nynorsk [Tim Schumacher]
+
+* vendor/qcom/opensource/commonsys/fm
+f339ceb Automatic translation import [LineageOS Infra]
+
+====================
+     2026-02-28    
+====================
+* hardware/qcom-caf/common
+50b2e0f common: Add sm8450-6.6 support [LuK1337]
+0b13366 common: Don't hardcode data-ipa-cfg-mgr soong namespace for UM 5.10+ [LuK1337]
+
+* hardware/qcom-caf/sm8450-6.6/audio/primary-hal
+5f39bdaf7 hal: Separate xml from libaudiocorehal/libaudioeffecthal [LuK1337]
+b7fa28de4 libbaterylistener: Remove unused HIDL health dependencies [Michael Bestas]
+e52555d32 hal: Add dependency on libarpal_headers [Bruno Martins]
+f477d0aa4 hal: fix initialization order for class member variables [dianlujitao]
+fe1630395 hal: update and use global AIDL versions [dianlujitao]
+ace9481cb Convert audio makefiles to blueprint [Arian]
+ccfe375f9 adsprpcd: Import missing string.h header [chandu078]
+2b161e40a adsprpcd: Drop dependency on proprietary headers and fix build errors [LuK1337]
+141da5968 Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8450-6.6/data-ipa-cfg-mgr
+74b11514 ipacm: Address ipacm start failure [dianlujitao]
+a724ec33 ipacm: Get rid of `using namespace std;` [Yumi Yukimura]
+3e870635 ipacm: Remove compilation dependency for in_addr_t on bionic [Praveen Kurapati]
+92a6244e data-ipa-cfg-mgr: Disable all the debugging [Bruno Martins]
+100dd615 data-ipa-cfg-mgr: Remove verbose cflag [Luca Stefani]
+96f4a8d2 data-ipa-cfg-mgr: Import hardware/qcom-caf/sm8450-6.6 namespace [Michael Bestas]
+5298a751 data-ipa-cfg-mgr: Define soong namespace [razorloves]
+757d653a Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8450-6.6/dataipa
+bbe1f0e0 dataipa: Disable all the debugging [Bruno Martins]
+73e78b05 dataipa: libipanat: Ignore all errors [Bruno Martins]
+73b47890 dataipa: Disable kernel modules and tests [Michael Bestas]
+4d73050c Add .gitupstream file [Michael Bestas]
+
+* hardware/qcom-caf/sm8450-6.6/display/hal
+08c16c4182 Address remaining -Wformat related errors [LuK1337]
+ec927bc0e6 gralloc: Fix compilation error for incorrect format specifier. [Avdhesh Singh Chauhan]
+d550f0256f display: fix qssi 16.1.1 tag update compiler issues [Vishalteja Kosana]
+da614263e7 qmaa: Fix soong namespace imports [Michael Bestas]
+35e621725b gralloc: avoid calling property_get() on every buffer allocation [Cosmin Tanislav]
+9239a2b7c0 gralloc: Fix unannotated fall-through compilation errors [Bruno Martins]
+9a2cd9960c libubwcp: Make libubwcp_headers available [chandu078]
+904fc82704 composer: Link against proper vendor.qti.hardware.display.composer3 version [Michael Bestas]
+75a00720a1 vmmem: Add dummy libvmmem shared_lib [Bruno Martins]
+6389107640 vmmem: Make libvmmem_headers available [SGCMarkus]
+4db265815d composer: Separate rc and xml from service [Michael Bestas]
+c8c13b5a26 composer: Replace writepid with task_profiles command for cgroup migration [Suren Baghdasaryan]
+13a5e1a284 display: Define init script modules properly. [Alexander Koskovich]
+c0be003f02 display: Remove CleanSpec.mk [Michael Bestas]
+8e4c92e4a0 Revert "display: Add QMCS image generation" [Michael Bestas]
+6dc1129795 display: Fix conflicting soong_namespace imports [Bruno Martins]
+e087daa00e Add .gitupstream file [Chirayu Desai]
+
+* lineage/crowdin
+414d31a config: Remove 23.0 support [LuK1337]
+
+* lineage/hudson
+4107ad8 RIP 23.0 [LuK1337]
+63836c0 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+49bc680 Updated to 27-Feb-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+9ee79441 wiki: RIP 23.0 [LuK1337]
+
+* packages/apps/Launcher3
+a5bbefd64d Launcher3: Ensure order of TaskbarNavLayoutter buttons is correct [LuK1337]
+
+* tools/extract-utils
+246c7c0 extract_utils: allow filename only symlink [LuK1337]
+
+* vendor/lineage
+a4f610a5c vars: Add waipio-6.6-vendor [LuK1337]
+
+====================
+     2026-02-27    
+====================
+* hardware/qcom-caf/common
+50b2e0f common: Add sm8450-6.6 support [LuK1337]
+0b13366 common: Don't hardcode data-ipa-cfg-mgr soong namespace for UM 5.10+ [LuK1337]
+
+* hardware/qcom-caf/sm8450-6.6/audio/primary-hal
+5f39bdaf7 hal: Separate xml from libaudiocorehal/libaudioeffecthal [LuK1337]
+b7fa28de4 libbaterylistener: Remove unused HIDL health dependencies [Michael Bestas]
+e52555d32 hal: Add dependency on libarpal_headers [Bruno Martins]
+f477d0aa4 hal: fix initialization order for class member variables [dianlujitao]
+fe1630395 hal: update and use global AIDL versions [dianlujitao]
+ace9481cb Convert audio makefiles to blueprint [Arian]
+ccfe375f9 adsprpcd: Import missing string.h header [chandu078]
+2b161e40a adsprpcd: Drop dependency on proprietary headers and fix build errors [LuK1337]
+141da5968 Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8450-6.6/data-ipa-cfg-mgr
+74b11514 ipacm: Address ipacm start failure [dianlujitao]
+a724ec33 ipacm: Get rid of `using namespace std;` [Yumi Yukimura]
+3e870635 ipacm: Remove compilation dependency for in_addr_t on bionic [Praveen Kurapati]
+92a6244e data-ipa-cfg-mgr: Disable all the debugging [Bruno Martins]
+100dd615 data-ipa-cfg-mgr: Remove verbose cflag [Luca Stefani]
+96f4a8d2 data-ipa-cfg-mgr: Import hardware/qcom-caf/sm8450-6.6 namespace [Michael Bestas]
+5298a751 data-ipa-cfg-mgr: Define soong namespace [razorloves]
+757d653a Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8450-6.6/dataipa
+bbe1f0e0 dataipa: Disable all the debugging [Bruno Martins]
+73e78b05 dataipa: libipanat: Ignore all errors [Bruno Martins]
+73b47890 dataipa: Disable kernel modules and tests [Michael Bestas]
+4d73050c Add .gitupstream file [Michael Bestas]
+
+* hardware/qcom-caf/sm8450-6.6/display/hal
+08c16c4182 Address remaining -Wformat related errors [LuK1337]
+ec927bc0e6 gralloc: Fix compilation error for incorrect format specifier. [Avdhesh Singh Chauhan]
+d550f0256f display: fix qssi 16.1.1 tag update compiler issues [Vishalteja Kosana]
+da614263e7 qmaa: Fix soong namespace imports [Michael Bestas]
+35e621725b gralloc: avoid calling property_get() on every buffer allocation [Cosmin Tanislav]
+9239a2b7c0 gralloc: Fix unannotated fall-through compilation errors [Bruno Martins]
+9a2cd9960c libubwcp: Make libubwcp_headers available [chandu078]
+904fc82704 composer: Link against proper vendor.qti.hardware.display.composer3 version [Michael Bestas]
+75a00720a1 vmmem: Add dummy libvmmem shared_lib [Bruno Martins]
+6389107640 vmmem: Make libvmmem_headers available [SGCMarkus]
+4db265815d composer: Separate rc and xml from service [Michael Bestas]
+c8c13b5a26 composer: Replace writepid with task_profiles command for cgroup migration [Suren Baghdasaryan]
+13a5e1a284 display: Define init script modules properly. [Alexander Koskovich]
+c0be003f02 display: Remove CleanSpec.mk [Michael Bestas]
+8e4c92e4a0 Revert "display: Add QMCS image generation" [Michael Bestas]
+6dc1129795 display: Fix conflicting soong_namespace imports [Bruno Martins]
+e087daa00e Add .gitupstream file [Chirayu Desai]
+
+* lineage/crowdin
+414d31a config: Remove 23.0 support [LuK1337]
+
+* lineage/hudson
+4107ad8 RIP 23.0 [LuK1337]
+63836c0 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+49bc680 Updated to 27-Feb-2026 23:01 UTC [Tim Schumacher]
+acd2f39 Updated to 26-Feb-2026 11:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+9ee79441 wiki: RIP 23.0 [LuK1337]
+a81d703c wiki: Update required fw version for benz and salami [inferno0230]
+
+* packages/apps/ExactCalculator
+c9b0487 ExactCalculator: Swap dec_point and digit_zero [LuK1337]
+
+* packages/apps/Launcher3
+a5bbefd64d Launcher3: Ensure order of TaskbarNavLayoutter buttons is correct [LuK1337]
+
+* tools/extract-utils
+246c7c0 extract_utils: allow filename only symlink [LuK1337]
+
+* vendor/lineage
+a4f610a5c vars: Add waipio-6.6-vendor [LuK1337]
+
+====================
+     2026-02-26    
+====================
+* lineage/hudson
+dc7e476 the TIME was ticking too fast [pnguyen879]
+
+* lineage/mirror
+acd2f39 Updated to 26-Feb-2026 11:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+a81d703c wiki: Update required fw version for benz and salami [inferno0230]
+f64a0da6 devices: Promote timelm to 23.2 [pnguyen879]
+
+* packages/apps/ExactCalculator
+c9b0487 ExactCalculator: Swap dec_point and digit_zero [LuK1337]
+
+* vendor/apn
+fe64e68 apn: Update Netgsm [Doğancan yılmazer]
+
+====================
+     2026-02-25    
+====================
+* android
+bddd7f6 manifest: Track sm8450-6.6 HALs [LuK1337]
+
+* device/lineage/sepolicy
+56c0209 qcom: Replace platform check with BOARD_VENDOR_SEPOLICY_DIRS filter [LuK1337]
+
+* hardware/qcom-caf/sm8450-6.6/audio/graphservices
+f9c6879 ar_osal: Remove `file` arg from ar_log() [LuK1337]
+
+* hardware/qcom-caf/sm8450-6.6/audio/pal
+f9a6b8cc1 pal/plugins: Fix static analysis issues & warnings [Aravind Siddappaji]
+645d5fe85 Fixed compiler warnings for audio-core-auto.lnx.1.0 [Ashwin Srirankan]
+8b38d721e Handle compiler warning treated as error [Vaidegi Balakrishnan]
+7e95b3880 vui_interface: Address more compilation errors [Bruno Martins]
+eb224f864 pal: fix redefinition of MS_PER_SEC / US_PER_SEC [Cosmin Tanislav]
+533ea87db pal: Convert libvui_intf to blueprint [Michael Bestas]
+362fcfdd8 pal: Make libarvui_intf_headers available [Michael Bestas]
+52a09684d pal: Fix compilation issues for sun-LE [Yitong Li]
+f908e35fe vui_interface: fix memory leak when deregistering model, [Aiyaz Patel]
+d4e353dee vui_interface: add support for MMA usecase [SHIKHAR MATHUR]
+2af16acd1 vui_interface: add support for extended detection payload [SHIKHAR MATHUR]
+f2e6a8794 vui_interface: update sound model version parsing [SHIKHAR MATHUR]
+0c20a53d9 pal: change to add vui-interface to pal for sva [Manikantan R]
+7eddb842f pal: Make libaudiofeaturestats_headers available [Michael Bestas]
+a1c16c83b pal: Expose more headers under libarpal_headers module [SGCMarkus]
+48a7ed6bb pal: Add dummy libPeripheralStateUtils shared_lib [Luofan Chen]
+ddabc3562 Convert audio makefiles to blueprint [Arian]
+99dce6f5b pal: adapt VI structs usage to graphservices definitions [Cosmin Tanislav]
+
+* lineage/hudson
+dc7e476 the TIME was ticking too fast [pnguyen879]
+68bd8d0 hudson: rosemary goes 23.2! [Matsvei Niaverau]
+
+* lineage/wiki
+f64a0da6 devices: Promote timelm to 23.2 [pnguyen879]
+3ae43c10 wiki: Add Web Flash Tools instructions [Nicholas Lim]
+22b7fb19 wiki: Promote rosemary to 23.2 [Matsvei Niaverau]
+
+* vendor/apn
+fe64e68 apn: Update Netgsm [Doğancan yılmazer]
+
+====================
+     2026-02-24    
+====================
+* android
+bddd7f6 manifest: Track sm8450-6.6 HALs [LuK1337]
+
+* build/soong
+82dec4967 check_boot_jars: Add MTK packages to whitelist [Nolen Johnson]
+
+* device/lineage/sepolicy
+56c0209 qcom: Replace platform check with BOARD_VENDOR_SEPOLICY_DIRS filter [LuK1337]
+
+* hardware/qcom-caf/sm8450-6.6/audio/graphservices
+f9c6879 ar_osal: Remove `file` arg from ar_log() [LuK1337]
+
+* hardware/qcom-caf/sm8450-6.6/audio/pal
+f9a6b8cc1 pal/plugins: Fix static analysis issues & warnings [Aravind Siddappaji]
+645d5fe85 Fixed compiler warnings for audio-core-auto.lnx.1.0 [Ashwin Srirankan]
+8b38d721e Handle compiler warning treated as error [Vaidegi Balakrishnan]
+7e95b3880 vui_interface: Address more compilation errors [Bruno Martins]
+eb224f864 pal: fix redefinition of MS_PER_SEC / US_PER_SEC [Cosmin Tanislav]
+533ea87db pal: Convert libvui_intf to blueprint [Michael Bestas]
+362fcfdd8 pal: Make libarvui_intf_headers available [Michael Bestas]
+52a09684d pal: Fix compilation issues for sun-LE [Yitong Li]
+f908e35fe vui_interface: fix memory leak when deregistering model, [Aiyaz Patel]
+d4e353dee vui_interface: add support for MMA usecase [SHIKHAR MATHUR]
+2af16acd1 vui_interface: add support for extended detection payload [SHIKHAR MATHUR]
+f2e6a8794 vui_interface: update sound model version parsing [SHIKHAR MATHUR]
+0c20a53d9 pal: change to add vui-interface to pal for sva [Manikantan R]
+7eddb842f pal: Make libaudiofeaturestats_headers available [Michael Bestas]
+a1c16c83b pal: Expose more headers under libarpal_headers module [SGCMarkus]
+48a7ed6bb pal: Add dummy libPeripheralStateUtils shared_lib [Luofan Chen]
+ddabc3562 Convert audio makefiles to blueprint [Arian]
+99dce6f5b pal: adapt VI structs usage to graphservices definitions [Cosmin Tanislav]
+
+* lineage/hudson
+68bd8d0 hudson: rosemary goes 23.2! [Matsvei Niaverau]
+92a8961 Better late than never [Sebastiano Barezzi]
+d60dd76 fly before may [Arian]
+
+* lineage/wiki
+3ae43c10 wiki: Add Web Flash Tools instructions [Nicholas Lim]
+22b7fb19 wiki: Promote rosemary to 23.2 [Matsvei Niaverau]
+1449c96d wiki: Add docker compose file [Nicholas Lim]
+80725b1c wiki: Promote apollon, lmi, munch and thyme to 23.2 [Sebastiano Barezzi]
+02ba5b54 wiki: Cleanup Xiaomi SM8250 maintainers [Sebastiano Barezzi]
+222eb880 wiki: Promote mayfly to lineage-23.2 [Arian]
+
+* packages/apps/Glimpse
+4263e73 Glimpse: Reformat code [Sebastiano Barezzi]
+3435a3c Glimpse: Add support for motion photos [Luca Stefani]
+
+====================
+     2026-02-23    
+====================
+* build/soong
+82dec4967 check_boot_jars: Add MTK packages to whitelist [Nolen Johnson]
+
+* hardware/qcom-caf/sm8350/display
+35026dc46e sdm: Operate FINGERPRINT_MASK for oplus optical UDFPS [pjgowtham]
+940af99ae1 sdm: Support Samsung FINGERPRINT_MASK DRM property [Atakan]
+a34ffd4a74 Support pixelworks soft iris color calibration [pjgowtham]
+
+* lineage/hudson
+92a8961 Better late than never [Sebastiano Barezzi]
+d60dd76 fly before may [Arian]
+da91b76 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+1449c96d wiki: Add docker compose file [Nicholas Lim]
+80725b1c wiki: Promote apollon, lmi, munch and thyme to 23.2 [Sebastiano Barezzi]
+02ba5b54 wiki: Cleanup Xiaomi SM8250 maintainers [Sebastiano Barezzi]
+222eb880 wiki: Promote mayfly to lineage-23.2 [Arian]
+
+* packages/apps/Glimpse
+4263e73 Glimpse: Reformat code [Sebastiano Barezzi]
+3435a3c Glimpse: Add support for motion photos [Luca Stefani]
+
+* vendor/apn
+1ba16ff apn: CN: Kill `3gwap` APN for China Unicom [Nanhumly]
+
+====================
+     2026-02-22    
+====================
+* external/chromium-webview/prebuilt/arm
+f547731 Update Chromium Webview arm to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+8ea09e0 Update Chromium Webview arm64 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+2005a53 Update Chromium Webview x86 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+0baf207 Update Chromium Webview x86_64 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* hardware/qcom-caf/sm8350/display
+35026dc46e sdm: Operate FINGERPRINT_MASK for oplus optical UDFPS [pjgowtham]
+940af99ae1 sdm: Support Samsung FINGERPRINT_MASK DRM property [Atakan]
+a34ffd4a74 Support pixelworks soft iris color calibration [pjgowtham]
+
+* lineage/hudson
+da91b76 Regenerate device dependency mappings [LineageOS Infra]
+2e0103a hudson: Add Galaxy Tab S6 Lite 2024 Wi-Fi (gta4xlswifi) [Tim Zimmermann]
+
+* lineage/wiki
+2d73bceb wiki: devices: Add Galaxy Tab S6 Lite 2024 Wi-Fi (gta4xlswifi) [Tim Zimmermann]
+
+* vendor/apn
+1ba16ff apn: CN: Kill `3gwap` APN for China Unicom [Nanhumly]
+
+====================
+     2026-02-21    
+====================
+* external/chromium-webview/patches
+a268fe6 Update Chromium Webview to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+f547731 Update Chromium Webview arm to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+8ea09e0 Update Chromium Webview arm64 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+2005a53 Update Chromium Webview x86 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+0baf207 Update Chromium Webview x86_64 to 145.0.7632.109 [Kevin F. Haggerty]
+
+* lineage/hudson
+2e0103a hudson: Add Galaxy Tab S6 Lite 2024 Wi-Fi (gta4xlswifi) [Tim Zimmermann]
+4eddd23 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+f975644 Updated to 20-Feb-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+2d92096 build-webview: Update default webview to 145.0.7632.109 [Kevin F. Haggerty]
+
+* lineage/wiki
+2d73bceb wiki: devices: Add Galaxy Tab S6 Lite 2024 Wi-Fi (gta4xlswifi) [Tim Zimmermann]
+
+====================
+     2026-02-20    
+====================
+* device/lineage/sepolicy
+c580ded atv: Update from newest DroidLogic devkit [Nolen Johnson]
+
+* external/chromium-webview/patches
+a268fe6 Update Chromium Webview to 145.0.7632.109 [Kevin F. Haggerty]
+
+* lineage/hudson
+4eddd23 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+f975644 Updated to 20-Feb-2026 23:01 UTC [Tim Schumacher]
+644f44d Updated aosp-minimal to 19-Feb-2026 11:02 UTC [Tim Schumacher]
+
+* lineage/scripts
+2d92096 build-webview: Update default webview to 145.0.7632.109 [Kevin F. Haggerty]
+
+====================
+     2026-02-19    
+====================
+* device/lineage/sepolicy
+c580ded atv: Update from newest DroidLogic devkit [Nolen Johnson]
+
+* lineage/mirror
+644f44d Updated aosp-minimal to 19-Feb-2026 11:02 UTC [Tim Schumacher]
+e0b2c0a Updated to 18-Feb-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+3292a6aa wiki: Update storage info for socrates [WenHao2130]
+3f69d1af wiki: Update contributors and groups [Inhishonor]
+
+* packages/apps/LineageParts
+d1cc261 LineageParts: Remove unsupported camera button preferences the right way [LuK1337]
+
