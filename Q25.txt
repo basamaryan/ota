@@ -875,20 +875,3 @@ f975644 Updated to 20-Feb-2026 23:01 UTC [Tim Schumacher]
 * lineage/scripts
 2d92096 build-webview: Update default webview to 145.0.7632.109 [Kevin F. Haggerty]
 
-====================
-     2026-02-19    
-====================
-* device/lineage/sepolicy
-c580ded atv: Update from newest DroidLogic devkit [Nolen Johnson]
-
-* lineage/mirror
-644f44d Updated aosp-minimal to 19-Feb-2026 11:02 UTC [Tim Schumacher]
-e0b2c0a Updated to 18-Feb-2026 23:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-3292a6aa wiki: Update storage info for socrates [WenHao2130]
-3f69d1af wiki: Update contributors and groups [Inhishonor]
-
-* packages/apps/LineageParts
-d1cc261 LineageParts: Remove unsupported camera button preferences the right way [LuK1337]
-
