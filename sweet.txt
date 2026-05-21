@@ -1,141 +1,147 @@
 ====================
-     2026-05-19    
+     2026-05-21    
 ====================
 * build/soong
-4d9832ddc gen_build_prop: Fix forced system partition props override [Alexander Winkowski]
-7aed61a8e check_boot_jars: Add oplus package names to allowed list [pjgowtham]
+6bfef999a gen_build_prop: Fix forced system partition props override [Alexander Winkowski]
+f5185bb33 check_boot_jars: Add oplus package names to allowed list [pjgowtham]
 
 * device/qcom/sepolicy_vndr/legacy-um
-0c3b6a092 BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
-a3958b384 BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
+7eb8bec73 BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
+b6e87807f BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
 
 * frameworks/av
-550cd7374f StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
-d24611dd7f libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
+b94cd284bf StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
+9e4d012394 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
 
 * frameworks/base
-c64f9b4278e4 SystemUI: keep Wi-Fi QS tile subtitle Wi-Fi-specific [Ashwin Devi Srinivasan]
-9d33ae03e732 SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
-0dee31792459 SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
-24f0d4c46418 SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
-097cfcdf1db9 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
-0d8bae00d725 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
-e2cf3761e254 Add some fwb stubs from Oplus [DennySPb]
-53816472c214 camera: Add backwards-compatible CaptureResultExtras constructor [Adithya R]
-ce57128950d1 core: camera2: StreamConfigurationMap: add constructor for MIUI camera [Pulkit077]
-495720ac0d8b SystemUI: Implement face unlock recognition text [minaripenguin]
-684f4baa7020 KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
-f10b9bf3de69 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
-fbbf0c15a581 SystemUI: Disable FaceUnlock Lockouts [minaripenguin]
-7e425ed7e260 services: Force load FaceSense providers [Pranav Vashi]
-0ef956716592 FaceSense: Vibrate on successful authentication [Adithya R]
-b9851ad0ec45 FaceService: Conditionally add ParanoidSense [someone5678]
-ad834ecbcc99 base: Initial SenseProvider for FaceSense service [Chris Crump]
+9388d60f15ca SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
+c99d24b6c2a9 SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
+df9c81bab4fd SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
+18b5fd43d9e5 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
+2135eaf67c07 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
+2a27d3ab7bd2 SystemUI: keep Wi-Fi QS tile subtitle Wi-Fi-specific [Ashwin Devi Srinivasan]
+0188a89b866d Add some fwb stubs from Oplus [DennySPb]
+fd5ed54f7291 camera: Add backwards-compatible CaptureResultExtras constructor [Adithya R]
+b33ac1b387f7 core: camera2: StreamConfigurationMap: add constructor for MIUI camera [Pulkit077]
+6dc3ec4fa68e SystemUI: Implement face unlock recognition text [minaripenguin]
+813b1fda317b KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
+f2189de1e4b0 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
+2fb84e3c8919 SystemUI: Disable FaceUnlock Lockouts [minaripenguin]
+7397cd6a8384 services: Force load FaceSense providers [Pranav Vashi]
+43ae1583d23d FaceSense: Vibrate on successful authentication [Adithya R]
+9e0ce09bf3c7 FaceService: Conditionally add ParanoidSense [someone5678]
+77958552edca base: Initial SenseProvider for FaceSense service [Chris Crump]
+8151f8ffe6c1 fixup! SystemUI: Clock position customization [LuK1337]
 
 * hardware/qcom-caf/common
-7cd535f libqti-perfd-client: Reset Power HAL on binder death [Nick Reuter]
-f775561 libqti-perfd-client: Implement camera perf hints [Arian]
-
-* lineage/hudson
-2ae50e3 Regenerate device dependency mappings [LineageOS Infra]
+f6aa020 libqti-perfd-client: Reset Power HAL on binder death [Nick Reuter]
+ac1133d libqti-perfd-client: Implement camera perf hints [Arian]
 
 * packages/apps/Launcher3
-50fdb4d9b5 Enable navbar animation by default [Alexander Winkowski]
+fcfd5d7305 Enable navbar animation by default [Alexander Winkowski]
 
 * packages/apps/Settings
-69407e5838f Settings: Fix custom Private DNS hostname being overwritten [armdebug]
-25aca43bbb4 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
-6c3099d21a7 Settings: Add Face Unlock with ParanoidSense [Chris Crump]
-
-* packages/apps/Updater
-ca99135 Updater: Separate project configurable resources [pjgowtham]
-4c5e82c Updater: Prevent error Lottie animation from looping [pjgowtham]
-6d1d37d Updater: Remove unused dependencies and run generatebp [pjgowtham]
-74a3baa Updater: Avoid showing ZeroStatePreference when checking updates [pjgowtham]
-6570bf3 UpdateList: Animate item visibility on expand/collapse [pjgowtham]
-c301d76 Updater: Fix crash when attempting to delete update [pjgowtham]
-271c12c Updater: Fix imported update persistence [pjgowtham]
-03279b5 Updater: Update ZeroStatePreference strings [pjgowtham]
-bb21ce2 Updater: Post-migration cleanup of UpdatesListAdapter [pjgowtham]
-581c034 Updater: Modernize UpdatesListAdapter [pjgowtham]
-3681cf1 Updater: Improve Utils.canInstall and migrate to InstallUtils [pjgowtham]
-23d2dac Updater: Create buttons layout for update item [pjgowtham]
-81089d6 Updater: Copy CollapseBar from TopIntroPreference [pjgowtham]
-4cd22cf Updater: Import and utilize new vector assets for updater [pjgowtham]
-44e5f2a Updater: Restrict duplicate link URL capture to exclude '>' [pjgowtham]
-636dda8 Updater: apply smoothSeconds() to ETA calculation [pjgowtham]
-b02eba8 Updater: Increase download chunk size to 32 KiB [pjgowtham]
-19d1007 Updater: Inline functions from Utils with single call site [pjgowtham]
-cc3daf2 Updater: Use platform FileUtils for file copies [pjgowtham]
-8ae238e Updater: Use ICU and java.time for date and ETA formatting [pjgowtham]
-4c8e471 Updater: Provide responsive wide screen split layout [pjgowtham]
-18e4da4 Updater: Open downloads page instead of copying URL [pjgowtham]
-c1ef5b9 Updater: Drop welcome and info dialogs [pjgowtham]
-61eff67 Updater: Drop material library dependency [pjgowtham]
-b12fd13 Updater: Introduce UpdatesCheck [pjgowtham]
-36afa5c Updater: Introduce DeviceInfoBanner [pjgowtham]
-aae6616 Updater: Move preferences entry and local update prefs to footer [pjgowtham]
-0ed83bb Updater: Drop LocalBroadcastManager usage and its dependency [pjgowtham]
-f4cc869 Updater: Drop no_new_updates_view [pjgowtham]
-d670cae Updater: Drop update check result toasts [pjgowtham]
-a072280 Updater: Show install statuses in the scaffold title [pjgowtham]
-cc07f10 Updater: Cleanup uncrypt files on boot completed [pjgowtham]
-62147d3 Updater: Cleanup unused functions from Utils [pjgowtham]
-ff4c710 Updater: Wire up preferences screen and migrate settings access [pjgowtham]
-c39ee4f Updater: Introduce PreferencesActivity and PreferencesScreen [pjgowtham]
-68030ea Updater: Introduce preferences/app state layer and UpdatesCheckWorker [pjgowtham]
-1467882 Updater: Drop explicit AppCompat dependency [pjgowtham]
-8198b05 Updater: Force enable expressive SPA theme [pjgowtham]
-09e8b54 Updater: Adopt platform Settings navigation scaffold [pjgowtham]
-2c2e4da Updater: Flatten activity hierarchy [pjgowtham]
-c5dc01a Updater: Introduce UpdatesRepository and UpdatesViewModel [pjgowtham]
-5ba4b05 Updater: Suppress PROVIDED_RUNTIME_TOO_LOW for NetworkUpdate [LuK1337]
-bd6bb28 Updater: Add network data source and bump minSdk to 33 [pjgowtham]
-8c768f1 Updater: Add material 3 extended icons dependency [pjgowtham]
-b333307 Updater: Add datastore dependency [pjgowtham]
-98c3ad7 Updater: Add Ktor dependencies and add serialize plugin [pjgowtham]
-bfb774e Updater: Add Kotlin dependency for livedata [pjgowtham]
-34fafbd Updater: Add kotlin dependency for WorkManager [pjgowtham]
-89efa15 Updater: Clear notification actions on download completion [pjgowtham]
-7f4faac Updater: Centralize notifications into NotificationHelper [pjgowtham]
-2750441 Updater: Make refresh unavailable during update check [pjgowtham]
-d27d8a6 Updater: Enforce compile-time database correctness [pjgowtham]
-ddd2316 Updater: Consolidate into Kotlin data classes [pjgowtham]
-3664df9 Updater: Prefer global string resources where available [pjgowtham]
-7a75142 Updater: Move pre-install checks out of the adapter into InstallUtils [pjgowtham]
-fcf2cf5 Updater: Introduce BatteryMonitor [pjgowtham]
-291db64 Updater: Introduce NetworkMonitor [pjgowtham]
-c892808 Updater: Simplify isNetworkAvailable() in Utils [pjgowtham]
-8a468ad Updater: Make download & resume buttons network-aware [pjgowtham]
-5a773ea Updater: Revise download and installation controls [pjgowtham]
-47b2791 Updater: Enforce single concurrent download [pjgowtham]
-7c32cb3 Updater: Use SettingsLib SettingsOpacity for disabled alpha [pjgowtham]
-3205066 Updater: Provide extraction script to pull jars and utilize them for previews [pjgowtham]
-7e7d3c6 Updater: Match the display_name with Settings [pjgowtham]
-62f835c Updater: Bump compile sdk to 36 [pjgowtham]
-79d5186 Updater: Add compose dependencies and run generatebp [pjgowtham]
-9056d30 Updater: Include Settings Provider Activity - Privileged [pjgowtham]
-9ecc6f7 Updater: Suppress known-safe R8 duplicate warnings [pjgowtham]
-62d8691 Updater: Optimize and shrink resources [Luca Stefani]
-07bcfee Updater: Remove stale proguard rule [pjgowtham]
-de922cb Updater: Remove unused android-library plugin [pjgowtham]
-30d13dd Updater: Update library versions from AOSP prebuilts and public stable [pjgowtham]
-3d8b65c Updater: Update generatebp to v1.31 [pjgowtham]
-2ca7681 Updater: Update Gradle wrapper and AGP [pjgowtham]
-a5e3b2e Updater: Migrate generatebp to plugin declaration [pjgowtham]
-9b4a39e Updater: Migrate to version catalog [pjgowtham]
-262997a Updater: Display android security patch in default locale [pjgowtham]
-e19ac8e Updater: Replace BuildInfoUtils and extend SettingsLib DeviceInfoUtils [pjgowtham]
-a4c4b88 Updater: Introduce Kotlin [pjgowtham]
-135ccc5 Updater: Remove redundant metered network warning checkbox [pjgowtham]
-70413e3 Updater: Remove URL Copied toast message [pjgowtham]
-ee6fdb8 Updater: Fix pending reboot state not shown [pjgowtham]
-81c56fa Updater: Remove config_hideRecoveryUpdate and "Update recovery" on AB [pjgowtham]
-79945fe Updater: Fix duplicated and truncated date for local updates [pjgowtham]
+52a38fbded3 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+7b4ae792548 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
+f175ae16d5c Settings: Add Face Unlock with ParanoidSense [Chris Crump]
 
 * vendor/lineage
-94cd9180 overlay: Update DocumentsUIOverlay [Michael Bestas]
-400cd647 vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+0b74dc77 overlay: Update DocumentsUIOverlay [Michael Bestas]
+8d900adc vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+
+====================
+     2026-05-20    
+====================
+* android
+611ced8 manifest: Add bazel kernel platform 6.18 [Aaron Kling]
+e0b37d0 manifest: Add bazel kernel platform 6.12 [Aaron Kling]
+cda1014 manifest: Add bazel kernel platform 6.6 [Aaron Kling]
+
+* bootable/recovery
+f1d5e39d fixup! recovery: Return reboot recovery install code [Nicholas Lim]
+
+* build/make
+10a1fcb5ef fixup! core & tools: system_dlkm: add dynamic partition [Aaron Kling]
+
+* build/soong
+6bfef999a gen_build_prop: Fix forced system partition props override [Alexander Winkowski]
+f5185bb33 check_boot_jars: Add oplus package names to allowed list [pjgowtham]
+
+* device/qcom/sepolicy_vndr/legacy-um
+7eb8bec73 BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
+b6e87807f BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
+
+* frameworks/av
+b94cd284bf StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
+9e4d012394 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
+
+* frameworks/base
+9388d60f15ca SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
+c99d24b6c2a9 SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
+df9c81bab4fd SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
+18b5fd43d9e5 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
+2135eaf67c07 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
+2a27d3ab7bd2 SystemUI: keep Wi-Fi QS tile subtitle Wi-Fi-specific [Ashwin Devi Srinivasan]
+0188a89b866d Add some fwb stubs from Oplus [DennySPb]
+fd5ed54f7291 camera: Add backwards-compatible CaptureResultExtras constructor [Adithya R]
+b33ac1b387f7 core: camera2: StreamConfigurationMap: add constructor for MIUI camera [Pulkit077]
+6dc3ec4fa68e SystemUI: Implement face unlock recognition text [minaripenguin]
+813b1fda317b KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
+f2189de1e4b0 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
+2fb84e3c8919 SystemUI: Disable FaceUnlock Lockouts [minaripenguin]
+7397cd6a8384 services: Force load FaceSense providers [Pranav Vashi]
+43ae1583d23d FaceSense: Vibrate on successful authentication [Adithya R]
+9e0ce09bf3c7 FaceService: Conditionally add ParanoidSense [someone5678]
+77958552edca base: Initial SenseProvider for FaceSense service [Chris Crump]
+8151f8ffe6c1 fixup! SystemUI: Clock position customization [LuK1337]
+
+* hardware/qcom-caf/common
+f6aa020 libqti-perfd-client: Reset Power HAL on binder death [Nick Reuter]
+ac1133d libqti-perfd-client: Implement camera perf hints [Arian]
+
+* lineage/hudson
+6510f14 Regenerate device dependency mappings [LineageOS Infra]
+
+* packages/apps/Dialer
+e7de48179 Dialer: Handle unicode search results properly [Michael W]
+7257eb531 Dialer: Bolden search results properly [Michael W]
+
+* packages/apps/Launcher3
+fcfd5d7305 Enable navbar animation by default [Alexander Winkowski]
+
+* packages/apps/Settings
+52a38fbded3 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+7b4ae792548 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
+f175ae16d5c Settings: Add Face Unlock with ParanoidSense [Chris Crump]
+
+* vendor/lineage
+0b74dc77 overlay: Update DocumentsUIOverlay [Michael Bestas]
+8d900adc vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+
+====================
+     2026-05-19    
+====================
+* android
+611ced8 manifest: Add bazel kernel platform 6.18 [Aaron Kling]
+e0b37d0 manifest: Add bazel kernel platform 6.12 [Aaron Kling]
+cda1014 manifest: Add bazel kernel platform 6.6 [Aaron Kling]
+
+* bootable/recovery
+f1d5e39d fixup! recovery: Return reboot recovery install code [Nicholas Lim]
+
+* build/make
+10a1fcb5ef fixup! core & tools: system_dlkm: add dynamic partition [Aaron Kling]
+
+* lineage/hudson
+6510f14 Regenerate device dependency mappings [LineageOS Infra]
+2ae50e3 Regenerate device dependency mappings [LineageOS Infra]
+
+* packages/apps/Dialer
+e7de48179 Dialer: Handle unicode search results properly [Michael W]
+7257eb531 Dialer: Bolden search results properly [Michael W]
+
+* vendor/lineage
+610a83ba roomservice: Support including kernel snippets [LuK1337]
 
 ====================
      2026-05-18    
@@ -143,145 +149,17 @@ ee6fdb8 Updater: Fix pending reboot state not shown [pjgowtham]
 * android
 e792ac0 Remove top-level bootstrap.bash & Android.bp links [Dan Willemsen]
 
-* build/soong
-4d9832ddc gen_build_prop: Fix forced system partition props override [Alexander Winkowski]
-7aed61a8e check_boot_jars: Add oplus package names to allowed list [pjgowtham]
-
-* device/qcom/sepolicy_vndr/legacy-um
-0c3b6a092 BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
-a3958b384 BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
-
 * device/qcom/sepolicy_vndr/sm8550
 a5736627f sm8550: vendor: Allow spdaemon to find system_suspend [Nolen Johnson]
 
-* frameworks/av
-550cd7374f StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
-d24611dd7f libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
-
 * frameworks/base
-c64f9b4278e4 SystemUI: keep Wi-Fi QS tile subtitle Wi-Fi-specific [Ashwin Devi Srinivasan]
-9d33ae03e732 SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
-0dee31792459 SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
-24f0d4c46418 SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
-097cfcdf1db9 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
-0d8bae00d725 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
-e2cf3761e254 Add some fwb stubs from Oplus [DennySPb]
-53816472c214 camera: Add backwards-compatible CaptureResultExtras constructor [Adithya R]
-ce57128950d1 core: camera2: StreamConfigurationMap: add constructor for MIUI camera [Pulkit077]
-495720ac0d8b SystemUI: Implement face unlock recognition text [minaripenguin]
-684f4baa7020 KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
-f10b9bf3de69 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
-fbbf0c15a581 SystemUI: Disable FaceUnlock Lockouts [minaripenguin]
-7e425ed7e260 services: Force load FaceSense providers [Pranav Vashi]
-0ef956716592 FaceSense: Vibrate on successful authentication [Adithya R]
-b9851ad0ec45 FaceService: Conditionally add ParanoidSense [someone5678]
-ad834ecbcc99 base: Initial SenseProvider for FaceSense service [Chris Crump]
 f7107a350825 SystemUI: Match circle battery style colors with landscape icon [Michael Zh]
-
-* hardware/qcom-caf/common
-7cd535f libqti-perfd-client: Reset Power HAL on binder death [Nick Reuter]
-f775561 libqti-perfd-client: Implement camera perf hints [Arian]
 
 * lineage/hudson
 2ae50e3 Regenerate device dependency mappings [LineageOS Infra]
 
-* packages/apps/Launcher3
-50fdb4d9b5 Enable navbar animation by default [Alexander Winkowski]
-
-* packages/apps/Settings
-69407e5838f Settings: Fix custom Private DNS hostname being overwritten [armdebug]
-25aca43bbb4 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
-6c3099d21a7 Settings: Add Face Unlock with ParanoidSense [Chris Crump]
-
-* packages/apps/Updater
-ca99135 Updater: Separate project configurable resources [pjgowtham]
-4c5e82c Updater: Prevent error Lottie animation from looping [pjgowtham]
-6d1d37d Updater: Remove unused dependencies and run generatebp [pjgowtham]
-74a3baa Updater: Avoid showing ZeroStatePreference when checking updates [pjgowtham]
-6570bf3 UpdateList: Animate item visibility on expand/collapse [pjgowtham]
-c301d76 Updater: Fix crash when attempting to delete update [pjgowtham]
-271c12c Updater: Fix imported update persistence [pjgowtham]
-03279b5 Updater: Update ZeroStatePreference strings [pjgowtham]
-bb21ce2 Updater: Post-migration cleanup of UpdatesListAdapter [pjgowtham]
-581c034 Updater: Modernize UpdatesListAdapter [pjgowtham]
-3681cf1 Updater: Improve Utils.canInstall and migrate to InstallUtils [pjgowtham]
-23d2dac Updater: Create buttons layout for update item [pjgowtham]
-81089d6 Updater: Copy CollapseBar from TopIntroPreference [pjgowtham]
-4cd22cf Updater: Import and utilize new vector assets for updater [pjgowtham]
-44e5f2a Updater: Restrict duplicate link URL capture to exclude '>' [pjgowtham]
-636dda8 Updater: apply smoothSeconds() to ETA calculation [pjgowtham]
-b02eba8 Updater: Increase download chunk size to 32 KiB [pjgowtham]
-19d1007 Updater: Inline functions from Utils with single call site [pjgowtham]
-cc3daf2 Updater: Use platform FileUtils for file copies [pjgowtham]
-8ae238e Updater: Use ICU and java.time for date and ETA formatting [pjgowtham]
-4c8e471 Updater: Provide responsive wide screen split layout [pjgowtham]
-18e4da4 Updater: Open downloads page instead of copying URL [pjgowtham]
-c1ef5b9 Updater: Drop welcome and info dialogs [pjgowtham]
-61eff67 Updater: Drop material library dependency [pjgowtham]
-b12fd13 Updater: Introduce UpdatesCheck [pjgowtham]
-36afa5c Updater: Introduce DeviceInfoBanner [pjgowtham]
-aae6616 Updater: Move preferences entry and local update prefs to footer [pjgowtham]
-0ed83bb Updater: Drop LocalBroadcastManager usage and its dependency [pjgowtham]
-f4cc869 Updater: Drop no_new_updates_view [pjgowtham]
-d670cae Updater: Drop update check result toasts [pjgowtham]
-a072280 Updater: Show install statuses in the scaffold title [pjgowtham]
-cc07f10 Updater: Cleanup uncrypt files on boot completed [pjgowtham]
-62147d3 Updater: Cleanup unused functions from Utils [pjgowtham]
-ff4c710 Updater: Wire up preferences screen and migrate settings access [pjgowtham]
-c39ee4f Updater: Introduce PreferencesActivity and PreferencesScreen [pjgowtham]
-68030ea Updater: Introduce preferences/app state layer and UpdatesCheckWorker [pjgowtham]
-1467882 Updater: Drop explicit AppCompat dependency [pjgowtham]
-8198b05 Updater: Force enable expressive SPA theme [pjgowtham]
-09e8b54 Updater: Adopt platform Settings navigation scaffold [pjgowtham]
-2c2e4da Updater: Flatten activity hierarchy [pjgowtham]
-c5dc01a Updater: Introduce UpdatesRepository and UpdatesViewModel [pjgowtham]
-5ba4b05 Updater: Suppress PROVIDED_RUNTIME_TOO_LOW for NetworkUpdate [LuK1337]
-bd6bb28 Updater: Add network data source and bump minSdk to 33 [pjgowtham]
-8c768f1 Updater: Add material 3 extended icons dependency [pjgowtham]
-b333307 Updater: Add datastore dependency [pjgowtham]
-98c3ad7 Updater: Add Ktor dependencies and add serialize plugin [pjgowtham]
-bfb774e Updater: Add Kotlin dependency for livedata [pjgowtham]
-34fafbd Updater: Add kotlin dependency for WorkManager [pjgowtham]
-89efa15 Updater: Clear notification actions on download completion [pjgowtham]
-7f4faac Updater: Centralize notifications into NotificationHelper [pjgowtham]
-2750441 Updater: Make refresh unavailable during update check [pjgowtham]
-d27d8a6 Updater: Enforce compile-time database correctness [pjgowtham]
-ddd2316 Updater: Consolidate into Kotlin data classes [pjgowtham]
-3664df9 Updater: Prefer global string resources where available [pjgowtham]
-7a75142 Updater: Move pre-install checks out of the adapter into InstallUtils [pjgowtham]
-fcf2cf5 Updater: Introduce BatteryMonitor [pjgowtham]
-291db64 Updater: Introduce NetworkMonitor [pjgowtham]
-c892808 Updater: Simplify isNetworkAvailable() in Utils [pjgowtham]
-8a468ad Updater: Make download & resume buttons network-aware [pjgowtham]
-5a773ea Updater: Revise download and installation controls [pjgowtham]
-47b2791 Updater: Enforce single concurrent download [pjgowtham]
-7c32cb3 Updater: Use SettingsLib SettingsOpacity for disabled alpha [pjgowtham]
-3205066 Updater: Provide extraction script to pull jars and utilize them for previews [pjgowtham]
-7e7d3c6 Updater: Match the display_name with Settings [pjgowtham]
-62f835c Updater: Bump compile sdk to 36 [pjgowtham]
-79d5186 Updater: Add compose dependencies and run generatebp [pjgowtham]
-9056d30 Updater: Include Settings Provider Activity - Privileged [pjgowtham]
-9ecc6f7 Updater: Suppress known-safe R8 duplicate warnings [pjgowtham]
-62d8691 Updater: Optimize and shrink resources [Luca Stefani]
-07bcfee Updater: Remove stale proguard rule [pjgowtham]
-de922cb Updater: Remove unused android-library plugin [pjgowtham]
-30d13dd Updater: Update library versions from AOSP prebuilts and public stable [pjgowtham]
-3d8b65c Updater: Update generatebp to v1.31 [pjgowtham]
-2ca7681 Updater: Update Gradle wrapper and AGP [pjgowtham]
-a5e3b2e Updater: Migrate generatebp to plugin declaration [pjgowtham]
-9b4a39e Updater: Migrate to version catalog [pjgowtham]
-262997a Updater: Display android security patch in default locale [pjgowtham]
-e19ac8e Updater: Replace BuildInfoUtils and extend SettingsLib DeviceInfoUtils [pjgowtham]
-a4c4b88 Updater: Introduce Kotlin [pjgowtham]
-135ccc5 Updater: Remove redundant metered network warning checkbox [pjgowtham]
-70413e3 Updater: Remove URL Copied toast message [pjgowtham]
-ee6fdb8 Updater: Fix pending reboot state not shown [pjgowtham]
-81c56fa Updater: Remove config_hideRecoveryUpdate and "Update recovery" on AB [pjgowtham]
-79945fe Updater: Fix duplicated and truncated date for local updates [pjgowtham]
-
 * vendor/lineage
-94cd9180 overlay: Update DocumentsUIOverlay [Michael Bestas]
-400cd647 vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+610a83ba roomservice: Support including kernel snippets [LuK1337]
 
 ====================
      2026-05-17    
@@ -622,40 +500,4 @@ f48e03f Align t/android-5.4 with t/android-5.10 [Michael Bestas]
 * lineage/wiki
 e8226f82 wiki: Update Xperia bootloader unlock domain [LuK1337]
 6fd44cae wiki: add Android 15 as supported firmware version to a73xq [Simon1511]
-
-====================
-     2026-05-07    
-====================
-* kernel/configs
-a609a86 t/android-5.4: Bump min LTS version [Michael Bestas]
-f48e03f Align t/android-5.4 with t/android-5.10 [Michael Bestas]
-38775d3 Copy s/android-5.4 to t/android-5.4 [Michael Bestas]
-323aad2 Align t/android-4.19 with t/android-5.10 [Thomas Turner]
-6165685 Copy s/android-4.19 to t/android-4.19 [Thomas Turner]
-
-* lineage/wiki
-6fd44cae wiki: add Android 15 as supported firmware version to a73xq [Simon1511]
-
-* vendor/lineage
-6d7745d9 overlay: Enable glanceable hub toggle [AdarshGrewal]
-87c7a588 overlay: Enable glance hub on mobiles too [AdarshGrewal]
-
-====================
-     2026-05-06    
-====================
-* device/qcom/sepolicy_vndr/sm8650
-c557f5a66 qva: Label AOSP NXP authsecret HAL [AdarshGrewal]
-
-* device/qcom/sepolicy_vndr/sm8750
-a3c24fcf1 qva: Label AOSP NXP authsecret HAL [AdarshGrewal]
-
-* kernel/configs
-6165685 Copy s/android-4.19 to t/android-4.19 [Thomas Turner]
-
-* packages/modules/Permission
-ed81d04271 PermissionController: Add missing permission groups [Pranav Vashi]
-
-* vendor/lineage
-6d7745d9 overlay: Enable glanceable hub toggle [AdarshGrewal]
-87c7a588 overlay: Enable glance hub on mobiles too [AdarshGrewal]
 
