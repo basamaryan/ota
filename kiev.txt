@@ -1,53 +1,194 @@
 ====================
-     2026-05-21    
+     2026-05-27    
 ====================
 * build/soong
-6bfef999a gen_build_prop: Fix forced system partition props override [Alexander Winkowski]
-f5185bb33 check_boot_jars: Add oplus package names to allowed list [pjgowtham]
+25698072c gen_build_prop: Fix forced system partition props override [Alexander Winkowski]
+3845a6bde check_boot_jars: Add oplus package names to allowed list [pjgowtham]
 
 * device/qcom/sepolicy_vndr/legacy-um
-7eb8bec73 BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
-b6e87807f BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
+be024ba0c BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
+9bbe975d5 BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
 
 * frameworks/av
-b94cd284bf StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
-9e4d012394 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
+057151879f StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
+12aaa71ba4 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
 
 * frameworks/base
-9388d60f15ca SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
-c99d24b6c2a9 SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
-df9c81bab4fd SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
-18b5fd43d9e5 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
-2135eaf67c07 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
-2a27d3ab7bd2 SystemUI: keep Wi-Fi QS tile subtitle Wi-Fi-specific [Ashwin Devi Srinivasan]
-0188a89b866d Add some fwb stubs from Oplus [DennySPb]
-fd5ed54f7291 camera: Add backwards-compatible CaptureResultExtras constructor [Adithya R]
-b33ac1b387f7 core: camera2: StreamConfigurationMap: add constructor for MIUI camera [Pulkit077]
-6dc3ec4fa68e SystemUI: Implement face unlock recognition text [minaripenguin]
-813b1fda317b KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
-f2189de1e4b0 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
-2fb84e3c8919 SystemUI: Disable FaceUnlock Lockouts [minaripenguin]
-7397cd6a8384 services: Force load FaceSense providers [Pranav Vashi]
-43ae1583d23d FaceSense: Vibrate on successful authentication [Adithya R]
-9e0ce09bf3c7 FaceService: Conditionally add ParanoidSense [someone5678]
-77958552edca base: Initial SenseProvider for FaceSense service [Chris Crump]
-8151f8ffe6c1 fixup! SystemUI: Clock position customization [LuK1337]
+5e8f0926dedb SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
+7572dc1812ba SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
+e351729d9436 SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
+d90e73c2ece1 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
+13c8dd2896a3 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
+f767e2dbdb05 SystemUI: keep Wi-Fi QS tile subtitle Wi-Fi-specific [Ashwin Devi Srinivasan]
+1ebc300f6864 Add some fwb stubs from Oplus [DennySPb]
+69dbac134021 camera: Add backwards-compatible CaptureResultExtras constructor [Adithya R]
+1f0f23cee4f1 core: camera2: StreamConfigurationMap: add constructor for MIUI camera [Pulkit077]
+20b5054b330d SystemUI: Implement face unlock recognition text [minaripenguin]
+d50fdc2c2a8f KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
+570ee6b58ad7 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
+7f4c55d963e8 SystemUI: Disable FaceUnlock Lockouts [minaripenguin]
+03e22476b4cd services: Force load FaceSense providers [Pranav Vashi]
+4c453523d95b FaceSense: Vibrate on successful authentication [Adithya R]
+43e9624fc0f9 FaceService: Conditionally add ParanoidSense [someone5678]
+b5578eb4c4c0 base: Initial SenseProvider for FaceSense service [Chris Crump]
 
 * hardware/qcom-caf/common
-f6aa020 libqti-perfd-client: Reset Power HAL on binder death [Nick Reuter]
-ac1133d libqti-perfd-client: Implement camera perf hints [Arian]
+dea0908 libqti-perfd-client: Reset Power HAL on binder death [Nick Reuter]
+3e1a6f9 libqti-perfd-client: Implement camera perf hints [Arian]
 
 * packages/apps/Launcher3
-fcfd5d7305 Enable navbar animation by default [Alexander Winkowski]
+f7b69dc72b Enable navbar animation by default [Alexander Winkowski]
 
 * packages/apps/Settings
-52a38fbded3 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
-7b4ae792548 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
-f175ae16d5c Settings: Add Face Unlock with ParanoidSense [Chris Crump]
+a008446ed34 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+9180103e8d4 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
+59f6ed95547 Settings: Add Face Unlock with ParanoidSense [Chris Crump]
 
 * vendor/lineage
-0b74dc77 overlay: Update DocumentsUIOverlay [Michael Bestas]
-8d900adc vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+746ea79a overlay: Update DocumentsUIOverlay [Michael Bestas]
+08c62f30 vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+
+====================
+     2026-05-26    
+====================
+* build/soong
+25698072c gen_build_prop: Fix forced system partition props override [Alexander Winkowski]
+3845a6bde check_boot_jars: Add oplus package names to allowed list [pjgowtham]
+
+* device/qcom/sepolicy_vndr/legacy-um
+be024ba0c BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
+9bbe975d5 BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
+
+* frameworks/av
+057151879f StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
+12aaa71ba4 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
+
+* frameworks/base
+5e8f0926dedb SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
+7572dc1812ba SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
+e351729d9436 SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
+d90e73c2ece1 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
+13c8dd2896a3 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
+f767e2dbdb05 SystemUI: keep Wi-Fi QS tile subtitle Wi-Fi-specific [Ashwin Devi Srinivasan]
+1ebc300f6864 Add some fwb stubs from Oplus [DennySPb]
+69dbac134021 camera: Add backwards-compatible CaptureResultExtras constructor [Adithya R]
+1f0f23cee4f1 core: camera2: StreamConfigurationMap: add constructor for MIUI camera [Pulkit077]
+20b5054b330d SystemUI: Implement face unlock recognition text [minaripenguin]
+d50fdc2c2a8f KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
+570ee6b58ad7 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
+7f4c55d963e8 SystemUI: Disable FaceUnlock Lockouts [minaripenguin]
+03e22476b4cd services: Force load FaceSense providers [Pranav Vashi]
+4c453523d95b FaceSense: Vibrate on successful authentication [Adithya R]
+43e9624fc0f9 FaceService: Conditionally add ParanoidSense [someone5678]
+b5578eb4c4c0 base: Initial SenseProvider for FaceSense service [Chris Crump]
+
+* hardware/qcom-caf/common
+dea0908 libqti-perfd-client: Reset Power HAL on binder death [Nick Reuter]
+3e1a6f9 libqti-perfd-client: Implement camera perf hints [Arian]
+
+* lineage/hudson
+53463f5 Zinwa Q25 Basic never shipped [Nolen Johnson]
+120def3 blackberry revival 2026 [Nolen Johnson]
+
+* lineage/wiki
+86edf790 devices: Q25: Q25 basic never shipped [Nolen Johnson]
+95da5074 Q25: Simplify install instructions [Nolen Johnson]
+076b8b36 devices: Add Zinwa Q25 / Q25 Pro [Nolen Johnson]
+
+* packages/apps/Launcher3
+f7b69dc72b Enable navbar animation by default [Alexander Winkowski]
+
+* packages/apps/Settings
+a008446ed34 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+9180103e8d4 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
+59f6ed95547 Settings: Add Face Unlock with ParanoidSense [Chris Crump]
+
+* vendor/lineage
+746ea79a overlay: Update DocumentsUIOverlay [Michael Bestas]
+08c62f30 vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+
+====================
+     2026-05-25    
+====================
+* lineage/crowdin
+12cc9a8 crowdin: Normalize Joey's name everywhere [Tim Schumacher]
+b924043 crowdin: Adjust generate_wiki_list() output to match lineage/wiki [LuK1337]
+
+* lineage/hudson
+53463f5 Zinwa Q25 Basic never shipped [Nolen Johnson]
+120def3 blackberry revival 2026 [Nolen Johnson]
+9db6306 can't kill the almost fully FOSS phone(s) [Nolen Johnson]
+
+* lineage/wiki
+86edf790 devices: Q25: Q25 basic never shipped [Nolen Johnson]
+95da5074 Q25: Simplify install instructions [Nolen Johnson]
+076b8b36 devices: Add Zinwa Q25 / Q25 Pro [Nolen Johnson]
+51f9b039 wiki: Normalize Joey's name everywhere [Tim Schumacher]
+ee6dfde9 wiki: Add myself to infrastructure managers [LuK1337]
+2720b8bf wiki: Regenerate proofreaders [LuK1337]
+140cc9c6 devices: Promote troika/kane to 23.2 [Nolen Johnson]
+29b4e193 wiki: Fix device filter overflow on mobile [Nicholas Lim]
+8097ed24 wiki: bugsreporting: Link ETA glossary [Michael W]
+3693be10 wiki: glossary: Add ETA [Michael W]
+dd77df84 wiki: bugreporting: Clarify more things [Michael W]
+
+====================
+     2026-05-24    
+====================
+* lineage/crowdin
+12cc9a8 crowdin: Normalize Joey's name everywhere [Tim Schumacher]
+b924043 crowdin: Adjust generate_wiki_list() output to match lineage/wiki [LuK1337]
+
+* lineage/hudson
+9db6306 can't kill the almost fully FOSS phone(s) [Nolen Johnson]
+dca7888 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+51f9b039 wiki: Normalize Joey's name everywhere [Tim Schumacher]
+ee6dfde9 wiki: Add myself to infrastructure managers [LuK1337]
+2720b8bf wiki: Regenerate proofreaders [LuK1337]
+140cc9c6 devices: Promote troika/kane to 23.2 [Nolen Johnson]
+29b4e193 wiki: Fix device filter overflow on mobile [Nicholas Lim]
+8097ed24 wiki: bugsreporting: Link ETA glossary [Michael W]
+3693be10 wiki: glossary: Add ETA [Michael W]
+dd77df84 wiki: bugreporting: Clarify more things [Michael W]
+f2ab2ba9 wiki: fastboot_path: Add a missing period [Tuan Anh]
+
+* packages/apps/Aperture
+ddd313e Aperture: De Morgan never fails [Luca Stefani]
+
+====================
+     2026-05-23    
+====================
+* lineage/hudson
+dca7888 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+f2ab2ba9 wiki: fastboot_path: Add a missing period [Tuan Anh]
+
+* packages/apps/Aperture
+ddd313e Aperture: De Morgan never fails [Luca Stefani]
+
+====================
+     2026-05-22    
+====================
+* lineage-sdk
+8973ea94 sdk: fix javadoc warnings [Alexander Martinz]
+
+* system/core
+e99d3d82b libsnapshot: Hide /metadata/ota open fail in recovery [LuK1337]
+
+====================
+     2026-05-21    
+====================
+* frameworks/base
+8151f8ffe6c1 fixup! SystemUI: Clock position customization [LuK1337]
+
+* lineage-sdk
+8973ea94 sdk: fix javadoc warnings [Alexander Martinz]
+
+* system/core
+e99d3d82b libsnapshot: Hide /metadata/ota open fail in recovery [LuK1337]
 
 ====================
      2026-05-20    
@@ -63,41 +204,8 @@ f1d5e39d fixup! recovery: Return reboot recovery install code [Nicholas Lim]
 * build/make
 10a1fcb5ef fixup! core & tools: system_dlkm: add dynamic partition [Aaron Kling]
 
-* build/soong
-6bfef999a gen_build_prop: Fix forced system partition props override [Alexander Winkowski]
-f5185bb33 check_boot_jars: Add oplus package names to allowed list [pjgowtham]
-
-* device/qcom/sepolicy_vndr/legacy-um
-7eb8bec73 BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
-b6e87807f BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
-
-* frameworks/av
-b94cd284bf StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
-9e4d012394 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
-
 * frameworks/base
-9388d60f15ca SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
-c99d24b6c2a9 SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
-df9c81bab4fd SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
-18b5fd43d9e5 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
-2135eaf67c07 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
-2a27d3ab7bd2 SystemUI: keep Wi-Fi QS tile subtitle Wi-Fi-specific [Ashwin Devi Srinivasan]
-0188a89b866d Add some fwb stubs from Oplus [DennySPb]
-fd5ed54f7291 camera: Add backwards-compatible CaptureResultExtras constructor [Adithya R]
-b33ac1b387f7 core: camera2: StreamConfigurationMap: add constructor for MIUI camera [Pulkit077]
-6dc3ec4fa68e SystemUI: Implement face unlock recognition text [minaripenguin]
-813b1fda317b KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
-f2189de1e4b0 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
-2fb84e3c8919 SystemUI: Disable FaceUnlock Lockouts [minaripenguin]
-7397cd6a8384 services: Force load FaceSense providers [Pranav Vashi]
-43ae1583d23d FaceSense: Vibrate on successful authentication [Adithya R]
-9e0ce09bf3c7 FaceService: Conditionally add ParanoidSense [someone5678]
-77958552edca base: Initial SenseProvider for FaceSense service [Chris Crump]
 8151f8ffe6c1 fixup! SystemUI: Clock position customization [LuK1337]
-
-* hardware/qcom-caf/common
-f6aa020 libqti-perfd-client: Reset Power HAL on binder death [Nick Reuter]
-ac1133d libqti-perfd-client: Implement camera perf hints [Arian]
 
 * lineage/hudson
 6510f14 Regenerate device dependency mappings [LineageOS Infra]
@@ -105,18 +213,6 @@ ac1133d libqti-perfd-client: Implement camera perf hints [Arian]
 * packages/apps/Dialer
 e7de48179 Dialer: Handle unicode search results properly [Michael W]
 7257eb531 Dialer: Bolden search results properly [Michael W]
-
-* packages/apps/Launcher3
-fcfd5d7305 Enable navbar animation by default [Alexander Winkowski]
-
-* packages/apps/Settings
-52a38fbded3 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
-7b4ae792548 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
-f175ae16d5c Settings: Add Face Unlock with ParanoidSense [Chris Crump]
-
-* vendor/lineage
-0b74dc77 overlay: Update DocumentsUIOverlay [Michael Bestas]
-8d900adc vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
 
 ====================
      2026-05-19    
@@ -173,6 +269,13 @@ a5736627f sm8550: vendor: Allow spdaemon to find system_suspend [Nolen Johnson]
 * frameworks/base
 f7107a350825 SystemUI: Match circle battery style colors with landscape icon [Michael Zh]
 
+* packages/apps/Gallery2
+73803da5c Re-write the watermark-not-available message, move to string table [наб]
+
+* packages/apps/Glimpse
+3246358 Ask for unlock if trash or edit action invoked from lock screen [Torsten Grote]
+5a54287 Show share button when device is locked [Torsten Grote]
+
 ====================
      2026-05-16    
 ====================
@@ -218,7 +321,12 @@ f3f8f3a Automatic translation import [LineageOS Infra]
 * packages/apps/FlipFlap
 2ad86a3 Automatic translation import [LineageOS Infra]
 
+* packages/apps/Gallery2
+73803da5c Re-write the watermark-not-available message, move to string table [наб]
+
 * packages/apps/Glimpse
+3246358 Ask for unlock if trash or edit action invoked from lock screen [Torsten Grote]
+5a54287 Show share button when device is locked [Torsten Grote]
 6823ba0 Automatic translation import [LineageOS Infra]
 
 * packages/apps/Jelly
@@ -400,104 +508,4 @@ fd81c5e8 Run `pre-commit run --all` [LuK1337]
 07b883ef Setup pre-commit [LuK1337]
 33fdf544 roomservice: Address ruff's "E722 Do not use bare `except`" warnings [LuK1337]
 11b051c3 roomservice: ruff format [Michael Bestas]
-
-====================
-     2026-05-13    
-====================
-* frameworks/opt/telephony
-21e2e9fc3c EuiccCardController: Avoid NPE for legacy euicc devices [kailua]
-
-* lineage/scripts
-12aa796 lineage-priv-template: Add AVB_CUSTOM_*, WITH_AVB support [LuK1337]
-
-* lineage/wiki
-96dc051d wiki: Fix lancelot SoC [LuK1337]
-41f2581b wiki: Drop "MTXXXX" from Mediatek SoC names [LuK1337]
-
-* packages/modules/Connectivity
-c9f3e77952 ConnectivityService: Disable "Close QUIC connection" feature [Michael Bestas]
-
-====================
-     2026-05-12    
-====================
-* lineage/wiki
-96dc051d wiki: Fix lancelot SoC [LuK1337]
-41f2581b wiki: Drop "MTXXXX" from Mediatek SoC names [LuK1337]
-
-* packages/apps/DeskClock
-23107f7f5 DeskClock: Fix bottom navigation label clipping in landscape [cynagenautes]
-
-* vendor/lineage
-ea570156 kernel: Support having kernel platform in the main repo manifest [Aaron Kling]
-a5588130 generated_kernel_includes: Track kernel platform path change [Aaron Kling]
-a67469aa generated_kernel_includes: Fail immediately on errors [Aaron Kling]
-
-====================
-     2026-05-11    
-====================
-* external/chromium-webview/prebuilt/arm64
-3dcd7b8 Update Chromium Webview arm64 to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-8ad28d8 Update Chromium Webview x86_64 to 148.0.7778.120 [Kevin F. Haggerty]
-
-* packages/apps/DeskClock
-23107f7f5 DeskClock: Fix bottom navigation label clipping in landscape [cynagenautes]
-
-* vendor/lineage
-ea570156 kernel: Support having kernel platform in the main repo manifest [Aaron Kling]
-a5588130 generated_kernel_includes: Track kernel platform path change [Aaron Kling]
-a67469aa generated_kernel_includes: Fail immediately on errors [Aaron Kling]
-
-====================
-     2026-05-10    
-====================
-* external/chromium-webview/prebuilt/arm
-98c3cac Update Chromium Webview arm to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-3dcd7b8 Update Chromium Webview arm64 to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-11df557 Update Chromium Webview x86 to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-8ad28d8 Update Chromium Webview x86_64 to 148.0.7778.120 [Kevin F. Haggerty]
-
-====================
-     2026-05-09    
-====================
-* external/chromium-webview/patches
-6594ed2 Update Chromium Webview to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm
-98c3cac Update Chromium Webview arm to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-11df557 Update Chromium Webview x86 to 148.0.7778.120 [Kevin F. Haggerty]
-
-* lineage/scripts
-92f3074 build-webview: Update default webview to 148.0.7778.120 [Kevin F. Haggerty]
-
-* lineage/wiki
-e8226f82 wiki: Update Xperia bootloader unlock domain [LuK1337]
-
-====================
-     2026-05-08    
-====================
-* external/chromium-webview/patches
-6594ed2 Update Chromium Webview to 148.0.7778.120 [Kevin F. Haggerty]
-
-* kernel/configs
-a609a86 t/android-5.4: Bump min LTS version [Michael Bestas]
-f48e03f Align t/android-5.4 with t/android-5.10 [Michael Bestas]
-38775d3 Copy s/android-5.4 to t/android-5.4 [Michael Bestas]
-323aad2 Align t/android-4.19 with t/android-5.10 [Thomas Turner]
-
-* lineage/scripts
-92f3074 build-webview: Update default webview to 148.0.7778.120 [Kevin F. Haggerty]
-
-* lineage/wiki
-e8226f82 wiki: Update Xperia bootloader unlock domain [LuK1337]
-6fd44cae wiki: add Android 15 as supported firmware version to a73xq [Simon1511]
 
