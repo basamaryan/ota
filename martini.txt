@@ -1,53 +1,659 @@
 ====================
-     2026-05-21    
+     2026-06-02    
 ====================
 * build/soong
-6bfef999a gen_build_prop: Fix forced system partition props override [Alexander Winkowski]
-f5185bb33 check_boot_jars: Add oplus package names to allowed list [pjgowtham]
+72e3d5c00 gen_build_prop: Fix forced system partition props override [Alexander Winkowski]
+5e29abf86 check_boot_jars: Add oplus package names to allowed list [pjgowtham]
 
 * device/qcom/sepolicy_vndr/legacy-um
-7eb8bec73 BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
-b6e87807f BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
+fb947bf69 BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
+d9f56d813 BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
 
 * frameworks/av
-b94cd284bf StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
-9e4d012394 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
+df2e1dbcf9 StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
+ec47185eaf libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
 
 * frameworks/base
-9388d60f15ca SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
-c99d24b6c2a9 SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
-df9c81bab4fd SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
-18b5fd43d9e5 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
-2135eaf67c07 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
-2a27d3ab7bd2 SystemUI: keep Wi-Fi QS tile subtitle Wi-Fi-specific [Ashwin Devi Srinivasan]
-0188a89b866d Add some fwb stubs from Oplus [DennySPb]
-fd5ed54f7291 camera: Add backwards-compatible CaptureResultExtras constructor [Adithya R]
-b33ac1b387f7 core: camera2: StreamConfigurationMap: add constructor for MIUI camera [Pulkit077]
-6dc3ec4fa68e SystemUI: Implement face unlock recognition text [minaripenguin]
-813b1fda317b KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
-f2189de1e4b0 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
-2fb84e3c8919 SystemUI: Disable FaceUnlock Lockouts [minaripenguin]
-7397cd6a8384 services: Force load FaceSense providers [Pranav Vashi]
-43ae1583d23d FaceSense: Vibrate on successful authentication [Adithya R]
-9e0ce09bf3c7 FaceService: Conditionally add ParanoidSense [someone5678]
-77958552edca base: Initial SenseProvider for FaceSense service [Chris Crump]
-8151f8ffe6c1 fixup! SystemUI: Clock position customization [LuK1337]
+997b8bf7bede SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
+f26e6c608326 SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
+d1c2d55d5126 SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
+099d459be98c SystemUI: Add status bar battery disable toggle [Pranav Vashi]
+70f2d861ac63 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
+182dd41add16 SystemUI: keep Wi-Fi QS tile subtitle Wi-Fi-specific [Ashwin Devi Srinivasan]
+a90cb5b83a55 Add some fwb stubs from Oplus [DennySPb]
+8b071052a9c1 camera: Add backwards-compatible CaptureResultExtras constructor [Adithya R]
+160e5c0d911c core: camera2: StreamConfigurationMap: add constructor for MIUI camera [Pulkit077]
+d904c9cd603f SystemUI: Implement face unlock recognition text [minaripenguin]
+c47c64aeb59e KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
+b5011cd394c1 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
+197e251b59eb SystemUI: Disable FaceUnlock Lockouts [minaripenguin]
+b093dd3232a1 services: Force load FaceSense providers [Pranav Vashi]
+ffc12cfd27af FaceSense: Vibrate on successful authentication [Adithya R]
+88436ed5a52f FaceService: Conditionally add ParanoidSense [someone5678]
+4e185b6fc1f3 base: Initial SenseProvider for FaceSense service [Chris Crump]
+b81fa0a3980f Merge commit 'refs/changes/62/486962/6' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+823bd676f4d8 Merge commit 'refs/changes/61/486961/6' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+a1b872bbcac1 Merge commit 'refs/changes/60/486960/6' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+2986d6660cec Merge commit 'refs/changes/59/486959/6' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+9022a497826b Merge commit 'refs/changes/58/486958/6' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+6c06324890de Merge commit 'refs/changes/57/486957/6' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+2dac09d309fc Merge commit 'refs/changes/56/486956/6' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+c27a736e9b87 Merge commit 'refs/changes/55/486955/6' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+71df20457d99 Merge commit 'refs/changes/54/486954/6' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+fb8ea22386c2 Merge commit 'refs/changes/53/486953/6' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+cfef77a87dbd Merge commit 'refs/changes/52/486952/6' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+3127871db5a2 Merge commit 'refs/changes/71/488371/2' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+c9cc79f03ccd Merge commit 'refs/changes/51/486951/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+fe3f92ca2b26 Merge commit 'refs/changes/50/486950/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+24d827718260 Merge commit 'refs/changes/49/486949/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+ef01ec6cedbc Merge commit 'refs/changes/48/486948/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+744778dd7ab6 Merge commit 'refs/changes/47/486947/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+980bf0733a3e Merge commit 'refs/changes/45/486945/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+d9b9990578dd Merge commit 'refs/changes/46/486946/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+54006e429559 Merge commit 'refs/changes/44/486944/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+6e95fd05e61e Merge commit 'refs/changes/43/486943/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+9101686e087a Merge commit 'refs/changes/42/486942/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+a5233d25c166 Merge commit 'refs/changes/41/486941/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+c17abacc4fa3 Merge commit 'refs/changes/40/486940/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+530ad8915636 Merge commit 'refs/changes/39/486939/4' of https://github.com/LineageOS/android_frameworks_base into HEAD [basamaryan]
+1e3091ae449d core: allow low_ram devices to enable multiwindow [Thomas Makin]
+50f347fed845 DO NOT MERGE: Enforce suspend restrictions in startOp and noteOp paths [Evan Severson]
+e348e9a289c5 Enforce package name length limits in PackagePolicy setters. [Pavel Grafov]
+e3cb7ee46cb2 Skip serialization of huge vibration effects in NotificationChannel [Matías Hernández]
+3fb9fd022f1c Block adding toast windows to non-empty tokens. [Jeff DeCew]
+5bcf7b701ff1 Validate package ID range in LoadedArsc [Yurii Zubrytskyi]
+68e39c547f93 Check caller for clearDeveloperVerificationExperiment [Song Chun Fan]
+a73da4544755 Check caller for addDeveloperVerificationExperiment [Song Chun Fan]
+76bc69925680 Compare period character as well during wildcard matching [Sanjana Sunil]
+2c6d59c32965 Map animation delegate to the transition instead of plumbing it [Evan Rosky]
+cf3eab0dba11 Prevent configAtEnd dispatching to finishing AR [Hongwei Wang]
+0f5bef686416 Validate max proxy string length for proxySpec and exclusionList using PolicySizeVerifier. [Gabriel-Radu Ilca]
+21b13b5a8e5f RESTRICT AUTOMERGE Require to be bound with non-pinned visible window [Achim Thesmann]
+3ea1a917c0a4 Make sure we properly validate the XML attr size [Yurii Zubrytskyi]
+20c048d3a33b On face auth success, verify the face auth'd user is the current user [Beverly]
+0809b70ecc41 Add StorageManager.convert() check earlier in the stack so the command fails early instead of crashing system later. [Anagha Sasikumar]
+85ee95929483 Quick fix for WCLS security vulnerability. [Yutong Zhang]
+ba7aa21e9202 Validate ResStringPool_header.styleCount [Mark Punzalan]
+044a21eef5d5 Don't allow hiding critical apps. [Pavel Grafov]
+b8522db766bf Allow default per-thread and per-process OnHeaderDecodedListeners [Leah Rumancik]
+69b4a8afbcb5 Remove multi user flag reference [Reema Bajwa]
+d6127974262b Checking userId in com.android.server.pm.ComputerEngine#resolveContentProvider [h00013079]
+49d8705dcefb Hide non system overlay window immediately if it is animating exit [Riddle Hsu]
+05bc9a330089 Apply visibility policy to window state surface [Riddle Hsu]
+c8a6b7653d39 Start a new transition to ignore split-enter from a malformed transition [Winson Chung]
+fb6e3ddcdd5d Fix Tapjacking caused by touch slipping out of letterbox [Nan Wu]
+d587354d0d3b Fix bugs caused on package update events [Reema Bajwa]
+a39ea979510d Catch uncaught IllegalStateException [Aaron Okano]
+32e2fa2ea29a Add Central Kurdish locale [LuK1337]
+af32af1f296d Automatic translation import [LineageOS Infra]
 
 * hardware/qcom-caf/common
-f6aa020 libqti-perfd-client: Reset Power HAL on binder death [Nick Reuter]
-ac1133d libqti-perfd-client: Implement camera perf hints [Arian]
+8cc80bd libqti-perfd-client: Reset Power HAL on binder death [Nick Reuter]
+cd89562 libqti-perfd-client: Implement camera perf hints [Arian]
+
+* lineage-sdk
+4aa2cfd0 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Aperture
+307799a Automatic translation import [LineageOS Infra]
+
+* packages/apps/AudioFX
+2564d4c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Backgrounds
+b087d2d Automatic translation import [LineageOS Infra]
+
+* packages/apps/Camelot
+b468abb Automatic translation import [LineageOS Infra]
+
+* packages/apps/Catapult
+2f633d2 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Contacts
+02bbe49b4 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+04a88fc02 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+9fb821f3c Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+3d254881c Merge commit 'refs/changes/64/486964/2' of https://github.com/LineageOS/android_packages_apps_DocumentsUI into HEAD [basamaryan]
+1ca4b850a Automatic translation import [LineageOS Infra]
+
+* packages/apps/FMRadio
+0fc2342 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+cd84b90 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+de94c15 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+3e22802 Automatic translation import [LineageOS Infra]
 
 * packages/apps/Launcher3
-fcfd5d7305 Enable navbar animation by default [Alexander Winkowski]
+348c684af4 Enable navbar animation by default [Alexander Winkowski]
+168aa7e4f1 Merge commit 'refs/changes/66/486966/2' of https://github.com/LineageOS/android_packages_apps_Launcher3 into HEAD [basamaryan]
+73d4bfab15 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+1535777 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Messaging
+039afc3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Profiles
+ed322aa Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+c1cd6cd Automatic translation import [LineageOS Infra]
 
 * packages/apps/Settings
-52a38fbded3 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
-7b4ae792548 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
-f175ae16d5c Settings: Add Face Unlock with ParanoidSense [Chris Crump]
+e62564540c1 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+636a782d679 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
+40dea87be38 Settings: Add Face Unlock with ParanoidSense [Chris Crump]
+a6d46225a12 Merge commit 'refs/changes/73/486973/3' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+36e11234e78 Merge commit 'refs/changes/72/486972/3' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+f29769bdd0a Merge commit 'refs/changes/71/486971/3' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+9e0f266238a Merge commit 'refs/changes/70/486970/3' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+5e8f1d84218 Merge commit 'refs/changes/69/486969/3' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+7b818893e28 Merge commit 'refs/changes/67/486967/3' of https://github.com/LineageOS/android_packages_apps_Settings into HEAD [basamaryan]
+31235c40cb6 Update enable ANGLE warning message [Yuxin Hu]
+2f5a3de79ec Fix app label injection in ForgetDeviceDialogFragment [Evan Chen]
+dc11fdb55d2 Fix vulnerability in RequestManageCredentials [Iustin Ventaniuc]
+b31c30e984e Add null check to caller permission check in DisableSupervisionActivity. [Yvonne Jiang]
+94b4fbe7ae9 Fix default payment app selection [James Eidson]
+c21864c9476 Import translations. DO NOT MERGE ANYWHERE [Bill Yi]
+2b697a49299 Add a warning asking user to backup device data [Yuxin Hu]
+41108e6c8a9 nfc: Do not let guest user disable secure nfc [George Chang]
+38037c8cb2e Allow multi-user to control secure nfc [Kyle Hsiao]
+854bec6cc24 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+bef9531 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+ada946e8 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+5abbd21 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+bce2d1a Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+cdc9be1e5 Automatic translation import [LineageOS Infra]
+
+* packages/modules/Bluetooth
+bb543aaca6 Merge commit 'refs/changes/77/486977/2' of https://github.com/LineageOS/android_packages_modules_Bluetooth into HEAD [basamaryan]
+dc5a4cac62 Merge commit 'refs/changes/76/486976/2' of https://github.com/LineageOS/android_packages_modules_Bluetooth into HEAD [basamaryan]
+fc67e51572 Merge commit 'refs/changes/75/486975/2' of https://github.com/LineageOS/android_packages_modules_Bluetooth into HEAD [basamaryan]
+88b3813ce5 Merge commit 'refs/changes/74/486974/2' of https://github.com/LineageOS/android_packages_modules_Bluetooth into HEAD [basamaryan]
+
+* packages/modules/Nfc
+393ad5d17 Fix permanent BAL grant via onServiceConnected race [Kyle Hsiao]
+6df86d709 Add onNullBinding and onBindingDied implemention to HostApduService [Jack Yu]
+05d6cbea7 Load the Secure NFC setting when the current user is changed upon query [Kyle Hsiao]
+5a57c95fe nfc: Unbind from previously set foreground pref service [Roshan Pius]
+76ce13eac NFC Security Vulnerability in Multi-User Mode [Kyle Hsiao]
+71324ae21 nfc: Modify Secure NFC restoration to use the corresponding userId [Kyle Hsiao]
+
+* packages/providers/DownloadProvider
+6d2a304d Automatic translation import [LineageOS Infra]
+
+* packages/providers/MediaProvider
+bc818d702 Fix select button in preview for single-select [Aditya Singh]
+1affeb0ef Revert^2 "Fix: add confirmation step in single select mode." [Aditya Singh]
+
+* packages/resources/devicesettings
+bce690b Automatic translation import [LineageOS Infra]
+
+* packages/services/Mms
+9e14dd1 Automatic translation import [LineageOS Infra]
+
+* packages/services/Telephony
+95e95093d Disallow shell to change CarrierRestrictionRules [Keith Mok]
+
+* vendor/crowdin
+9976f71 Automatic translation import [LineageOS Infra]
 
 * vendor/lineage
-0b74dc77 overlay: Update DocumentsUIOverlay [Michael Bestas]
-8d900adc vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+d8872a11 overlay: Update DocumentsUIOverlay [Michael Bestas]
+359ee04a vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
+0f736ac7 release: Bump Security String to 2026-06-01 [Nolen Johnson]
+b07f39bb config: CUSTOM_LOCALES: Add Central Kurdish [LuK1337]
+
+* vendor/qcom/opensource/commonsys/fm
+fdbc91f Automatic translation import [LineageOS Infra]
+
+====================
+     2026-06-01    
+====================
+* frameworks/base
+50f347fed845 DO NOT MERGE: Enforce suspend restrictions in startOp and noteOp paths [Evan Severson]
+e348e9a289c5 Enforce package name length limits in PackagePolicy setters. [Pavel Grafov]
+e3cb7ee46cb2 Skip serialization of huge vibration effects in NotificationChannel [Matías Hernández]
+3fb9fd022f1c Block adding toast windows to non-empty tokens. [Jeff DeCew]
+5bcf7b701ff1 Validate package ID range in LoadedArsc [Yurii Zubrytskyi]
+68e39c547f93 Check caller for clearDeveloperVerificationExperiment [Song Chun Fan]
+a73da4544755 Check caller for addDeveloperVerificationExperiment [Song Chun Fan]
+76bc69925680 Compare period character as well during wildcard matching [Sanjana Sunil]
+2c6d59c32965 Map animation delegate to the transition instead of plumbing it [Evan Rosky]
+cf3eab0dba11 Prevent configAtEnd dispatching to finishing AR [Hongwei Wang]
+0f5bef686416 Validate max proxy string length for proxySpec and exclusionList using PolicySizeVerifier. [Gabriel-Radu Ilca]
+21b13b5a8e5f RESTRICT AUTOMERGE Require to be bound with non-pinned visible window [Achim Thesmann]
+3ea1a917c0a4 Make sure we properly validate the XML attr size [Yurii Zubrytskyi]
+20c048d3a33b On face auth success, verify the face auth'd user is the current user [Beverly]
+0809b70ecc41 Add StorageManager.convert() check earlier in the stack so the command fails early instead of crashing system later. [Anagha Sasikumar]
+85ee95929483 Quick fix for WCLS security vulnerability. [Yutong Zhang]
+ba7aa21e9202 Validate ResStringPool_header.styleCount [Mark Punzalan]
+044a21eef5d5 Don't allow hiding critical apps. [Pavel Grafov]
+b8522db766bf Allow default per-thread and per-process OnHeaderDecodedListeners [Leah Rumancik]
+69b4a8afbcb5 Remove multi user flag reference [Reema Bajwa]
+d6127974262b Checking userId in com.android.server.pm.ComputerEngine#resolveContentProvider [h00013079]
+49d8705dcefb Hide non system overlay window immediately if it is animating exit [Riddle Hsu]
+05bc9a330089 Apply visibility policy to window state surface [Riddle Hsu]
+c8a6b7653d39 Start a new transition to ignore split-enter from a malformed transition [Winson Chung]
+fb6e3ddcdd5d Fix Tapjacking caused by touch slipping out of letterbox [Nan Wu]
+d587354d0d3b Fix bugs caused on package update events [Reema Bajwa]
+a39ea979510d Catch uncaught IllegalStateException [Aaron Okano]
+32e2fa2ea29a Add Central Kurdish locale [LuK1337]
+af32af1f296d Automatic translation import [LineageOS Infra]
+
+* lineage-sdk
+4aa2cfd0 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Aperture
+307799a Automatic translation import [LineageOS Infra]
+
+* packages/apps/AudioFX
+2564d4c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Backgrounds
+b087d2d Automatic translation import [LineageOS Infra]
+
+* packages/apps/Camelot
+b468abb Automatic translation import [LineageOS Infra]
+
+* packages/apps/Catapult
+2f633d2 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Contacts
+02bbe49b4 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+04a88fc02 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+9fb821f3c Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+1ca4b850a Automatic translation import [LineageOS Infra]
+
+* packages/apps/FMRadio
+0fc2342 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+cd84b90 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+de94c15 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+3e22802 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Launcher3
+73d4bfab15 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+1535777 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Messaging
+039afc3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Profiles
+ed322aa Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+c1cd6cd Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+31235c40cb6 Update enable ANGLE warning message [Yuxin Hu]
+2f5a3de79ec Fix app label injection in ForgetDeviceDialogFragment [Evan Chen]
+dc11fdb55d2 Fix vulnerability in RequestManageCredentials [Iustin Ventaniuc]
+b31c30e984e Add null check to caller permission check in DisableSupervisionActivity. [Yvonne Jiang]
+94b4fbe7ae9 Fix default payment app selection [James Eidson]
+c21864c9476 Import translations. DO NOT MERGE ANYWHERE [Bill Yi]
+2b697a49299 Add a warning asking user to backup device data [Yuxin Hu]
+41108e6c8a9 nfc: Do not let guest user disable secure nfc [George Chang]
+38037c8cb2e Allow multi-user to control secure nfc [Kyle Hsiao]
+854bec6cc24 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+bef9531 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+ada946e8 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+5abbd21 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+bce2d1a Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+cdc9be1e5 Automatic translation import [LineageOS Infra]
+
+* packages/modules/Nfc
+393ad5d17 Fix permanent BAL grant via onServiceConnected race [Kyle Hsiao]
+6df86d709 Add onNullBinding and onBindingDied implemention to HostApduService [Jack Yu]
+05d6cbea7 Load the Secure NFC setting when the current user is changed upon query [Kyle Hsiao]
+5a57c95fe nfc: Unbind from previously set foreground pref service [Roshan Pius]
+76ce13eac NFC Security Vulnerability in Multi-User Mode [Kyle Hsiao]
+71324ae21 nfc: Modify Secure NFC restoration to use the corresponding userId [Kyle Hsiao]
+
+* packages/providers/DownloadProvider
+6d2a304d Automatic translation import [LineageOS Infra]
+
+* packages/providers/MediaProvider
+bc818d702 Fix select button in preview for single-select [Aditya Singh]
+1affeb0ef Revert^2 "Fix: add confirmation step in single select mode." [Aditya Singh]
+
+* packages/resources/devicesettings
+bce690b Automatic translation import [LineageOS Infra]
+
+* packages/services/Mms
+9e14dd1 Automatic translation import [LineageOS Infra]
+
+* packages/services/Telephony
+95e95093d Disallow shell to change CarrierRestrictionRules [Keith Mok]
+
+* vendor/crowdin
+9976f71 Automatic translation import [LineageOS Infra]
+
+* vendor/lineage
+0f736ac7 release: Bump Security String to 2026-06-01 [Nolen Johnson]
+b07f39bb config: CUSTOM_LOCALES: Add Central Kurdish [LuK1337]
+
+* vendor/qcom/opensource/commonsys/fm
+fdbc91f Automatic translation import [LineageOS Infra]
+
+====================
+     2026-05-31    
+====================
+* frameworks/base
+71942aabb32e PhoneWindowManager: Add partial screenshot action [LuK1337]
+
+* lineage-sdk
+82216f7d sdk: Add partial screenshot action [LuK1337]
+
+* lineage/wiki
+a9afe689 wiki: 4 -> 3 [LuK1337]
+
+* packages/apps/LineageParts
+a987f42 LineageParts: Add partial screenshot action [LuK1337]
+
+====================
+     2026-05-30    
+====================
+* frameworks/base
+71942aabb32e PhoneWindowManager: Add partial screenshot action [LuK1337]
+
+* lineage-sdk
+82216f7d sdk: Add partial screenshot action [LuK1337]
+
+* lineage/hudson
+fad226d Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+b035da7 Updated to 29-May-2026 10:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+a9afe689 wiki: 4 -> 3 [LuK1337]
+0c775f5a wiki: Add wiki->gh mapping for Mi439 maintainer [LuK1337]
+f171910a wiki: Add wiki->gh mapping for evert maintainer [LuK1337]
+
+* packages/apps/LineageParts
+a987f42 LineageParts: Add partial screenshot action [LuK1337]
+
+====================
+     2026-05-29    
+====================
+* lineage/hudson
+fad226d Regenerate device dependency mappings [LineageOS Infra]
+25dd66a Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+b035da7 Updated to 29-May-2026 10:01 UTC [Tim Schumacher]
+
+* lineage/website
+64281ca www: Issue tracker is now on GitHub [LuK1337]
+
+* lineage/wiki
+0c775f5a wiki: Add wiki->gh mapping for Mi439 maintainer [LuK1337]
+f171910a wiki: Add wiki->gh mapping for evert maintainer [LuK1337]
+51283ea4 wiki: Add wiki->gh mapping for guam maintainers [LuK1337]
+4c0884a1 wiki: Migrate Android issue tracker to gitlab [LuK1337]
+c40df507 wiki: devrel-int is on github too [LuK1337]
+
+====================
+     2026-05-28    
+====================
+* lineage/hudson
+25dd66a Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/website
+64281ca www: Issue tracker is now on GitHub [LuK1337]
+
+* lineage/wiki
+51283ea4 wiki: Add wiki->gh mapping for guam maintainers [LuK1337]
+4c0884a1 wiki: Migrate Android issue tracker to gitlab [LuK1337]
+c40df507 wiki: devrel-int is on github too [LuK1337]
+
+====================
+     2026-05-27    
+====================
+* lineage/hudson
+d86b9bf it was a long race(r) to kiev, but nairo made it across the finish line [basamaryan]
+
+* lineage/wiki
+f09d532f devices: Promote moto-sm7250 to 23.2 [basamaryan]
+
+====================
+     2026-05-26    
+====================
+* lineage/hudson
+d86b9bf it was a long race(r) to kiev, but nairo made it across the finish line [basamaryan]
+53463f5 Zinwa Q25 Basic never shipped [Nolen Johnson]
+120def3 blackberry revival 2026 [Nolen Johnson]
+
+* lineage/wiki
+f09d532f devices: Promote moto-sm7250 to 23.2 [basamaryan]
+86edf790 devices: Q25: Q25 basic never shipped [Nolen Johnson]
+95da5074 Q25: Simplify install instructions [Nolen Johnson]
+076b8b36 devices: Add Zinwa Q25 / Q25 Pro [Nolen Johnson]
+
+====================
+     2026-05-25    
+====================
+* android
+a5cfe7f manifest: Track forks for 2026-06 ASB [Nolen Johnson]
+
+* build/release
+d76088e51 Select 25Q4 sqlite as 3.50.6 [Lee Shombert]
+
+* external/dng_sdk
+60de57b Update dng_sdk to 1.7.1 2471 [John Reck]
+6585981 Replace ubsan-minimal with throw [John Reck]
+
+* external/libpng
+40df6f9af Rearchitect the fix to the buffer overflow in `png_image_finish_read` [Cosmin Truta]
+6b823243b Fix a buffer overflow in `png_image_finish_read` [Cosmin Truta]
+784eb33f4 Fix a buffer overflow in `png_init_read_transformations` [Cosmin Truta]
+dcc9becae Fix a buffer overflow in `png_do_quantize` [Cosmin Truta]
+056c15163 Fix a memory leak in function `png_set_quantize`; refactor [Cosmin Truta]
+19d4b5890 Fix a heap buffer overflow in `png_write_image_8bit` [Cosmin Truta]
+
+* external/sqlite
+b205ee6 Install 25Q4 sqlite 3.50.6 [Lee Shombert]
+
+* lineage/crowdin
+12cc9a8 crowdin: Normalize Joey's name everywhere [Tim Schumacher]
+b924043 crowdin: Adjust generate_wiki_list() output to match lineage/wiki [LuK1337]
+
+* lineage/hudson
+53463f5 Zinwa Q25 Basic never shipped [Nolen Johnson]
+120def3 blackberry revival 2026 [Nolen Johnson]
+9db6306 can't kill the almost fully FOSS phone(s) [Nolen Johnson]
+
+* lineage/wiki
+86edf790 devices: Q25: Q25 basic never shipped [Nolen Johnson]
+95da5074 Q25: Simplify install instructions [Nolen Johnson]
+076b8b36 devices: Add Zinwa Q25 / Q25 Pro [Nolen Johnson]
+51f9b039 wiki: Normalize Joey's name everywhere [Tim Schumacher]
+ee6dfde9 wiki: Add myself to infrastructure managers [LuK1337]
+2720b8bf wiki: Regenerate proofreaders [LuK1337]
+140cc9c6 devices: Promote troika/kane to 23.2 [Nolen Johnson]
+29b4e193 wiki: Fix device filter overflow on mobile [Nicholas Lim]
+8097ed24 wiki: bugsreporting: Link ETA glossary [Michael W]
+3693be10 wiki: glossary: Add ETA [Michael W]
+dd77df84 wiki: bugreporting: Clarify more things [Michael W]
+
+* packages/apps/CertInstaller
+59837d4 Use loadSafeLabel to prevent UI spoofing in CertInstaller [Radu Macovei]
+
+* packages/apps/DocumentsUI
+7e05f8f78 Use signature-based trust for package name overrides [Himanshu Arora]
+
+* packages/apps/KeyChain
+ed4de13 Sanitize app label in KeyChainActivity to prevent UI injection. [Radu Macovei]
+
+* packages/apps/Launcher3
+ea8684022d Introduce LauncherProcessImageListener for downscaling images in Launcher. [Adnan Begovic]
+
+* packages/modules/Bluetooth
+57768dda31 Avoid buffer overflow [Bhakthavatsala Raghavendra]
+164dd285a2 Handle LE Secure Connections Passkey Display/Notification [Brian Delwiche]
+9cc909b5f7 sdp: Validate buffer length in sdpu_build_attrib_seq [Archie Pusaka]
+59c4ba27c3 Remove flag reboke_permission_on_unbond [Kyunglyul Hyun]
+
+* packages/providers/ContactsProvider
+59be632a Fix size check bypass for case-mismatched columns [Bhavuk Garg]
+035215fa Fix side channel attacks in CP2 [Himanshu Gupta]
+
+* packages/services/Telecomm
+82b594d2f Fix issue initiating calls from the work profile. [Tyler Gunn]
+
+====================
+     2026-05-24    
+====================
+* android
+a5cfe7f manifest: Track forks for 2026-06 ASB [Nolen Johnson]
+
+* build/release
+d76088e51 Select 25Q4 sqlite as 3.50.6 [Lee Shombert]
+
+* external/dng_sdk
+60de57b Update dng_sdk to 1.7.1 2471 [John Reck]
+6585981 Replace ubsan-minimal with throw [John Reck]
+
+* external/libpng
+40df6f9af Rearchitect the fix to the buffer overflow in `png_image_finish_read` [Cosmin Truta]
+6b823243b Fix a buffer overflow in `png_image_finish_read` [Cosmin Truta]
+784eb33f4 Fix a buffer overflow in `png_init_read_transformations` [Cosmin Truta]
+dcc9becae Fix a buffer overflow in `png_do_quantize` [Cosmin Truta]
+056c15163 Fix a memory leak in function `png_set_quantize`; refactor [Cosmin Truta]
+19d4b5890 Fix a heap buffer overflow in `png_write_image_8bit` [Cosmin Truta]
+
+* external/sqlite
+b205ee6 Install 25Q4 sqlite 3.50.6 [Lee Shombert]
+8d4404a Remove obsolete sqlite source directories [Lee Shombert]
+
+* lineage/crowdin
+12cc9a8 crowdin: Normalize Joey's name everywhere [Tim Schumacher]
+b924043 crowdin: Adjust generate_wiki_list() output to match lineage/wiki [LuK1337]
+
+* lineage/hudson
+9db6306 can't kill the almost fully FOSS phone(s) [Nolen Johnson]
+dca7888 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+51f9b039 wiki: Normalize Joey's name everywhere [Tim Schumacher]
+ee6dfde9 wiki: Add myself to infrastructure managers [LuK1337]
+2720b8bf wiki: Regenerate proofreaders [LuK1337]
+140cc9c6 devices: Promote troika/kane to 23.2 [Nolen Johnson]
+29b4e193 wiki: Fix device filter overflow on mobile [Nicholas Lim]
+8097ed24 wiki: bugsreporting: Link ETA glossary [Michael W]
+3693be10 wiki: glossary: Add ETA [Michael W]
+dd77df84 wiki: bugreporting: Clarify more things [Michael W]
+f2ab2ba9 wiki: fastboot_path: Add a missing period [Tuan Anh]
+
+* packages/apps/Aperture
+ddd313e Aperture: De Morgan never fails [Luca Stefani]
+
+* packages/apps/CertInstaller
+59837d4 Use loadSafeLabel to prevent UI spoofing in CertInstaller [Radu Macovei]
+
+* packages/apps/DocumentsUI
+7e05f8f78 Use signature-based trust for package name overrides [Himanshu Arora]
+
+* packages/apps/KeyChain
+ed4de13 Sanitize app label in KeyChainActivity to prevent UI injection. [Radu Macovei]
+
+* packages/apps/Launcher3
+ea8684022d Introduce LauncherProcessImageListener for downscaling images in Launcher. [Adnan Begovic]
+
+* packages/modules/Bluetooth
+57768dda31 Avoid buffer overflow [Bhakthavatsala Raghavendra]
+164dd285a2 Handle LE Secure Connections Passkey Display/Notification [Brian Delwiche]
+9cc909b5f7 sdp: Validate buffer length in sdpu_build_attrib_seq [Archie Pusaka]
+59c4ba27c3 Remove flag reboke_permission_on_unbond [Kyunglyul Hyun]
+
+* packages/providers/ContactsProvider
+59be632a Fix size check bypass for case-mismatched columns [Bhavuk Garg]
+035215fa Fix side channel attacks in CP2 [Himanshu Gupta]
+
+* packages/services/Telecomm
+82b594d2f Fix issue initiating calls from the work profile. [Tyler Gunn]
+
+====================
+     2026-05-23    
+====================
+* external/sqlite
+8d4404a Remove obsolete sqlite source directories [Lee Shombert]
+
+* lineage/hudson
+dca7888 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+f2ab2ba9 wiki: fastboot_path: Add a missing period [Tuan Anh]
+
+* packages/apps/Aperture
+ddd313e Aperture: De Morgan never fails [Luca Stefani]
+
+====================
+     2026-05-22    
+====================
+* lineage-sdk
+8973ea94 sdk: fix javadoc warnings [Alexander Martinz]
+
+* system/core
+e99d3d82b libsnapshot: Hide /metadata/ota open fail in recovery [LuK1337]
+
+====================
+     2026-05-21    
+====================
+* frameworks/base
+8151f8ffe6c1 fixup! SystemUI: Clock position customization [LuK1337]
+
+* lineage-sdk
+8973ea94 sdk: fix javadoc warnings [Alexander Martinz]
+
+* system/core
+e99d3d82b libsnapshot: Hide /metadata/ota open fail in recovery [LuK1337]
 
 ====================
      2026-05-20    
@@ -63,441 +669,13 @@ f1d5e39d fixup! recovery: Return reboot recovery install code [Nicholas Lim]
 * build/make
 10a1fcb5ef fixup! core & tools: system_dlkm: add dynamic partition [Aaron Kling]
 
-* build/soong
-6bfef999a gen_build_prop: Fix forced system partition props override [Alexander Winkowski]
-f5185bb33 check_boot_jars: Add oplus package names to allowed list [pjgowtham]
-
-* device/qcom/sepolicy_vndr/legacy-um
-7eb8bec73 BACKPORT: sepolicy_vndr: Provide net_admin capability for lowi-server [Manaswini Paluri]
-b6e87807f BACKPORT: sepolicy_vendor: Add net domain sepolicy rule for lowi-server [Manaswini Paluri]
-
-* frameworks/av
-b94cd284bf StagefrightRecorder: Add "set-title" parameter [cjh1249131356]
-9e4d012394 libcameraservice: Add support to set vendor tag with client package name [cjh1249131356]
-
 * frameworks/base
-9388d60f15ca SystemUI: Fix loading of brightness icons on moving slider [Pranav Vashi]
-c99d24b6c2a9 SystemUI: Hide mobile data tile when unsupported [Pranav Vashi]
-df9c81bab4fd SystemUI: Handle secondary click for mobile data tile [Pranav Vashi]
-18b5fd43d9e5 SystemUI: Add status bar battery disable toggle [Pranav Vashi]
-2135eaf67c07 SystemUI: Add repository method to observe settings change for string values [Pranav Vashi]
-2a27d3ab7bd2 SystemUI: keep Wi-Fi QS tile subtitle Wi-Fi-specific [Ashwin Devi Srinivasan]
-0188a89b866d Add some fwb stubs from Oplus [DennySPb]
-fd5ed54f7291 camera: Add backwards-compatible CaptureResultExtras constructor [Adithya R]
-b33ac1b387f7 core: camera2: StreamConfigurationMap: add constructor for MIUI camera [Pulkit077]
-6dc3ec4fa68e SystemUI: Implement face unlock recognition text [minaripenguin]
-813b1fda317b KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
-f2189de1e4b0 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
-2fb84e3c8919 SystemUI: Disable FaceUnlock Lockouts [minaripenguin]
-7397cd6a8384 services: Force load FaceSense providers [Pranav Vashi]
-43ae1583d23d FaceSense: Vibrate on successful authentication [Adithya R]
-9e0ce09bf3c7 FaceService: Conditionally add ParanoidSense [someone5678]
-77958552edca base: Initial SenseProvider for FaceSense service [Chris Crump]
 8151f8ffe6c1 fixup! SystemUI: Clock position customization [LuK1337]
 
-* hardware/qcom-caf/common
-f6aa020 libqti-perfd-client: Reset Power HAL on binder death [Nick Reuter]
-ac1133d libqti-perfd-client: Implement camera perf hints [Arian]
-
 * lineage/hudson
 6510f14 Regenerate device dependency mappings [LineageOS Infra]
 
 * packages/apps/Dialer
 e7de48179 Dialer: Handle unicode search results properly [Michael W]
 7257eb531 Dialer: Bolden search results properly [Michael W]
-
-* packages/apps/Launcher3
-fcfd5d7305 Enable navbar animation by default [Alexander Winkowski]
-
-* packages/apps/Settings
-52a38fbded3 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
-7b4ae792548 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
-f175ae16d5c Settings: Add Face Unlock with ParanoidSense [Chris Crump]
-
-* vendor/lineage
-0b74dc77 overlay: Update DocumentsUIOverlay [Michael Bestas]
-8d900adc vendor: config: Exclude AOSP audio on GMS builds [AdarshGrewal]
-
-====================
-     2026-05-19    
-====================
-* android
-611ced8 manifest: Add bazel kernel platform 6.18 [Aaron Kling]
-e0b37d0 manifest: Add bazel kernel platform 6.12 [Aaron Kling]
-cda1014 manifest: Add bazel kernel platform 6.6 [Aaron Kling]
-
-* bootable/recovery
-f1d5e39d fixup! recovery: Return reboot recovery install code [Nicholas Lim]
-
-* build/make
-10a1fcb5ef fixup! core & tools: system_dlkm: add dynamic partition [Aaron Kling]
-
-* lineage/hudson
-6510f14 Regenerate device dependency mappings [LineageOS Infra]
-2ae50e3 Regenerate device dependency mappings [LineageOS Infra]
-
-* packages/apps/Dialer
-e7de48179 Dialer: Handle unicode search results properly [Michael W]
-7257eb531 Dialer: Bolden search results properly [Michael W]
-
-* vendor/lineage
-610a83ba roomservice: Support including kernel snippets [LuK1337]
-
-====================
-     2026-05-18    
-====================
-* android
-e792ac0 Remove top-level bootstrap.bash & Android.bp links [Dan Willemsen]
-
-* device/qcom/sepolicy_vndr/sm8550
-a5736627f sm8550: vendor: Allow spdaemon to find system_suspend [Nolen Johnson]
-
-* frameworks/base
-f7107a350825 SystemUI: Match circle battery style colors with landscape icon [Michael Zh]
-
-* lineage/hudson
-2ae50e3 Regenerate device dependency mappings [LineageOS Infra]
-
-* vendor/lineage
-610a83ba roomservice: Support including kernel snippets [LuK1337]
-
-====================
-     2026-05-17    
-====================
-* android
-e792ac0 Remove top-level bootstrap.bash & Android.bp links [Dan Willemsen]
-
-* device/qcom/sepolicy_vndr/sm8550
-a5736627f sm8550: vendor: Allow spdaemon to find system_suspend [Nolen Johnson]
-
-* frameworks/base
-f7107a350825 SystemUI: Match circle battery style colors with landscape icon [Michael Zh]
-
-====================
-     2026-05-16    
-====================
-* frameworks/base
-23ff226493a9 Automatic translation import [LineageOS Infra]
-
-* lineage-sdk
-e438d33d Automatic translation import [LineageOS Infra]
-
-* lineage/wiki
-6937e0ca wiki: before_install_sabrina: No sudo please [LuK1337]
-
-* packages/apps/Aperture
-3c35f53 Automatic translation import [LineageOS Infra]
-
-* packages/apps/AudioFX
-e0b4a78 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Backgrounds
-aa916ba Automatic translation import [LineageOS Infra]
-
-* packages/apps/Camelot
-06212de Automatic translation import [LineageOS Infra]
-
-* packages/apps/Catapult
-66cf57a Automatic translation import [LineageOS Infra]
-
-* packages/apps/Contacts
-bb085f1d2 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DeskClock
-0ecf56717 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Dialer
-53fbdbade Automatic translation import [LineageOS Infra]
-
-* packages/apps/DocumentsUI
-d3ce55b1d Automatic translation import [LineageOS Infra]
-
-* packages/apps/FMRadio
-f3f8f3a Automatic translation import [LineageOS Infra]
-
-* packages/apps/FlipFlap
-2ad86a3 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Glimpse
-6823ba0 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Jelly
-978f17b Automatic translation import [LineageOS Infra]
-
-* packages/apps/Launcher3
-281a53c68c Automatic translation import [LineageOS Infra]
-
-* packages/apps/LineageParts
-d1221ea Automatic translation import [LineageOS Infra]
-
-* packages/apps/Messaging
-2848bf3 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Profiles
-1a2468b Automatic translation import [LineageOS Infra]
-
-* packages/apps/Recorder
-3b4ae90 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Settings
-bb914cb3821 Automatic translation import [LineageOS Infra]
-
-* packages/apps/SetupWizard
-986056d Automatic translation import [LineageOS Infra]
-
-* packages/apps/ThemePicker
-5e95c766 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Twelve
-556761b Automatic translation import [LineageOS Infra]
-
-* packages/apps/Updater
-179c69f Automatic translation import [LineageOS Infra]
-
-* packages/inputmethods/LatinIME
-aeefe2f05 Automatic translation import [LineageOS Infra]
-
-* packages/providers/DownloadProvider
-02c552dd Automatic translation import [LineageOS Infra]
-
-* packages/resources/devicesettings
-9b8e30d Automatic translation import [LineageOS Infra]
-
-* packages/services/Mms
-b7fced7 Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-18d3555 Automatic translation import [LineageOS Infra]
-
-* vendor/qcom/opensource/commonsys/fm
-0d3f79f Automatic translation import [LineageOS Infra]
-
-====================
-     2026-05-15    
-====================
-* frameworks/base
-23ff226493a9 Automatic translation import [LineageOS Infra]
-
-* lineage-sdk
-e438d33d Automatic translation import [LineageOS Infra]
-
-* lineage/wiki
-6937e0ca wiki: before_install_sabrina: No sudo please [LuK1337]
-
-* packages/apps/Aperture
-3c35f53 Automatic translation import [LineageOS Infra]
-
-* packages/apps/AudioFX
-e0b4a78 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Backgrounds
-aa916ba Automatic translation import [LineageOS Infra]
-
-* packages/apps/Camelot
-06212de Automatic translation import [LineageOS Infra]
-
-* packages/apps/Catapult
-66cf57a Automatic translation import [LineageOS Infra]
-
-* packages/apps/Contacts
-bb085f1d2 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DeskClock
-0ecf56717 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Dialer
-53fbdbade Automatic translation import [LineageOS Infra]
-
-* packages/apps/DocumentsUI
-d3ce55b1d Automatic translation import [LineageOS Infra]
-
-* packages/apps/FMRadio
-f3f8f3a Automatic translation import [LineageOS Infra]
-
-* packages/apps/FlipFlap
-2ad86a3 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Glimpse
-6823ba0 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Jelly
-978f17b Automatic translation import [LineageOS Infra]
-
-* packages/apps/Launcher3
-281a53c68c Automatic translation import [LineageOS Infra]
-
-* packages/apps/LineageParts
-d1221ea Automatic translation import [LineageOS Infra]
-
-* packages/apps/Messaging
-2848bf3 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Profiles
-1a2468b Automatic translation import [LineageOS Infra]
-
-* packages/apps/Recorder
-3b4ae90 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Settings
-bb914cb3821 Automatic translation import [LineageOS Infra]
-
-* packages/apps/SetupWizard
-986056d Automatic translation import [LineageOS Infra]
-
-* packages/apps/ThemePicker
-5e95c766 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Twelve
-556761b Automatic translation import [LineageOS Infra]
-
-* packages/apps/Updater
-179c69f Automatic translation import [LineageOS Infra]
-
-* packages/inputmethods/LatinIME
-aeefe2f05 Automatic translation import [LineageOS Infra]
-
-* packages/providers/DownloadProvider
-02c552dd Automatic translation import [LineageOS Infra]
-
-* packages/resources/devicesettings
-9b8e30d Automatic translation import [LineageOS Infra]
-
-* packages/services/Mms
-b7fced7 Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-18d3555 Automatic translation import [LineageOS Infra]
-
-* vendor/lineage
-93002ff9 roomservice: Simplify JSON file reading [LuK1337]
-362a33dd roomservice: Upgrade to f-strings [LuK1337]
-3d0e844e roomservice: os.system -> subprocess.run [LuK1337]
-fd81c5e8 Run `pre-commit run --all` [LuK1337]
-07b883ef Setup pre-commit [LuK1337]
-33fdf544 roomservice: Address ruff's "E722 Do not use bare `except`" warnings [LuK1337]
-11b051c3 roomservice: ruff format [Michael Bestas]
-
-* vendor/qcom/opensource/commonsys/fm
-0d3f79f Automatic translation import [LineageOS Infra]
-
-====================
-     2026-05-14    
-====================
-* frameworks/opt/telephony
-21e2e9fc3c EuiccCardController: Avoid NPE for legacy euicc devices [kailua]
-
-* lineage/scripts
-12aa796 lineage-priv-template: Add AVB_CUSTOM_*, WITH_AVB support [LuK1337]
-
-* packages/modules/Connectivity
-c9f3e77952 ConnectivityService: Disable "Close QUIC connection" feature [Michael Bestas]
-
-* vendor/lineage
-93002ff9 roomservice: Simplify JSON file reading [LuK1337]
-362a33dd roomservice: Upgrade to f-strings [LuK1337]
-3d0e844e roomservice: os.system -> subprocess.run [LuK1337]
-fd81c5e8 Run `pre-commit run --all` [LuK1337]
-07b883ef Setup pre-commit [LuK1337]
-33fdf544 roomservice: Address ruff's "E722 Do not use bare `except`" warnings [LuK1337]
-11b051c3 roomservice: ruff format [Michael Bestas]
-
-====================
-     2026-05-13    
-====================
-* frameworks/opt/telephony
-21e2e9fc3c EuiccCardController: Avoid NPE for legacy euicc devices [kailua]
-
-* lineage/scripts
-12aa796 lineage-priv-template: Add AVB_CUSTOM_*, WITH_AVB support [LuK1337]
-
-* lineage/wiki
-96dc051d wiki: Fix lancelot SoC [LuK1337]
-41f2581b wiki: Drop "MTXXXX" from Mediatek SoC names [LuK1337]
-
-* packages/modules/Connectivity
-c9f3e77952 ConnectivityService: Disable "Close QUIC connection" feature [Michael Bestas]
-
-====================
-     2026-05-12    
-====================
-* lineage/wiki
-96dc051d wiki: Fix lancelot SoC [LuK1337]
-41f2581b wiki: Drop "MTXXXX" from Mediatek SoC names [LuK1337]
-
-* packages/apps/DeskClock
-23107f7f5 DeskClock: Fix bottom navigation label clipping in landscape [cynagenautes]
-
-* vendor/lineage
-ea570156 kernel: Support having kernel platform in the main repo manifest [Aaron Kling]
-a5588130 generated_kernel_includes: Track kernel platform path change [Aaron Kling]
-a67469aa generated_kernel_includes: Fail immediately on errors [Aaron Kling]
-
-====================
-     2026-05-11    
-====================
-* external/chromium-webview/prebuilt/arm64
-3dcd7b8 Update Chromium Webview arm64 to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-8ad28d8 Update Chromium Webview x86_64 to 148.0.7778.120 [Kevin F. Haggerty]
-
-* packages/apps/DeskClock
-23107f7f5 DeskClock: Fix bottom navigation label clipping in landscape [cynagenautes]
-
-* vendor/lineage
-ea570156 kernel: Support having kernel platform in the main repo manifest [Aaron Kling]
-a5588130 generated_kernel_includes: Track kernel platform path change [Aaron Kling]
-a67469aa generated_kernel_includes: Fail immediately on errors [Aaron Kling]
-
-====================
-     2026-05-10    
-====================
-* external/chromium-webview/prebuilt/arm
-98c3cac Update Chromium Webview arm to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-3dcd7b8 Update Chromium Webview arm64 to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-11df557 Update Chromium Webview x86 to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-8ad28d8 Update Chromium Webview x86_64 to 148.0.7778.120 [Kevin F. Haggerty]
-
-====================
-     2026-05-09    
-====================
-* external/chromium-webview/patches
-6594ed2 Update Chromium Webview to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm
-98c3cac Update Chromium Webview arm to 148.0.7778.120 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-11df557 Update Chromium Webview x86 to 148.0.7778.120 [Kevin F. Haggerty]
-
-* lineage/scripts
-92f3074 build-webview: Update default webview to 148.0.7778.120 [Kevin F. Haggerty]
-
-* lineage/wiki
-e8226f82 wiki: Update Xperia bootloader unlock domain [LuK1337]
-
-====================
-     2026-05-08    
-====================
-* external/chromium-webview/patches
-6594ed2 Update Chromium Webview to 148.0.7778.120 [Kevin F. Haggerty]
-
-* kernel/configs
-a609a86 t/android-5.4: Bump min LTS version [Michael Bestas]
-f48e03f Align t/android-5.4 with t/android-5.10 [Michael Bestas]
-38775d3 Copy s/android-5.4 to t/android-5.4 [Michael Bestas]
-323aad2 Align t/android-4.19 with t/android-5.10 [Thomas Turner]
-
-* lineage/scripts
-92f3074 build-webview: Update default webview to 148.0.7778.120 [Kevin F. Haggerty]
-
-* lineage/wiki
-e8226f82 wiki: Update Xperia bootloader unlock domain [LuK1337]
-6fd44cae wiki: add Android 15 as supported firmware version to a73xq [Simon1511]
 
