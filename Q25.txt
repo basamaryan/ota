@@ -735,15 +735,3 @@ ddd313e Aperture: De Morgan never fails [Luca Stefani]
 * system/core
 e99d3d82b libsnapshot: Hide /metadata/ota open fail in recovery [LuK1337]
 
-====================
-     2026-05-21    
-====================
-* frameworks/base
-8151f8ffe6c1 fixup! SystemUI: Clock position customization [LuK1337]
-
-* lineage-sdk
-8973ea94 sdk: fix javadoc warnings [Alexander Martinz]
-
-* system/core
-e99d3d82b libsnapshot: Hide /metadata/ota open fail in recovery [LuK1337]
-
