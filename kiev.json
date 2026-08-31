@@ -1,13 +1,18 @@
-{
-  "response": [
-    {
-      "datetime": "1780458418",
-      "filename": "lineage-23.2-20260603-UNOFFICIAL-GMS-kiev.zip",
-      "id": "8c02f8b2c0ea7a306123a213c5b8acd13455dfdf6846609d62b0062fe48edd43",
-      "romtype": "UNOFFICIAL",
-      "size": 2102795666,
-      "url": "https://sourceforge.net/projects/noprincesshere/files/lineage-23.2/kiev/06032026/lineage-23.2-20260603-UNOFFICIAL-GMS-kiev.zip/download",
-      "version": "23.2"
-    }
-  ]
-}
+[
+  {
+    "datetime": 1788160679,
+    "files": [
+      {
+        "filename": "lineage-23.2-20260831-UNOFFICIAL-GMS-kiev.zip",
+        "os_patch_level": "2026-08-01",
+        "os_sdk_level": 36,
+        "ota_property_files": "payload_metadata.bin:4203:151577,payload.bin:4203:2103761640,payload_properties.txt:2103765901:156,apex_info.pb:2057:1279,care_map.pb:3383:773,metadata:69:675,metadata.pb:812:1197",
+        "sha256": "b873293a284e93d0f6d2e449ce222547c33928edb0ee9bb8a74382474f06ec9d",
+        "size": 2103769207,
+        "url": "https://sourceforge.net/projects/noprincesshere/files/lineage-23.2/kiev/08312026/lineage-23.2-20260831-UNOFFICIAL-GMS-kiev.zip/download"
+      }
+    ],
+    "type": "UNOFFICIAL",
+    "version": "23.2"
+  }
+]
